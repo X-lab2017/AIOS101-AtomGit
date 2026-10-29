@@ -1,22 +1,22 @@
-# 第八章材料包：把设计变成候选作品
+# 第八章材料包：把观察站做成可用候选
 
 > 状态：review
-> 版本：0.2.0
+> 版本：0.3.0
 
-## 准备三个输入
+## 选择输入
 
-将 `ch08` 放入观察站，用第七章设计替换 [materials/design.md](materials/design.md) 的提示内容，将已有导览副本放入 [materials/project-guide.md](materials/project-guide.md)。包内导览为作者参考稿，不是你的已完成作品。默认角色地图依据 [机制短卡](materials/role-notes.md)；其他选题先更换对应材料与提示词。
+将 `ch08` 放进观察站，用自己的设计替换 [materials/design.md](materials/design.md)。把本次需要的项目档案、来源、探究与作品片段放入 [materials/station-content.md](materials/station-content.md)，用实际导览替换 [materials/project-guide.md](materials/project-guide.md)。保留各自来源与状态，不必重写前六章。
 
-## 先确定结构，再保存作品
+材料中的参考内容为作者整理，不是你的运行与学习证据。也可先浏览[完整示范](../demo/README.md)，比较它如何连接项目与作品。
 
-沿用前章可用 DSH，选择 `ch08` 文件夹本身为工作区。先发送 [plan-prompt.txt](plan-prompt.txt)，根据提纲作一次自己的决定；确认后在同一会话发送 [create-prompt.txt](create-prompt.txt)。换会话时附上确认的提纲和决定。
+## 先流程，后候选
 
-新文件为 `work/artifact-v1.md`，包内不预置它。先确认它不存在；若已有，另取新名称并同步提示词。打开实际文件检查后，可以提出具体反馈，并要求另存 `work/artifact-v2.md`，同样不能覆盖已有文件。
+画出读者的一条路径与每步输入输出，再选择 `ch08` 文件夹本身为 DSH 工作区。发送 [plan-prompt.txt](plan-prompt.txt)，作出一项自己的决定，再发送 [create-prompt.txt](create-prompt.txt)。本例产物为单文件 `work/station-v1.md`；网页或多页文档应自行同步输出约定与链接检查。
 
-在 [work/decision.md](work/decision.md) 留下一条关键决定。核心材料为文字文件，不依赖图片生成或付费服务；工具接入与额度由教学方预先确认。无接入时先做原型，实际协作待补。
+打开候选，从入口走到作品和下一步。按实际问题反馈，修订另存 `work/station-v2.md`；已存在时另取新名称。在 [work/decision.md](work/decision.md) 留下一项具体取舍。没有接入时先做原型，DSH 文件协作目标待补。
 
-## 带往下一章
+## 带往第九章
 
-选定一版候选，保留原名的原件；在第九章复制为 `materials/candidate.md`，同时带上设计和实际引用的来源或配图。用原始来源完整链接能减少移动文件后的编号或相对路径问题。
+保留原件，将选定候选复制为 `ch09/materials/candidate.md`，同时带上设计、来源及全部附件。多页形式保持原目录结构，在 candidate.md 写实际入口，不只复制首页。
 
 返回[第八章正文](../../textbook/chapters/CH08.md)。

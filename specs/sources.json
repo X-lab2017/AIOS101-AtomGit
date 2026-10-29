@@ -78,7 +78,10 @@
       "CH05",
       "CH05-KIT",
       "CH06",
-      "CH06-KIT"
+      "CH06-KIT",
+      "DEMO",
+      "DEMO-DSH",
+      "DEMO-GUIDE"
     ]
   },
   {
@@ -93,7 +96,10 @@
       "CH05",
       "CH05-KIT",
       "CH06",
-      "CH06-KIT"
+      "CH06-KIT",
+      "DEMO",
+      "DEMO-DSH",
+      "DEMO-GUIDE"
     ]
   },
   {
@@ -469,7 +475,7 @@
     "title": "GOV.UK · Learning about users and their needs",
     "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
     "accessed": "2026-10-30",
-    "use": "用户任务、现有办法、假设与观察的区别；角色地图为本课程原创情境，不是该指南的研究结果。",
+    "use": "旧0.2.0使用的补充方法来源，保留历史；本轮产品主线以Neo Lee课件和恢复的观察站蓝图为依据。",
     "locations": [
       "CH07",
       "CH07-KIT"
@@ -485,7 +491,10 @@
       "CH08",
       "CH08-KIT",
       "CH09",
-      "CH09-KIT"
+      "CH09-KIT",
+      "DEMO",
+      "DEMO-DSH",
+      "DEMO-GUIDE"
     ]
   },
   {
@@ -498,5 +507,13 @@
       "CH09",
       "CH09-KIT"
     ]
+  },
+  {
+    "id": "SRC-NEO-LEE-PRODUCT",
+    "title": "Neo Lee · Skill Set in AI Era（Autumn 2026，用户提供课件）",
+    "url": "../docs/decisions/ADR-0005-observatory-product.md",
+    "accessed": "2026-10-29",
+    "use": "实际读PDF提取文本p24—25、47—53；产品方法重新用于观察站。课件非公开原文，方法与页码见ADR，不复制原图。",
+    "locations": []
   }
 ]

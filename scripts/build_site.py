@@ -14,9 +14,11 @@ if not re.fullmatch(r'[a-f0-9]{40}|local-preview',COMMIT): raise SystemExit('Inv
 REF='main' if COMMIT=='local-preview' else COMMIT
 STATUS={'outline':('章节提纲','Outline'),'draft':('正文草稿','Draft'),'review':('内容待评审','In review'),'published':('已审定正文','Reviewed')}
 ROUTES={'textbook/preface.md':'preface/','textbook/about.md':'about/','practice/README.md':'practice/','practice/demo/README.md':'practice/demo/','practice/template/README.md':'practice/template/','practice/ch01/README.md':'practice/ch01/','practice/ch02/README.md':'practice/ch02/','practice/ch03/README.md':'practice/ch03/','practice/ch04/README.md':'practice/ch04/','practice/ch05/README.md':'practice/ch05/','practice/ch06/README.md':'practice/ch06/'}
-CREATION_KITS=[('ch07','design-kit','第七章','为一个具体读者选择问题与范围'),('ch08','creation-kit','第八章','把设计变成一份可以阅读的作品'),('ch09','review-kit','第九章','用真实问题推动修订与复查')]
+CREATION_KITS=[('ch07','design-kit','第七章','设计观察站的用户旅程与功能范围'),('ch08','creation-kit','第八章','把流程与材料变成可用观察站候选'),('ch09','review-kit','第九章','用真实问题推动修订与复查')]
 CREATION_KITS=[k for k in CREATION_KITS if (ROOT/'practice'/k[0]/'README.md').is_file()]
 ROUTES.update({f'practice/{key}/README.md':f'practice/{key}/' for key,*_ in CREATION_KITS})
+DEMO_PAGES=[('dsh','DSH 项目档案'),('r1','DeepSeek-R1 项目档案'),('guide','DSH 入门导览')]
+ROUTES.update({f'practice/demo/{slug}.md':f'practice/demo/{slug}/' for slug,_ in DEMO_PAGES})
 ROUTES.update({c['source']:f"chapters/{c['number']:02d}/" for c in C['chapters']})
 def esc(s): return html.escape(str(s),quote=True)
 def bi(zh,en,tag='span',attrs=''): return f'<{tag} data-zh="{esc(zh)}" data-en="{esc(en)}" {attrs}>{esc(zh)}</{tag}>'
@@ -159,7 +161,9 @@ def main():
     reader('about/','ABOUT','textbook/about.md','关于这门课程',active='about')
     downloads='<div class="practice-actions"><a class="button primary" href="ch01/">从第一章材料开始 →</a><a class="text-link" href="../chapters/01/">阅读第一章 →</a></div>'
     reader('practice/','PRACTICE','practice/README.md','AI 开源项目观察站','贯穿全课的项目实践载体',active='practice',extra=downloads)
-    reader('practice/demo/','DEMO','practice/demo/README.md','示范观察站：认识 DSH','资料阅读与结构示例 · 实际任务待验证',active='practice')
+    reader('practice/demo/','DEMO','practice/demo/README.md','AI 开源项目观察站','选一个项目，找到依据与作品。',active='practice')
+    for slug,label in DEMO_PAGES:
+        reader(f'practice/demo/{slug}/','DEMO-'+slug.upper(),f'practice/demo/{slug}.md',label,'作者内容产品示范 · 非运行报告',active='practice')
     extra='<div class="practice-actions"><a class="button primary" href="../../downloads/ai-project-observatory-template.zip" download>下载全部模板 ↓</a><a class="text-link" href="https://atomgit.com/" target="_blank" rel="noopener">前往 AtomGit ↗</a></div>'
     reader('practice/template/','TEMPLATE','practice/template/README.md','从一份模板开始','复制、填写、观察，再逐步完善。',active='practice',extra=extra)
     kit='<div class="practice-actions"><a class="button primary" href="../../downloads/ch01-starter.zip" download>下载第一章材料包 ↓</a><a class="text-link" href="../../chapters/01/">返回第一章 →</a></div>'
@@ -179,6 +183,6 @@ def main():
         reader(f'practice/{key}/',key.upper()+'-KIT',f'practice/{key}/README.md',label+'材料包',subtitle,active='practice',extra=kit)
     (OUT/'.nojekyll').write_text('')
     (OUT/'build.json').write_text(json.dumps({'version':C['version'],'commit':COMMIT,'chapters':[{ 'id':c['id'],'status':status(c['source']),'source':c['source']} for c in C['chapters']]},ensure_ascii=False,indent=2))
-    print(f'Built {25+len(CREATION_KITS)} static pages and {7+len(CREATION_KITS)} downloadable practice kits')
+    print(f'Built {25+len(CREATION_KITS)+len(DEMO_PAGES)} static pages and {7+len(CREATION_KITS)} downloadable practice kits')
 
 if __name__=='__main__': main()
