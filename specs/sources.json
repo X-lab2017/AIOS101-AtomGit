@@ -16,7 +16,9 @@
       "PREFACE",
       "DEMO",
       "CH01",
-      "CH01-KIT"
+      "CH01-KIT",
+      "CH02",
+      "CH02-KIT"
     ]
   },
   {
@@ -98,6 +100,72 @@
     "locations": [
       "CH01",
       "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-R1-ENTRY",
+    "title": "DeepSeek-R1 官方发布页（2025-01-20）",
+    "url": "https://deepseek.com/en/news/deepseek-r1/",
+    "accessed": "2026-10-29",
+    "use": "通过技术报告链接核对官方项目入口；历史发布信息不等于当前服务状态",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-R1-README",
+    "title": "DeepSeek-R1 README（固定版本）",
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md",
+    "accessed": "2026-10-29",
+    "use": "模型名称、下载条目、本地运行与许可入口；非本课程实测",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-R1-FILES",
+    "title": "DeepSeek-R1 模型文件目录（固定版本）",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1/tree/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+    "accessed": "2026-10-29",
+    "use": "README、config.json、权重分片等实际文件名称；未下载权重或运行模型",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-DSH-README",
+    "title": "DSH 中文 README（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md",
+    "accessed": "2026-10-29",
+    "use": "项目身份、文档、预览与讨论入口；图 AG-02-02 的实际截图来源",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-DSH-CONTRIBUTING",
+    "title": "DSH 中文贡献指南（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/CONTRIBUTING.zh.md",
+    "accessed": "2026-10-29",
+    "use": "该版本暂不接收外部 PR，欢迎指南、答疑和讨论；不推断所有未来版本",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-DSH-LICENSE",
+    "title": "DSH 文档与软件许可（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/LICENSE",
+    "accessed": "2026-10-29",
+    "use": "README 截图的 MIT 许可与版权声明，原样保留于 SVG metadata 和随附 notice",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
     ]
   }
 ]

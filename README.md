@@ -17,7 +17,7 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 
 课程结构版本为 0.1.0：四篇十二章、规范和实践模板已经建立，正文逐章创作与评审。提纲、草稿和正式正文分别标记。示范不代表任务实测或社区贡献已经完成。
 
-序言现已完成 0.2.0 图文评审稿，包含两幅概念插画；可在在线站点阅读，或查看 [Markdown 正本](textbook/preface.md)。[第一章](textbook/chapters/CH01.md)也已完成 0.2.0 图文评审稿，配套三幅图和[八文件练习材料包](practice/ch01/README.md)；其余十一章仍为提纲。
+序言现已完成 0.2.0 图文评审稿，包含两幅概念插画；可在在线站点阅读，或查看 [Markdown 正本](textbook/preface.md)。[第一章](textbook/chapters/CH01.md)也已完成 0.2.0 图文评审稿，配套三幅图和[八文件练习材料包](practice/ch01/README.md)。[第二章](textbook/chapters/CH02.md)已完成 0.2.0 图文评审稿，配套三幅图和[七文件观察材料包](practice/ch02/README.md)；其余十章仍为提纲。
 
 ## 创作方式
 

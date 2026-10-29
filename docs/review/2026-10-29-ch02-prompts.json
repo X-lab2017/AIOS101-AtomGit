@@ -1,0 +1,23 @@
+{
+  "chapter": "CH02",
+  "date": "2026-10-29",
+  "figures": [
+    {
+      "id": "AG-02-01",
+      "mode": "generate",
+      "prompt": "Use case: illustration-story. Asset: AG-02-01 for a university textbook chapter about opening a real AI project and examining its materials. Create a thoughtful hand-drawn technology publishing illustration, landscape 3:2, 1536x1024 or higher. A small open workshop is viewed obliquely from the pavement, as an architectural cutaway with the facade still present. A single adult student holding a modest field notebook steps from the entrance into the workshop. At the doorway stands a simple printed information board. Inside, distinct plausible spaces contain shelves of document binders, a workbench with a disassembled ordinary desktop computer and technical papers, and a pinboard with short discussion slips. A rear cabinet is partly closed, its contents unknown. The visual idea is moving beyond the sign on the door to examine documents, working objects and conversations, without pretending everything has been revealed. This is a physical metaphor, not a literal AI system architecture; no wiring diagram or flow arrows. Make the composition airy, clear and human, professionally drawn like a restrained architectural journal illustration rather than cute isometric stock art. Use accurate everyday objects and plausible hands. Graphite and fine ink contours, selective crosshatching, matte gouache washes, warm uncoated paper #F6F3EB, deep ink #1D2433, indigo #5146D9, muted teal #3F958D, small coral #F27A59 accents. Calm light, a distinctive workshop perspective unlike the previous corridor scene and unlike an overhead desk. No legible text, letters, numerals, product logos, brand signs, captions or figure numbers. Paper sheets may have short abstract grey strokes. No robots, brains, neon networks, magical effects, trophies, plants, landscape pictures or unnecessary decoration. Keep the visitor and work areas large and readable at phone size; all main objects inside frame.",
+      "source": "Conceptual illustration, not a real project photograph."
+    },
+    {
+      "id": "AG-02-02",
+      "mode": "native-svg-with-real-screenshot",
+      "source": "deepseek-ai/deepseek-harness README.zh.md @ f3803c96974ad4a94195fb97e5c637e9c2a3afe3",
+      "brief": "Preserve real README text. Add readable course annotations for identity, documentation and preview conditions. No fabricated interface."
+    },
+    {
+      "id": "AG-02-03",
+      "mode": "native-svg",
+      "brief": "A field-notebook teaching example separates project statements, actual reading observations and a judgment still awaiting reader feedback. Large editable Chinese text; no fabricated runtime results."
+    }
+  ]
+}

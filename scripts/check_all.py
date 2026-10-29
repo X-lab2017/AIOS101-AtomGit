@@ -89,5 +89,10 @@ with zipfile.ZipFile(out/'downloads/ch01-starter.zip') as z:
     require('my-ai-observatory/work/guide-v1.md' not in z.namelist(),'Starter must not impersonate learner output')
 prompt=re.search(r'```text\n(.*?)\n```',(R/'textbook/chapters/CH01.md').read_text(),re.S)
 require(prompt and prompt[1]+'\n'==(kit_root/'prompt.txt').read_text(),'Chapter 1 prompt differs from kit')
-require(len(parsed)==20,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, both practice archives, Chapter 1 prompt and JavaScript syntax')
+kit2_root=R/'practice/ch02'
+with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
+    expected={'ch02/'+f.relative_to(kit2_root).as_posix():f.read_bytes() for f in kit2_root.rglob('*') if f.is_file()}
+    require(len(expected)==7 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 2 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 2 archive content differs')
+require(len(parsed)==21,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all three practice archives, Chapter 1 prompt and JavaScript syntax')

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1050" viewBox="0 0 1000 1050" role="img" aria-labelledby="title desc">
+<title id="title">同一条线索，分开记录说明、观察与判断</title>
+<desc id="desc">项目说明是暂不接受外部 PR、欢迎指南等帮助；个人阅读观察是自己在贡献指南中读到这项说明；新手指南可能帮助同学，则仍是需要实际读者反馈的判断。示例不代表运行或贡献已经完成。</desc>
+<rect width="1000" height="1050" fill="#F6F3EB"/>
+<path d="M35 28 L961 34 L969 1020 L29 1013 Z" fill="#FEFCF6" stroke="#B6B2A6" stroke-width="2"/>
+<g stroke="#E4E0D5" stroke-width="2"><path d="M46 318H953 M46 385H953 M46 452H953 M46 584H953 M46 651H953 M46 718H953 M46 850H953 M46 917H953"/></g>
+<path d="M108 164 Q103 568 108 978" fill="none" stroke="#E7B3A3" stroke-width="2"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#1D2433">
+<text x="64" y="94" font-size="42" font-weight="700">一条线索，三处记录</text>
+<text x="64" y="142" font-size="27" fill="#626878">DSH · CONTRIBUTING.zh.md · f3803c9…</text>
+<path d="M149 215 Q301 204 501 213" fill="none" stroke="#DDD9F4" stroke-width="29"/>
+<text x="150" y="228" font-size="45" font-weight="700" fill="#5146D9">项目说明</text>
+<text x="150" y="308" font-size="44">本版本暂不接收外部 PR；</text>
+<text x="150" y="375" font-size="44">欢迎指南、答疑等帮助。</text>
+<text x="150" y="439" font-size="35" fill="#626878">记录作者的说法与材料位置。</text>
+<path d="M148 482 Q313 477 501 483" fill="none" stroke="#D7E9E3" stroke-width="29"/>
+<text x="150" y="495" font-size="45" font-weight="700" fill="#2D716A">我的观察</text>
+<text x="150" y="574" font-size="44">我在贡献指南中，</text>
+<text x="150" y="641" font-size="44">读到了这项说明。</text>
+<text x="150" y="705" font-size="35" fill="#626878">记录实际阅读，不替代运行。</text>
+<path d="M148 748 Q356 740 603 749" fill="none" stroke="#F8DCCF" stroke-width="29"/>
+<text x="150" y="762" font-size="45" font-weight="700" fill="#A74831">待验证判断</text>
+<text x="150" y="840" font-size="44">一份新手指南，</text>
+<text x="150" y="907" font-size="44">可能帮助初次接触的同学。</text>
+<text x="150" y="971" font-size="35" fill="#626878">下一步：收集实际读者反馈。</text>
+<text x="936" y="1005" text-anchor="end" font-size="23" fill="#626878">示例写法 · 请据实记录</text>
+</g></svg>
