@@ -81,5 +81,13 @@ for f in [out/'styles.css']:
     for url in re.findall(r'url\([\"\']?([^\"\')]+)',f.read_text()):require((f.parent/url).exists(),'Missing font file')
 with zipfile.ZipFile(out/'downloads/ai-project-observatory-template.zip') as z:
     require(len(z.namelist())==7 and z.testzip() is None,'Template archive is invalid')
-require(len(parsed)==19,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, template archive and JavaScript syntax')
+kit_root=R/'practice/ch01'
+with zipfile.ZipFile(out/'downloads/ch01-starter.zip') as z:
+    expected={'my-ai-observatory/'+f.relative_to(kit_root).as_posix():f.read_bytes() for f in kit_root.rglob('*') if f.is_file()}
+    require(len(expected)==8 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 1 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 1 archive content differs')
+    require('my-ai-observatory/work/guide-v1.md' not in z.namelist(),'Starter must not impersonate learner output')
+prompt=re.search(r'```text\n(.*?)\n```',(R/'textbook/chapters/CH01.md').read_text(),re.S)
+require(prompt and prompt[1]+'\n'==(kit_root/'prompt.txt').read_text(),'Chapter 1 prompt differs from kit')
+require(len(parsed)==20,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, both practice archives, Chapter 1 prompt and JavaScript syntax')

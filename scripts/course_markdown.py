@@ -25,7 +25,7 @@ def destination(target, source, commit, routes):
         return '#'
     path = posixpath.normpath(posixpath.join(posixpath.dirname(source), parsed.path))
     if path in routes:
-        return PAGE_PREFIX + routes[path]
+        return PAGE_PREFIX + routes[path] + ('#' + parsed.fragment if parsed.fragment else '')
     if path.startswith('../'):
         return '#'
     return 'https://github.com/X-lab2017/AIOS101-AtomGit/blob/' + commit + '/' + quote(path) + ('#' + parsed.fragment if parsed.fragment else '')
@@ -125,7 +125,7 @@ def render(text, source, commit, routes):
             while i < len(lines) and not lines[i].startswith('```'):
                 code.append(lines[i]); i += 1
             source_code = '\n'.join(code)
-            result.append(mermaid_block(source_code) if language == 'mermaid' else '<pre><code>' + html.escape(source_code) + '</code></pre>'); i += 1; continue
+            result.append(mermaid_block(source_code) if language == 'mermaid' else ('<pre class="task-prompt"><code>' if language == 'text' else '<pre><code>') + html.escape(source_code) + '</code></pre>'); i += 1; continue
         heading = re.match(r'^(#{1,6})\s+(.+)', line)
         if heading:
             level = min(6, max(2, len(heading[1])))

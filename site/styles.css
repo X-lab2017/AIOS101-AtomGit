@@ -14,3 +14,7 @@
 .figure-credit{display:block;font-size:.9em;margin-top:3px;line-height:1.7}.source-details ul{padding-left:18px;line-height:1.9}.textbook-figure img{border-radius:3px;background:#F6F3EB}
 
 .textbook-figure{scroll-margin-top:110px}
+
+.prose pre.task-prompt{white-space:pre-wrap;overflow-wrap:anywhere}.prose pre.task-prompt code{font-family:inherit;word-break:normal}
+#figure-ag-01-02 img{width:100%;max-width:600px}
+.textbook-figure img{width:100%}
