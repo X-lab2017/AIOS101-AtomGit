@@ -11,7 +11,11 @@
     "title": "DeepSeek Harness 官方产品页",
     "url": "https://www.deepseek.com/en/harness/",
     "accessed": "2026-10-29",
-    "use": "示范档案中的官方自述；非本课程实测"
+    "use": "示范档案中的官方自述；非本课程实测",
+    "locations": [
+      "PREFACE",
+      "DEMO"
+    ]
   },
   {
     "id": "SRC-DS-API",
@@ -19,5 +23,35 @@
     "url": "https://api-docs.deepseek.com/",
     "accessed": "2026-10-29",
     "use": "区分模型调用条件与费用；不开具永久免费承诺"
+  },
+  {
+    "id": "SRC-OSI-OSD",
+    "title": "OSI · The Open Source Definition",
+    "url": "https://opensource.org/osd",
+    "accessed": "2026-10-29",
+    "use": "序言软件开源含义：源代码、使用、修改与再分发许可；非具体项目法律意见",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-DSH-README",
+    "title": "DeepSeek Harness 官方 README",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "accessed": "2026-10-29",
+    "use": "序言 DSH 项目身份、工具与模型的分工；未用官方演示代替本课程实测",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-DOCS",
+    "title": "AtomGit 帮助文档 · 产品介绍",
+    "url": "https://docs.atomgit.com/docs/start/",
+    "accessed": "2026-10-29",
+    "use": "仓库、版本管理、文档与协作能力；不引用营销统计或保证教学空间已配置",
+    "locations": [
+      "PREFACE"
+    ]
   }
 ]

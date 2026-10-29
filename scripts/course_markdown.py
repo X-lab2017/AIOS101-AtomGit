@@ -71,7 +71,8 @@ def figure_image(label, target, source):
     url = html.escape(PAGE_PREFIX + 'assets/figures/' + quote(record['file']),quote=True)
     title = html.escape('图 '+record['id']+'　'+record['title'])
     alt = html.escape(record['alt'],quote=True)
-    return ('<figure class="textbook-figure"><a href="'+url+'" target="_blank" rel="noopener" aria-label="放大查看 '+alt+'"><img src="'+url+'" alt="'+alt+'" width="'+str(record['width'])+'" height="'+str(record['height'])+'" loading="lazy"></a><figcaption>'+title+' · <a href="'+url+'" target="_blank" rel="noopener">放大查看</a></figcaption></figure>')
+    credit = html.escape(record.get('credit', record['source']))
+    return ('<figure class="textbook-figure" id="figure-'+html.escape(record['id'].lower(),quote=True)+'"><a href="'+url+'" target="_blank" rel="noopener" aria-label="放大查看 '+alt+'"><img src="'+url+'" alt="'+alt+'" width="'+str(record['width'])+'" height="'+str(record['height'])+'" loading="lazy" decoding="async"></a><figcaption>'+title+' · <a href="'+url+'" target="_blank" rel="noopener">放大查看</a><span class="figure-credit">'+credit+'</span></figcaption></figure>')
 
 
 def mermaid_block(code):

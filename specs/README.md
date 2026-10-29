@@ -3,6 +3,7 @@
 先读 [课程宪法](../CONSTITUTION.md)。结构化课程正本是 [course.json](course.json)：章节身份、名称、目标、任务、学习证据及顺序均由它维护。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
+- [序言规格](preface-spec.md)：读者动机、入门背景、贯穿实践与开篇图件。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
 - [贯穿实践规格](practice-spec.md)：观察站、里程碑、示范与模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。

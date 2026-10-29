@@ -2,6 +2,7 @@
 """Static course website. Content and navigation have one canonical source."""
 import hashlib, html, json, os, re, shutil, zipfile
 from pathlib import Path
+from urllib.parse import quote, urlsplit
 import course_markdown as md
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -20,6 +21,16 @@ def status(source):
     text=(ROOT/source).read_text();m=re.search(r'^> 状态：(outline|draft|review|published)$',text,re.M)
     if not m: raise ValueError('Missing content status: '+source)
     return m[1]
+def portable_markdown(source):
+    """Keep downloaded prose and illustrations usable outside the checkout."""
+    def rewrite(m):
+        target=m[3]; parsed=urlsplit(target)
+        if parsed.scheme or parsed.netloc or not parsed.path: return m[0]
+        resolved=(ROOT/source).parent.joinpath(parsed.path).resolve().relative_to(ROOT).as_posix()
+        base=REPO.replace('https://github.com/','https://raw.githubusercontent.com/')+'/'+REF+'/' if m[1] else REPO+'/blob/'+REF+'/'
+        return m[1]+'['+m[2]+']('+base+quote(resolved)+('#'+parsed.fragment if parsed.fragment else '')+')'
+    chunks=re.split(r'(```.*?```|`[^`]+`)',(ROOT/source).read_text(),flags=re.S)
+    return ''.join(chunk if i%2 else re.sub(r'(!?)\[([^\]]+)\]\(([^)]+)\)',rewrite,chunk) for i,chunk in enumerate(chunks))
 def chip(s): return bi(*STATUS[s],attrs=f'class="status {s}"')
 def prefix(route): return '../'*len(Path(route).parts) if route else './'
 def icon(name): return f'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{name}"/></svg>'
@@ -49,7 +60,7 @@ def home():
     pathways=''.join(f'''<a class="pathway p{i+1}" href="learn/#part-{part['id']}"><span class="part-index">0{i+1} / {part['en'].upper()}</span><h3>{part['name']}</h3><p>{part['intro']}</p><span class="pathway-end">{bi('第 '+str(i*3+1)+'—'+str(i*3+3)+' 章','Chapters '+str(i*3+1)+'–'+str(i*3+3))} <span aria-hidden="true">↗</span></span></a>''' for i,part in enumerate(C['parts']))
     body=f'''<div class="wrap"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> AIOS101 / ATOMGIT EDITION</div><h1>用开源来理解 AI，<br>用 AI 来<span class="highlight">贡献开源。</span></h1><p class="hero-goal">{C['goal']}</p><p class="hero-intro">打开真实的 AI 项目，把一个小问题变成有用的作品。<br class="desktop-break">在共同创造中，建立自己的技能集与作品集。</p><div class="hero-actions"><a class="button primary" href="learn/">{bi('查看学习路径','Explore the course')} <span aria-hidden="true">→</span></a><a class="text-link" href="practice/">{bi('认识项目实践','Meet the project')} ↗</a></div><p class="hero-note">{bi('面向所有专业 · 无需编程基础','For every discipline · No coding prerequisite')}</p></div>
 <div class="folio-scene" aria-label="AI 开源项目观察站：观察、理解、创作、贡献"><div class="folio-back"></div><div class="folio-page"><div class="folio-top"><span>FIELD NOTES / 001</span><span class="folio-stamp">OPEN</span></div><img class="folio-mark" src="assets/course/mark-light.svg" data-logo="mark" alt="开卷标志" width="160" height="160"><p class="folio-kicker">贯穿式项目实践</p><h2>AI 开源项目<br>观察站</h2><div class="folio-rule"></div><p class="folio-caption">观察一个项目<br>理解一种机制<br>创造一份有用的成果</p><div class="folio-bottom"><span>DeepSeek × DSH</span><span>AtomGit ↗</span></div></div><span class="folio-label label-one">从真实项目开始</span><span class="folio-label label-two">让成果帮助别人</span></div></section>
-<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('课程骨架已开放评审','Course skeleton ready for review')}</strong><span>{bi('十二章提供学习提纲与实践任务，教材正文将在评审后逐章创作。','All twelve chapters offer outlines and practice tasks. Full chapters will follow review.')}</span></p></div>
+<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('序言图文已开放评审','Illustrated preface ready for review')}</strong><span>{bi('先读序言，认识这门课；十二章可预览学习提纲与实践任务。','Start with the preface. All twelve chapters offer outlines and practice tasks.')}</span></p></div>
 <section class="section"><div class="section-heading"><div><span class="eyebrow">A JOURNEY IN FOUR PARTS</span><h2>从第一次创作，到第一份贡献</h2></div><a class="text-link" href="preface/">{bi('先读序言','Read the preface')} →</a></div><div class="pathways">{pathways}</div></section>
 <section class="project-feature"><div><span class="eyebrow">ONE PROJECT, MANY POSSIBILITIES</span><h2>边学边建，<br>让观察站持续生长。</h2><p>师生都围绕 AI 开源项目开展观察、实验与创作。你的成果可以是一份指南、一幅图解、一个交互演示，也可以是一件小工具。</p><a class="text-link" href="practice/">{bi('查看贯穿实践与模板','Explore practice and templates')} →</a></div><div class="station-list"><div><b>01</b><span><strong>项目档案</strong><small>对象、材料、来源与问题</small></span></div><div><b>02</b><span><strong>理解与创作</strong><small>观察、核验与可用作品</small></span></div><div><b>03</b><span><strong>协作与积累</strong><small>反馈、修订与个人成长</small></span></div></div></section>
 <section class="roles"><p><b>DeepSeek · DSH</b><span>既是学习对象，也是创作工具</span></p><span class="roles-cross">×</span><p><b>AtomGit</b><span>保存版本，分享成果，共同改进</span></p><span class="roles-cross">→</span><p><b>你的技能集与作品集</b><span>让每一次学习有迹可循</span></p></section></div>'''
@@ -63,6 +74,7 @@ def learn():
 def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=''):
     p=prefix(route);md.PAGE_PREFIX=p
     u=md.unit(ROOT/source,ROOT,REF,ROUTES,key)
+    if key=='PREFACE': title=u['title'].replace('，','，\n',1)
     section_links=''.join(f'<a href="#{esc(s["id"])}">{esc(s["title"])}</a>' for s in u['sections'])
     section_html=''.join(f'<section class="reading-section" id="{esc(s["id"])}"><h2>{esc(s["title"])}</h2>{s["html"]}</section>' for s in u['sections'])
     sidemenu=''.join(f'<a href="{p}chapters/{c["number"]:02d}/"'+(' aria-current="page"' if chapter and chapter['id']==c['id'] else '')+f'><span>{c["number"]:02d}</span>{esc(c["title"])}</a>' for c in C['chapters'])
@@ -79,9 +91,12 @@ def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=
     elif key=='PREFACE': neighbours=f'<div class="next-step"><a class="button primary" href="{p}chapters/01/">进入第 1 章 →</a></div>'
     elif active=='practice': neighbours=f'<div class="next-step"><a class="text-link" href="{p}learn/">← 返回学习路径</a></div>'
     source_url=REPO+'/blob/'+REF+'/'+source
-    body=f'''<div class="wrap reader-layout"><aside class="reader-sidebar">{sidebar}</aside><div class="reader-main"><header class="reader-heading"><div class="reader-meta">{chip(st)}<span>v{esc(u['version'])}</span></div><h1>{esc(title)}</h1>{'<p class="reader-subtitle">'+esc(subtitle)+'</p>' if subtitle else ''}<div class="reading-controls"><span>{bi('正文字号','Text size')}</span><button data-font="-1" aria-label="减小正文字号">A−</button><button data-font="1" aria-label="增大正文字号">A＋</button></div></header>{st_note}{goals}{extra}<article class="prose">{section_html}</article>{neighbours}<details class="source-details"><summary>{bi('来源与版本','Source and version')}</summary><p>正文版本 {esc(u['version'])} · {STATUS[st][0]}</p><a href="{source_url}">查看 Markdown 正本 ↗</a><span> · </span><a href="{p}downloads/{key}.md">下载本页 Markdown</a></details></div></div>'''
+    source_records=json.loads((ROOT/'specs/sources.json').read_text())
+    references=[r for r in source_records if key in r.get('locations',[])]
+    reference_html=('<p>本页事实核对来源（访问日期见链接项）：</p><ul>'+''.join('<li><a href="'+esc(r['url'])+'" target="_blank" rel="noopener">'+esc(r['title'])+'</a> · '+esc(r['accessed'])+'</li>' for r in references)+'</ul>') if references else ''
+    body=f'''<div class="wrap reader-layout"><aside class="reader-sidebar">{sidebar}</aside><div class="reader-main"><header class="reader-heading"><div class="reader-meta">{chip(st)}<span>v{esc(u['version'])}</span></div><h1>{esc(title)}</h1>{'<p class="reader-subtitle">'+esc(subtitle)+'</p>' if subtitle else ''}<div class="reading-controls"><span>{bi('正文字号','Text size')}</span><button data-font="-1" aria-label="减小正文字号">A−</button><button data-font="1" aria-label="增大正文字号">A＋</button></div></header>{st_note}{goals}{extra}<article class="prose">{section_html}</article>{neighbours}<details class="source-details"><summary>{bi('来源与版本','Source and version')}</summary><p>正文版本 {esc(u['version'])} · {STATUS[st][0]}</p><a href="{source_url}">查看 Markdown 正本 ↗</a><span> · </span><a href="{p}downloads/{key}.md">下载本页 Markdown</a>{reference_html}</details></div></div>'''
     shell(route,title,body,active)
-    (OUT/'downloads'/f'{key}.md').write_text((ROOT/source).read_text())
+    (OUT/'downloads'/f'{key}.md').write_text(portable_markdown(source))
 
 def main():
     OUT.mkdir(exist_ok=True)
@@ -99,7 +114,7 @@ def main():
         for f in sorted((ROOT/'practice/template').glob('*.md')):
             zi=zipfile.ZipInfo('ai-project-observatory/'+f.name,date_time=(2026,10,29,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
     home();learn()
-    reader('preface/','PREFACE','textbook/preface.md','用开源来理解 AI，\n用 AI 来贡献开源。','从使用 AI，到共同创造')
+    reader('preface/','PREFACE','textbook/preface.md','从使用 AI，\n到共同创造。','序言 · 打开，才能理解')
     for c in C['chapters']:reader(f"chapters/{c['number']:02d}/",c['id'],c['source'],c['title'],c['subtitle'],c)
     reader('about/','ABOUT','textbook/about.md','关于这门课程',active='about')
     downloads='<div class="practice-actions"><a class="button primary" href="../downloads/ai-project-observatory-template.zip" download>下载观察站模板 ↓</a><a class="text-link" href="demo/">查看示范结构 →</a></div>'
