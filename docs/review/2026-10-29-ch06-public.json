@@ -1,0 +1,74 @@
+[
+  {
+    "path": "build.json",
+    "bytes": 1342,
+    "sha256": "1fd14c60db051b20440fa8d0d9b1c297378e41d5bfd5703f8018775ed3df11f7",
+    "identical": true
+  },
+  {
+    "path": "index.html",
+    "bytes": 8447,
+    "sha256": "476830ce0144c2e69781539d670975b085ec96e248362b5f03009a8fec756159",
+    "identical": true
+  },
+  {
+    "path": "learn/index.html",
+    "bytes": 12339,
+    "sha256": "2386713104b1a9dcb0101dd0f5f4c693613d7a86fa65716ace3ef773403276df",
+    "identical": true
+  },
+  {
+    "path": "chapters/05/index.html",
+    "bytes": 28319,
+    "sha256": "540825b42772db883062d4947e663192dee2940c305a9ec55b72003a0c60fd19",
+    "identical": true
+  },
+  {
+    "path": "chapters/06/index.html",
+    "bytes": 27145,
+    "sha256": "c1c64e50ea9cf15e51e0b380b9e52862cfdbaec6b44169f14aac0d6810708732",
+    "identical": true
+  },
+  {
+    "path": "chapters/07/index.html",
+    "bytes": 7252,
+    "sha256": "8785c95fe37b8c3af8216ce42096c1a25f308f61f5e3a770ba5cf371e92d5b5c",
+    "identical": true
+  },
+  {
+    "path": "practice/index.html",
+    "bytes": 11986,
+    "sha256": "adfc4689ec118e968aaa2c99d61e4d03bbdf900d6818b7d3af7ea20ea32172df",
+    "identical": true
+  },
+  {
+    "path": "practice/ch06/index.html",
+    "bytes": 14383,
+    "sha256": "160c1f93614e1b3b97c40585b5f2de593cbc1b93b2db92b977200026573862f3",
+    "identical": true
+  },
+  {
+    "path": "assets/figures/ag-06-01-task-desk.webp",
+    "bytes": 267464,
+    "sha256": "e0e60f86c09cbfe86c2445c08c1dcc495d11b2b8894933b76375a977b3f5d9a5",
+    "identical": true
+  },
+  {
+    "path": "assets/figures/ag-06-02-action-loop.svg",
+    "bytes": 2751,
+    "sha256": "024234eaef7f61be945525e85208e24511a89424a403dc139ccf1b436cfdd78a",
+    "identical": true
+  },
+  {
+    "path": "assets/figures/ag-06-03-evidence-ladder.svg",
+    "bytes": 2696,
+    "sha256": "0994ec9c90dc4db189b596ba54b8544c13273a67dd60a4daa94eeb077405fae8",
+    "identical": true
+  },
+  {
+    "path": "downloads/ch06-task-kit.zip",
+    "bytes": 16340,
+    "sha256": "f4b501422e4e99bae15a6c5bf3b8e0019d12867efc1183430c0d516e4caf7991",
+    "identical": true
+  }
+]
