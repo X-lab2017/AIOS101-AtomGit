@@ -1,0 +1,23 @@
+[
+  {
+    "id": "SRC-AIOS101",
+    "title": "AIOS101 复用参照",
+    "url": "https://github.com/X-lab2017/AIOS101/tree/9acf393293ed629cdf1ffd1162d1257814aa57e7",
+    "accessed": "2026-10-29",
+    "use": "品牌与阅读/SDD方法，正文不直接移植"
+  },
+  {
+    "id": "SRC-DSH",
+    "title": "DeepSeek Harness 官方产品页",
+    "url": "https://www.deepseek.com/en/harness/",
+    "accessed": "2026-10-29",
+    "use": "示范档案中的官方自述；非本课程实测"
+  },
+  {
+    "id": "SRC-DS-API",
+    "title": "DeepSeek API 官方文档",
+    "url": "https://api-docs.deepseek.com/",
+    "accessed": "2026-10-29",
+    "use": "区分模型调用条件与费用；不开具永久免费承诺"
+  }
+]

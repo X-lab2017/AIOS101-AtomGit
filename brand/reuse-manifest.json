@@ -1,0 +1,115 @@
+{
+  "source": "X-lab2017/AIOS101",
+  "sourceCommit": "9acf393293ed629cdf1ffd1162d1257814aa57e7",
+  "visualBaseline": "Open Folio 1.0.0",
+  "reused": [
+    {
+      "path": "brand/tokens.css",
+      "sha": "e30085cdd49829ba54d4919b2e26dba9928afee1",
+      "sha256": "cd6761d169e09970d343f9aced6e16ea2ae53d860fc1f3e2348823f62e837218",
+      "mode": "unchanged"
+    },
+    {
+      "path": "scripts/course_markdown.py",
+      "sha": "13a24ed756321e7bb2a249b24e54349912faf5b2",
+      "sha256": "60cd24c9b21b91394aa43e238441f627d82b46a969501ee9061c8b97a5aef9e6",
+      "mode": "adapted"
+    },
+    {
+      "path": "site/assets/NOTICE.md",
+      "sha": "7a8d41151d8bb5af78e9a65901595f35dfddf98e",
+      "sha256": "7eaec8b32bc7601662cd56926b409adf80b49f29872bc9a3d7685fb93322a3bb",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/favicon.svg",
+      "sha": "2965ac0b6de492c6ababd320ee19ba7842e0c0c1",
+      "sha256": "972436d4fad223c7f902ca27dee4c7ec09e4ad2ac7cd62932cd7524497175e54",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/hero-folio.svg",
+      "sha": "d38e42767799463c0ed3c99eb8c5a4f8da62243c",
+      "sha256": "a278706da4ba03d7bce545533c2d53890ca1447e74e81ebcaea0264e05b8ead4",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/logo-dark.svg",
+      "sha": "15f64fceadcf9d840708144b5a875fb29f198c38",
+      "sha256": "9502e0d7cc69f6a16b058e7d8876a0cd3e44076101463b5e34d48be39788e9e5",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/logo-light.svg",
+      "sha": "5675158cc0447ac2f1a28099a356a231e8218715",
+      "sha256": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/mark-dark.svg",
+      "sha": "9d186414820a9efc02de3fec5a454c5d9e10af32",
+      "sha256": "3bd5e4920f10d76d9e5df39620f4f92cab8f16ea752fb2d4d24075517cbd1eb8",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/course/mark-light.svg",
+      "sha": "9b9f9ccbb6c1fca70f1f34d64901c09a1b1402bd",
+      "sha256": "92adb004e30ed453cfb755c2dbd1cd970492e8ed0ce280e6cc27432c3c0a7c85",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/fonts/OFL-Space-Grotesk.txt",
+      "sha": "f831dbc69f05a4d5abbb54c530f0123bc0ff2d8b",
+      "sha256": "c6dec685825f73b18c20926fddc65e8315642e12986f15db0699170940a09efc",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/fonts/SpaceGrotesk.woff2",
+      "sha": "0c4d65824309f9107f096fb4421e14782cb3ec81",
+      "sha256": "8e085aa438094f11487a836652edd5c054fa6a96f63fc7c282105ee3a4b08c07",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/icons/LICENSE-Phosphor.txt",
+      "sha": "78c9810819776e135d314adc0ff26eda7bec8b38",
+      "sha256": "b5b1f1da112d18ea2147decfd48ddc1bf2b5aeb6c265381579340e95b15a2bb2",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/icons/book-open.svg",
+      "sha": "216773b4fecb6be75772823514745702164b71db",
+      "sha256": "ed4f731cb4272cf5cedd9226577ba4bb1b36154f70cbee6fc50dfb947722bbc7",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/icons/git-branch.svg",
+      "sha": "aa3286237435786e41b0090d334a2d347632c67a",
+      "sha256": "048e8569daa3f44b71878f169003e156a57205653ebf8cb9be0da496ae4c349e",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/icons/graph.svg",
+      "sha": "df84fe0230d66f7f9d38fe9b85ccc66e34be94d5",
+      "sha256": "9566260ccb3d0d4fd83a0f26205505313ed4b42ba697d9cea709efd644bd48cf",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/icons/magnifying-glass.svg",
+      "sha": "38601953c6a3372d66ff486df6c651629e9ab57b",
+      "sha256": "4d4805b059b49add1e3424b53b05ba8f5bd6031ca551540b32b0a61cfb0ec7d9",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/logo-dark.svg",
+      "sha": "545a973fbb5ee879bcee7818fbb448ab3ae9e813",
+      "sha256": "3bbc362dccd07408680cee512590525955277d7aff607c9484298041997e12ea",
+      "mode": "unchanged"
+    },
+    {
+      "path": "site/assets/logo-light.svg",
+      "sha": "fc47a5d04aa971253992425966e4926c9ff8baa9",
+      "sha256": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
+      "mode": "unchanged"
+    }
+  ]
+}
