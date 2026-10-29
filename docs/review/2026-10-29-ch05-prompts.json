@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "generate",
+  "date": "2026-10-29",
+  "output": "textbook/assets/figures/ag-05-01-check-the-source.webp",
+  "prompt": "Use case: illustration-story. Asset: a sophisticated hand-drawn technology publishing illustration for a university textbook chapter on checking AI answers against evidence. New original wide 3:2 composition, not an infographic. Side-angle close view in a real quiet library: a single university student, shown in profile with thoughtful natural expression, holds a small elegant printed guide beside a thick open reference volume on a slanted reading stand; one finger carefully traces a passage in the reference book, while a thin coral pencil mark on the small guide signals a claim being checked. Several differently colored paper tabs in the reference book suggest exact source locations. The open book, hands and small guide dominate the foreground; library shelves fade into generous warm ivory negative space. Visual metaphor: fluent words need a source that actually supports them. No laptop, robots, glowing brains, network graphics, floating bubbles or magic objects. Realistic anatomy and believable books, expressive graphite contours and dry gouache on grainy cream paper #F6F3EB, ink #1D2433, restrained indigo #5146D9 with teal #3F958D and tiny coral #F27A59 details. Professional, warm and intellectually engaging, hand drawn rather than photorealistic, varied irregular strokes. No readable text, numbers, labels, logos or watermark; text only abstract short graphite paragraph marks. Not a real experiment record or software screenshot.",
+  "review": "已检查人物手部、图书与导览关系；无虚构软件界面或数值证据。WebP quality 88, 1536×1024；图中抽象段落不作为可读引文。",
+  "precise_figures": [
+    "textbook/assets/figures/ag-05-02-training-and-context.svg",
+    "textbook/assets/figures/ag-05-03-controlled-comparison.svg"
+  ]
+}

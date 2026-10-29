@@ -110,5 +110,17 @@ errors={a:sum(abs(a*n/100-t) for n,t in training)/len(training) for a in (20,30,
 require(errors=={20:20,30:0,40:20},'Training example arithmetic differs')
 require([30*n/100 for n in (150,250)]==[45,75],'Held-out predictions differ')
 require((abs(45-48)+abs(75-72))/2==3 and abs(60-150)==90,'Held-out errors differ')
-require(len(parsed)==23,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all five practice archives and Chapter 4 arithmetic, Chapter 1 prompt and JavaScript syntax')
+kit5_root=R/'practice/ch05'
+with zipfile.ZipFile(out/'downloads/ch05-evidence-kit.zip') as z:
+    expected={'ch05/'+f.relative_to(kit5_root).as_posix():f.read_bytes() for f in kit5_root.rglob('*') if f.is_file()}
+    require(len(expected)==10 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 5 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 5 archive content differs')
+# Prevent drift that would change instructions as well as the comparison material.
+template=(kit5_root/'prompt-template.txt').read_text()
+require(template.count('{{MATERIALS}}')==1,'Chapter 5 prompt must have exactly one material slot')
+a=(kit5_root/'materials/brief.md').read_text().strip()
+b=(kit5_root/'materials/guide.md').read_text().strip()
+require((kit5_root/'prompt-a.txt').read_text()==template.replace('{{MATERIALS}}',a),'Chapter 5 A prompt differs from canonical material')
+require((kit5_root/'prompt-b.txt').read_text()==template.replace('{{MATERIALS}}',a+'\n\n'+b),'Chapter 5 B prompt changes more than material')
+require(len(parsed)==24,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all six practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')
