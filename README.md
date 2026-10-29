@@ -17,7 +17,13 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 
 课程结构版本为 0.1.0：四篇十二章、规范和实践模板已经建立，正文逐章创作与评审。提纲、草稿和正式正文分别标记。示范不代表任务实测或社区贡献已经完成。
 
-序言现已完成 0.2.0 图文评审稿，包含两幅概念插画；可在在线站点阅读，或查看 [Markdown 正本](textbook/preface.md)。[第一章](textbook/chapters/CH01.md)也已完成 0.2.0 图文评审稿，配套三幅图和[八文件练习材料包](practice/ch01/README.md)。[第二章](textbook/chapters/CH02.md)已完成 0.2.0 图文评审稿，配套三幅图和[七文件观察材料包](practice/ch02/README.md)。[第三章](textbook/chapters/CH03.md)已完成 0.2.0 图文评审稿，配套三幅图和[八文件复用材料包](practice/ch03/README.md)，收束“认识开源”篇；其余九章仍为提纲。
+序言与前三章现为 0.2.1 图文评审稿。前三章已完成一轮[联合编辑评审与修订](docs/review/2026-10-29-ch01-03.md)，围绕同一份导览推进：
+
+- [第一章：先做成一件事](textbook/chapters/CH01.md)——三幅图、[八文件练习包](practice/ch01/README.md)，做出并核对初稿。
+- [第二章：打开一个项目](textbook/chapters/CH02.md)——三幅图、[七文件观察包](practice/ch02/README.md)，建立档案并检查导览中的一句话。
+- [第三章：开放的力量](textbook/chapters/CH03.md)——三幅图、[八文件复用包](practice/ch03/README.md)，为一项材料补齐使用说明。
+
+[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。其余九章仍为提纲；本轮不表示工具实测或真人试学已经完成。
 
 ## 创作方式
 

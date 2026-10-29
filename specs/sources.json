@@ -33,11 +33,13 @@
     "title": "OSI · The Open Source Definition",
     "url": "https://opensource.org/osd",
     "accessed": "2026-10-29",
-    "use": "序言软件开源含义：源代码、使用、修改与再分发许可；非具体项目法律意见",
+    "use": "序言与第一章的软件开源含义、第三章开放条件；2026-10-29 联合评审重新核对原文，不替代具体项目判断",
     "locations": [
       "PREFACE",
       "CH03",
-      "CH03-KIT"
+      "CH03-KIT",
+      "CH01",
+      "CH01-KIT"
     ]
   },
   {
@@ -286,6 +288,26 @@
     "locations": [
       "CH03",
       "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-P1-TEXTEDIT-SETTINGS",
+    "title": "Apple · 文本编辑的纯文本与保存设置",
+    "url": "https://support.apple.com/guide/textedit/change-textedit-settings-txted1063/1.20/mac/27",
+    "accessed": "2026-10-29",
+    "use": "实际读取设置页：纯文本、扩展名及编码设置；按读者所用系统切换版本，非课程设备实测",
+    "locations": [
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-P1-TEXTEDIT-GUIDE",
+    "title": "Apple · 文本编辑文档与格式指南",
+    "url": "https://support.apple.com/guide/textedit/welcome/mac",
+    "accessed": "2026-10-29",
+    "use": "从官方搜索返回内容核对纯文本/富文本支持与默认格式提示；单篇创建文档页直接打开曾超时",
+    "locations": [
+      "CH01-KIT"
     ]
   }
 ]
