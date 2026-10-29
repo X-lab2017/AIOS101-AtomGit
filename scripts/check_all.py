@@ -122,5 +122,19 @@ a=(kit5_root/'materials/brief.md').read_text().strip()
 b=(kit5_root/'materials/guide.md').read_text().strip()
 require((kit5_root/'prompt-a.txt').read_text()==template.replace('{{MATERIALS}}',a),'Chapter 5 A prompt differs from canonical material')
 require((kit5_root/'prompt-b.txt').read_text()==template.replace('{{MATERIALS}}',a+'\n\n'+b),'Chapter 5 B prompt changes more than material')
-require(len(parsed)==24,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all six practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')
+kit6_root=R/'practice/ch06'
+with zipfile.ZipFile(out/'downloads/ch06-task-kit.zip') as z:
+    expected={'ch06/'+f.relative_to(kit6_root).as_posix():f.read_bytes() for f in kit6_root.rglob('*') if f.is_file()}
+    require(len(expected)==10 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 6 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 6 archive content differs')
+    require('ch06/work/guide-candidate.md' not in z.namelist(),'Chapter 6 kit must not impersonate learner output')
+ch6=(R/'textbook/chapters/CH06.md').read_text()
+require(len(re.findall(r'^## 6\.[1-7] ',ch6,re.M))==7,'Chapter 6 section count differs')
+chapter6_figures=[f for f in figures if f['id'].startswith('AG-06-')]
+require(len(chapter6_figures)==3,'Chapter 6 must register three figures')
+for f in chapter6_figures:
+    data=(R/'textbook/assets/figures'/f['file']).read_bytes()
+    require(hashlib.sha256(data).hexdigest()==f['sha256'] and len(data)==f['bytes'],'Chapter 6 figure integrity differs')
+    require(ch6.count('../assets/figures/'+f['file'])==1,'Chapter 6 figure reference differs')
+require(len(parsed)==25,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all seven practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')

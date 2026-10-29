@@ -13,7 +13,7 @@ COMMIT=os.getenv('GITHUB_SHA','local-preview')
 if not re.fullmatch(r'[a-f0-9]{40}|local-preview',COMMIT): raise SystemExit('Invalid build commit')
 REF='main' if COMMIT=='local-preview' else COMMIT
 STATUS={'outline':('章节提纲','Outline'),'draft':('正文草稿','Draft'),'review':('内容待评审','In review'),'published':('已审定正文','Reviewed')}
-ROUTES={'textbook/preface.md':'preface/','textbook/about.md':'about/','practice/README.md':'practice/','practice/demo/README.md':'practice/demo/','practice/template/README.md':'practice/template/','practice/ch01/README.md':'practice/ch01/','practice/ch02/README.md':'practice/ch02/','practice/ch03/README.md':'practice/ch03/','practice/ch04/README.md':'practice/ch04/','practice/ch05/README.md':'practice/ch05/'}
+ROUTES={'textbook/preface.md':'preface/','textbook/about.md':'about/','practice/README.md':'practice/','practice/demo/README.md':'practice/demo/','practice/template/README.md':'practice/template/','practice/ch01/README.md':'practice/ch01/','practice/ch02/README.md':'practice/ch02/','practice/ch03/README.md':'practice/ch03/','practice/ch04/README.md':'practice/ch04/','practice/ch05/README.md':'practice/ch05/','practice/ch06/README.md':'practice/ch06/'}
 ROUTES.update({c['source']:f"chapters/{c['number']:02d}/" for c in C['chapters']})
 def esc(s): return html.escape(str(s),quote=True)
 def bi(zh,en,tag='span',attrs=''): return f'<{tag} data-zh="{esc(zh)}" data-en="{esc(en)}" {attrs}>{esc(zh)}</{tag}>'
@@ -140,6 +140,11 @@ def main():
             if not f.is_file(): continue
             name='ch05/'+f.relative_to(ROOT/'practice/ch05').as_posix()
             zi=zipfile.ZipInfo(name,date_time=(2026,10,29,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
+    with zipfile.ZipFile(OUT/'downloads/ch06-task-kit.zip','w',zipfile.ZIP_DEFLATED) as z:
+        for f in sorted((ROOT/'practice/ch06').rglob('*')):
+            if not f.is_file(): continue
+            name='ch06/'+f.relative_to(ROOT/'practice/ch06').as_posix()
+            zi=zipfile.ZipInfo(name,date_time=(2026,10,29,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
     home();learn()
     reader('preface/','PREFACE','textbook/preface.md','从使用 AI，\n到共同创造。','序言 · 打开，才能理解')
     for c in C['chapters']:reader(f"chapters/{c['number']:02d}/",c['id'],c['source'],c['title'],c['subtitle'],c)
@@ -159,8 +164,10 @@ def main():
     reader('practice/ch04/','CH04-KIT','practice/ch04/README.md','第四章材料包','用纸面小实验理解模型怎样学习',active='practice',extra=kit4)
     kit5='<div class="practice-actions"><a class="button primary" href="../../downloads/ch05-evidence-kit.zip" download>下载第五章材料包 ↓</a><a class="text-link" href="../../chapters/05/">返回第五章 →</a></div>'
     reader('practice/ch05/','CH05-KIT','practice/ch05/README.md','第五章材料包','比较材料条件，让导览中的说法有据可查',active='practice',extra=kit5)
+    kit6='<div class="practice-actions"><a class="button primary" href="../../downloads/ch06-task-kit.zip" download>下载第六章材料包 ↓</a><a class="text-link" href="../../chapters/06/">返回第六章 →</a></div>'
+    reader('practice/ch06/','CH06-KIT','practice/ch06/README.md','第六章材料包','追踪读取、生成与执行，检查同一份导览候选稿',active='practice',extra=kit6)
     (OUT/'.nojekyll').write_text('')
     (OUT/'build.json').write_text(json.dumps({'version':C['version'],'commit':COMMIT,'chapters':[{ 'id':c['id'],'status':status(c['source']),'source':c['source']} for c in C['chapters']]},ensure_ascii=False,indent=2))
-    print('Built 24 static pages, chapter status labels and six downloadable practice kits')
+    print('Built 25 static pages, chapter status labels and seven downloadable practice kits')
 
 if __name__=='__main__': main()

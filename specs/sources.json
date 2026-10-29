@@ -67,12 +67,14 @@
     "title": "材料 A · DSH README（固定版本）",
     "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md",
     "accessed": "2026-10-29",
-    "use": "A1—A4：项目身份、插件组织、开发者预览与 README 许可声明；非实测；第五章重新核对原段用于材料对照，非实际运行",
+    "use": "A1—A4：项目身份、插件组织、开发者预览与 README 许可声明；非实测；第五章重新核对原段用于材料对照，非实际运行；第六章重新阅读，用于模型与工具分工、读取与权限条件说明，非运行证据",
     "locations": [
       "CH01",
       "CH01-KIT",
       "CH05",
-      "CH05-KIT"
+      "CH05-KIT",
+      "CH06",
+      "CH06-KIT"
     ]
   },
   {
@@ -80,12 +82,14 @@
     "title": "材料 B · DSH Web UI 快速入门（固定版本）",
     "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/docs/user/guide/index.zh.md",
     "accessed": "2026-10-29",
-    "use": "B1—B4：服务前提、模型/工作区、文件工具与权限策略；非所有桌面版本的逐屏操作；第五章重新核对原段用于材料对照，非实际运行",
+    "use": "B1—B4：服务前提、模型/工作区、文件工具与权限策略；非所有桌面版本的逐屏操作；第五章重新核对原段用于材料对照，非实际运行；第六章重新阅读，用于模型与工具分工、读取与权限条件说明，非运行证据",
     "locations": [
       "CH01",
       "CH01-KIT",
       "CH05",
-      "CH05-KIT"
+      "CH05-KIT",
+      "CH06",
+      "CH06-KIT"
     ]
   },
   {
@@ -424,6 +428,17 @@
     "locations": [
       "CH05",
       "CH05-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH06-DSH-SAFETY",
+    "title": "DSH 安全说明（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/SAFETY.zh.md",
+    "accessed": "2026-10-29",
+    "use": "实验性状态、沙箱与审批限制、最小权限、备份与执行前检查；不是安全审计或实测",
+    "locations": [
+      "CH06",
+      "CH06-KIT"
     ]
   }
 ]

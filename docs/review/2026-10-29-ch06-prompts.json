@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen built-in",
+  "figure": "AG-06-01",
+  "prompt": "Use case: scientific-educational. Asset type: a polished editorial concept illustration in a Chinese introductory AI textbook, landscape 3:2. Primary request: illustrate the difference between an AI's written suggestion and a verified saved file, with a human carefully checking the work. Scene: quiet university library work desk, a student seen three-quarter from behind comparing a printed one-page project guide, two reference sheets, and a laptop displaying abstract document panes (no readable words, no real software interface). On the table a simple indigo folder holds the untouched original, a coral clipboard holds a candidate revision, and the student's hand points from the references to the candidate. Warm ivory paper #F6F3EB, deep ink #1D2433, indigo #5146D9, coral #F27A59 and teal #3F958D accents. Refined gouache and colored-pencil textured publication illustration, believable objects and hands, restrained composition, soft daylight, generous negative space. This is a concept metaphor, not an actual DSH screenshot or test photograph. No robots, brains, glowing AI symbols, logos, watermarks, readable text, arrows or diagram labels.",
+  "source_file": "generated_images/exec-b50cf8b7-ea3a-4b6b-88a7-4734d6eea0bb.png",
+  "output": "textbook/assets/figures/ag-06-01-task-desk.webp",
+  "note": "概念插画；另两幅图为代码原生 SVG。"
+}
