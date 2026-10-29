@@ -1,0 +1,156 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "bytes": 8328,
+    "matches": true,
+    "sha256": "e3aa54ba32526fa341c8dfd35a07e63c5e5adbdd3d0764ffd6fd132005e9714a"
+  },
+  {
+    "path": "learn/index.html",
+    "status": 200,
+    "bytes": 12446,
+    "matches": true,
+    "sha256": "44da33ac63dda3863169af0c5435e7894991bf5f03fc8f9366c8e92eea68b220"
+  },
+  {
+    "path": "about/index.html",
+    "status": 200,
+    "bytes": 8122,
+    "matches": true,
+    "sha256": "a20618f1bd6fa8c239c3d211d756d7051405521b99367f4ca680286ca8a93562"
+  },
+  {
+    "path": "practice/index.html",
+    "status": 200,
+    "bytes": 12634,
+    "matches": true,
+    "sha256": "769bd813cff72f82184f439813102364ec8102934d4980647176e554b156380a"
+  },
+  {
+    "path": "build.json",
+    "status": 200,
+    "bytes": 1339,
+    "matches": true,
+    "sha256": "67e1dc173ab3b1dd5cc9b656cf0f67bed989fb3cfbf03e48b3484be5fe05a6eb"
+  },
+  {
+    "path": "chapters/07/index.html",
+    "status": 200,
+    "bytes": 21085,
+    "matches": true,
+    "sha256": "8f856da63207afdc8b8ada6c5c14e65e1298124d7673c0dfcd93b7123cf1b14c"
+  },
+  {
+    "path": "practice/ch07/index.html",
+    "status": 200,
+    "bytes": 7185,
+    "matches": true,
+    "sha256": "355d0904c3617d9590da72690196e440657558b424dd0f4673b5900faa9064b6"
+  },
+  {
+    "path": "downloads/CH07.md",
+    "status": 200,
+    "bytes": 12354,
+    "matches": true,
+    "sha256": "0ee08f7d68646dbacf38d8411c129e2b9028e61e867ba423261eced4c6b3cb24"
+  },
+  {
+    "path": "downloads/ch07-design-kit.zip",
+    "status": 200,
+    "bytes": 1469,
+    "matches": true,
+    "sha256": "68d79e3c02a8f9bc6e736848036253a9c02ecb02e910d588c87913fab6fb816a"
+  },
+  {
+    "path": "chapters/08/index.html",
+    "status": 200,
+    "bytes": 21556,
+    "matches": true,
+    "sha256": "d6f7ff25f6cacc527d616e561cb0990bf31958919ac84be7fb1f509252f87c68"
+  },
+  {
+    "path": "practice/ch08/index.html",
+    "status": 200,
+    "bytes": 9290,
+    "matches": true,
+    "sha256": "73b01276a9366eeb46e98cd1cdb88b03793d0034e9273e9adeb49c54fee6ead8"
+  },
+  {
+    "path": "downloads/CH08.md",
+    "status": 200,
+    "bytes": 12334,
+    "matches": true,
+    "sha256": "53841d1f733860cd1cb1555ab670757d83f1d1fd85cea704b1d87b512c4ab57f"
+  },
+  {
+    "path": "downloads/ch08-creation-kit.zip",
+    "status": 200,
+    "bytes": 6525,
+    "matches": true,
+    "sha256": "dc0e564307d126a07086b1cc09d4a18464093e9fe3fc65bf3df46adc80e2e1f2"
+  },
+  {
+    "path": "chapters/09/index.html",
+    "status": 200,
+    "bytes": 21160,
+    "matches": true,
+    "sha256": "5754947910e49797275c2be4bdd26b11d6be50b7cbb213d86ff8605b28f9ab15"
+  },
+  {
+    "path": "practice/ch09/index.html",
+    "status": 200,
+    "bytes": 8807,
+    "matches": true,
+    "sha256": "d5343bdc23b25b6435a395e898bfdbddd20d56665eb9c5de12b94d385f243edd"
+  },
+  {
+    "path": "downloads/CH09.md",
+    "status": 200,
+    "bytes": 12277,
+    "matches": true,
+    "sha256": "67050816b070927c9a34e5b1d1a591bbcce30d502e37c963bf8523564a5d58d2"
+  },
+  {
+    "path": "downloads/ch09-review-kit.zip",
+    "status": 200,
+    "bytes": 3253,
+    "matches": true,
+    "sha256": "b73cc1db2b0ca0560a4f16d58cc2c218c593fdf0eeae5ceb27acd14043edd3d6"
+  },
+  {
+    "path": "assets/figures/ag-07-01-focus.webp",
+    "status": 200,
+    "bytes": 335724,
+    "matches": true,
+    "sha256": "9b9b861af48ff6188e83aca9428a24aa25301d701c4a69138ec55cf896b174b5"
+  },
+  {
+    "path": "assets/figures/ag-07-02-need-to-check.svg",
+    "status": 200,
+    "bytes": 2366,
+    "matches": true,
+    "sha256": "be0211757e89fdf4ffe92cf211ae7a7b820d953957b0ab2a1ccddba3c37c7396"
+  },
+  {
+    "path": "assets/figures/ag-08-01-prototype.webp",
+    "status": 200,
+    "bytes": 344368,
+    "matches": true,
+    "sha256": "9ea5a687710d45e8a40ec36303356676b99d6d4510258891edb3696a2558db02"
+  },
+  {
+    "path": "assets/figures/ag-08-02-role-map.svg",
+    "status": 200,
+    "bytes": 3484,
+    "matches": true,
+    "sha256": "18eeff040bc6233bacbd39807597bfdc3826b1386a96b686c37a55f1c9c337ba"
+  },
+  {
+    "path": "assets/figures/ag-09-01-revision.svg",
+    "status": 200,
+    "bytes": 2555,
+    "matches": true,
+    "sha256": "1ab741bbed20408c31423f333dce463acc042f6fa4e24cb138753997130c9cbb"
+  }
+]
