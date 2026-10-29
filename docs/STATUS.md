@@ -25,3 +25,5 @@
 - 首次发布提交：`5a62f351919ca04b15e3e2d03eeb7d34e474e083`；[Course Pages 工作流](https://github.com/X-lab2017/AIOS101-AtomGit/actions/runs/40854608867) 的 build 与 deploy 均成功。
 - [在线评审站](https://www.x-lab.info/AIOS101-AtomGit/) 已核验首页、第一章和实践页，模板已通过浏览器下载并与本地归档比对一致。
 - 骨架发布记录、首页截图与验收范围见 [骨架验收记录](review/2026-10-29-skeleton.md)。序言本轮创作与验收记录见 [序言评审记录](review/2026-10-29-preface.md)。
+
+序言 0.2.0 已由 [Course Pages 40857840146](https://github.com/X-lab2017/AIOS101-AtomGit/actions/runs/40857840146) 成功发布；线上已核对正文、两幅原图与来源入口，等待维护者内容评审。
