@@ -1,0 +1,14 @@
+[
+  {
+    "id": "AG-07-01",
+    "mode": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: Chinese university AI literacy textbook Chapter 7, thoughtful hand-drawn technology publishing illustration, no text. A tangible editorial metaphor for choosing one small reader problem: overhead view of a real designer's paper workbench, several rough pencil ideas on loose paper (a many-window website, an audio recorder, a complex gears device), a sturdy indigo paper viewfinder frame isolates one simple two-page sketch: a confused tangled thread leading to a clearly arranged few objects (a document, a pencil, a folder). One natural human hand holds the viewfinder, no people faces. Outside the frame ideas are faint graphite; inside the frame the chosen small problem is crisp. The frame does not change physical reality, it selects focus. Warm offwhite paper #F6F3EB, ink #1D2433, indigo #5146D9 focal frame, restrained coral #F27A59 and teal #3F958D. Fine pen hatching, subtle gouache, real paper edges, restrained publication-quality collage, confident generous negative space, 3:2 landscape. No fantasy robots, brains, glowing AI, logos, UI claims, arrows, legible text, numbers, watermarks, headings or captions. This is a conceptual illustration not an exact diagram.",
+    "file": "textbook/assets/figures/ag-07-01-focus.webp"
+  },
+  {
+    "id": "AG-08-01",
+    "mode": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: university AI creation textbook, Chapter 8. Thoughtful hand-drawn technology publishing artwork about a prototype being deliberately changeable. Three-quarter side view of a real editor's upright cork pinboard in a design studio, mounted sheets of cream paper with small pencil sketches: a document, a folder, a pencil. On the left, four separate rough paper fragments attached with removable drafting tape. Center one natural hand moving a paper fragment to a better place. On the right a single coherent, still simple page assembled from the same paper fragments, with ample space around it. Show visible tape, pinholes, faint erasures, pencil construction lines; this is a real editable physical prototype, not a slick final website. No arrows, no relationships to be interpreted as technical data, no words or letters. Style: fine ink and graphite hatching, restrained watercolor/gouache and tactile paper collage, intelligent editorial book illustration, professional, engaging, softly lit. Open Folio palette paper #F6F3EB, dark ink #1D2433, indigo #5146D9, teal #3F958D and coral #F27A59 small tabs only. Landscape 3:2. Avoid top-down desk scene, robots, glowing brains, sci-fi machinery, logos, captions, decorative plants, fake screenshots. Visual idea: moving the explanation before polishing the surface.",
+    "file": "textbook/assets/figures/ag-08-01-prototype.webp"
+  }
+]

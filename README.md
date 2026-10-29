@@ -29,7 +29,11 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 
 - [第六章：从回答到行动](textbook/chapters/CH06.md)——[任务追踪材料包](practice/ch06/README.md)，分清读取、生成、执行和人的授权核验。
 
-[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。第四至六章已作 0.3.0 机制与实践重构，等待内容复核，其余六章仍为提纲；本轮不表示工具实测或真人试学已经完成。
+- [第七章：找到值得解决的问题](textbook/chapters/CH07.md)——[设计材料包](practice/ch07/README.md)，围绕具体读者选择问题、范围和标准。
+- [第八章：把想法变成作品](textbook/chapters/CH08.md)——[创作材料包](practice/ch08/README.md)，从草图到实际候选，说明自己的关键取舍。
+- [第九章：让作品经得起检验](textbook/chapters/CH09.md)——[检验材料包](practice/ch09/README.md)，核验、修订并比较前后。
+
+[序言](textbook/preface.md)含两幅概念插画。第四至六章为 0.3.0 机制与实践修订稿，第七至九章为 0.2.0 图文评审稿，已按顺序完成编辑自审和联合修订，见[本轮记录](docs/review/2026-10-30-ch07-09.md)。最后三章保持提纲；工具实跑与真人试学未完成。
 
 ## 创作方式
 

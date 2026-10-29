@@ -56,10 +56,14 @@
     "id": "SRC-ATOMGIT-DOCS",
     "title": "AtomGit 帮助文档 · 产品介绍",
     "url": "https://docs.atomgit.com/docs/start/",
-    "accessed": "2026-10-29",
+    "accessed": "2026-10-30",
     "use": "仓库、版本管理、文档与协作能力；不引用营销统计或保证教学空间已配置",
     "locations": [
-      "PREFACE"
+      "PREFACE",
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
     ]
   },
   {
@@ -153,7 +157,7 @@
     "id": "SRC-CH02-DSH-README",
     "title": "DSH 中文 README（固定版本）",
     "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md",
-    "accessed": "2026-10-29",
+    "accessed": "2026-10-30",
     "use": "项目身份、文档、预览与讨论入口；图 AG-02-02 的实际截图来源；第五章重新核对原段用于材料对照，非实际运行",
     "locations": [
       "CH02",
@@ -161,7 +165,11 @@
       "CH03",
       "CH03-KIT",
       "CH05",
-      "CH05-KIT"
+      "CH05-KIT",
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
     ]
   },
   {
@@ -445,11 +453,50 @@
     "id": "SRC-CH06-DSH-ARCH",
     "title": "DSH 架构：轮次流程与会话日志（固定版本）",
     "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/docs/architecture.zh.md#turn-flow",
-    "accessed": "2026-10-29",
+    "accessed": "2026-10-30",
     "use": "模型请求、工具调用与结果、后续步骤、会话历史的职责解释；本轮通过GitHub连接器读取官方原文，非运行记录",
     "locations": [
       "CH06",
-      "CH06-KIT"
+      "CH06-KIT",
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH07-USER-NEEDS",
+    "title": "GOV.UK · Learning about users and their needs",
+    "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+    "accessed": "2026-10-30",
+    "use": "用户任务、现有办法、假设与观察的区别；角色地图为本课程原创情境，不是该指南的研究结果。",
+    "locations": [
+      "CH07",
+      "CH07-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH08-DSH-GUIDE",
+    "title": "DSH Web UI 指南（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/docs/user/guide/index.zh.md",
+    "accessed": "2026-10-30",
+    "use": "重新读取工作区选择、模型配置和工具动作；只证明文档说明，不表示本课程实际运行通过。",
+    "locations": [
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH09-USABILITY",
+    "title": "GOV.UK · Using moderated usability testing",
+    "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+    "accessed": "2026-10-30",
+    "use": "以任务观察使用、避免提示答案、区分独立完成与协助，以及尊重参与者；本课程的小练习不声称达到完整用户研究覆盖。",
+    "locations": [
+      "CH09",
+      "CH09-KIT"
     ]
   }
 ]

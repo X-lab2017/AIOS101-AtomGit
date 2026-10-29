@@ -142,5 +142,27 @@ for f in chapter6_figures:
 # Practice archives are validated against their actual source files, not a file-count quota.
 for chapter, required in {'ch04':['work/experiment-record.md','materials/check-values.md'], 'ch05':['prompt-a.txt','prompt-b.txt','work/comparison-record.md'], 'ch06':['prompt.txt','materials/guide-before.md','work/task-record.md']}.items():
     require(all((R/'practice'/chapter/name).is_file() for name in required), 'Missing learning task input: '+chapter)
-require(len(parsed)==25,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all seven practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')
+creation_kits={'ch07':'design-kit','ch08':'creation-kit','ch09':'review-kit'}
+active=[key for key in creation_kits if (R/'practice'/key/'README.md').exists()]
+for key in active:
+    with zipfile.ZipFile(out/'downloads'/f'{key}-{creation_kits[key]}.zip') as z:
+        root=R/'practice'/key
+        expected={key+'/'+f.relative_to(root).as_posix():f.read_bytes() for f in root.rglob('*') if f.is_file()}
+        require(z.testzip() is None and set(z.namelist())==set(expected),'Creation archive file set differs: '+key)
+        require(all(z.read(name)==data for name,data in expected.items()),'Creation archive bytes differ: '+key)
+        require(not any(name.endswith(('work/artifact-v1.md','work/artifact-v2.md','work/artifact-revised.md')) for name in z.namelist()),'Creation kit impersonates learner output: '+key)
+for key in active:
+    raw=(R/'textbook/chapters'/f'{key.upper()}.md').read_text()
+    own_figures=[f for f in figures if f['id'].startswith('AG-'+key[2:]+'-')]
+    for fig in own_figures:
+        require(raw.count('../assets/figures/'+fig['file'])==1,'Figure reference missing or duplicated: '+fig['id'])
+# Instructions must point at included inputs; learner outputs remain absent.
+if 'ch08' in active:
+    for name in ['plan-prompt.txt','create-prompt.txt']:
+        prompt=(R/'practice/ch08'/name).read_text()
+        for target in re.findall(r'materials/[a-z-]+\.md',prompt):
+            require((R/'practice/ch08'/target).is_file(),'Chapter 8 prompt input missing: '+target)
+if 'ch09' in active:
+    require(not (R/'practice/ch09/materials/candidate.md').exists(),'Chapter 9 must receive the learner candidate')
+require(len(parsed)==25+len(active),'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')

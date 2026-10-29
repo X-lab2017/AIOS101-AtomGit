@@ -14,6 +14,9 @@ if not re.fullmatch(r'[a-f0-9]{40}|local-preview',COMMIT): raise SystemExit('Inv
 REF='main' if COMMIT=='local-preview' else COMMIT
 STATUS={'outline':('章节提纲','Outline'),'draft':('正文草稿','Draft'),'review':('内容待评审','In review'),'published':('已审定正文','Reviewed')}
 ROUTES={'textbook/preface.md':'preface/','textbook/about.md':'about/','practice/README.md':'practice/','practice/demo/README.md':'practice/demo/','practice/template/README.md':'practice/template/','practice/ch01/README.md':'practice/ch01/','practice/ch02/README.md':'practice/ch02/','practice/ch03/README.md':'practice/ch03/','practice/ch04/README.md':'practice/ch04/','practice/ch05/README.md':'practice/ch05/','practice/ch06/README.md':'practice/ch06/'}
+CREATION_KITS=[('ch07','design-kit','第七章','为一个具体读者选择问题与范围'),('ch08','creation-kit','第八章','把设计变成一份可以阅读的作品'),('ch09','review-kit','第九章','用真实问题推动修订与复查')]
+CREATION_KITS=[k for k in CREATION_KITS if (ROOT/'practice'/k[0]/'README.md').is_file()]
+ROUTES.update({f'practice/{key}/README.md':f'practice/{key}/' for key,*_ in CREATION_KITS})
 ROUTES.update({c['source']:f"chapters/{c['number']:02d}/" for c in C['chapters']})
 def esc(s): return html.escape(str(s),quote=True)
 def bi(zh,en,tag='span',attrs=''): return f'<{tag} data-zh="{esc(zh)}" data-en="{esc(en)}" {attrs}>{esc(zh)}</{tag}>'
@@ -60,7 +63,7 @@ def home():
     pathways=''.join(f'''<a class="pathway p{i+1}" href="learn/#part-{part['id']}"><span class="part-index">0{i+1} / {part['en'].upper()}</span><h3>{part['name']}</h3><p>{part['intro']}</p><span class="pathway-end">{bi('第 '+str(i*3+1)+'—'+str(i*3+3)+' 章','Chapters '+str(i*3+1)+'–'+str(i*3+3))} <span aria-hidden="true">↗</span></span></a>''' for i,part in enumerate(C['parts']))
     body=f'''<div class="wrap"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> AIOS101 / ATOMGIT EDITION</div><h1>用开源来理解 AI，<br>用 AI 来<span class="highlight">贡献开源。</span></h1><p class="hero-goal">{C['goal']}</p><p class="hero-intro">打开真实的 AI 项目，把一个小问题变成有用的作品。<br class="desktop-break">在共同创造中，建立自己的技能集与作品集。</p><div class="hero-actions"><a class="button primary" href="learn/">{bi('查看学习路径','Explore the course')} <span aria-hidden="true">→</span></a><a class="text-link" href="practice/">{bi('认识项目实践','Meet the project')} ↗</a></div><p class="hero-note">{bi('面向所有专业 · 无需编程基础','For every discipline · No coding prerequisite')}</p></div>
 <div class="folio-scene" aria-label="AI 开源项目观察站：观察、理解、创作、贡献"><div class="folio-back"></div><div class="folio-page"><div class="folio-top"><span>FIELD NOTES / 001</span><span class="folio-stamp">OPEN</span></div><img class="folio-mark" src="assets/course/mark-light.svg" data-logo="mark" alt="开卷标志" width="160" height="160"><p class="folio-kicker">贯穿式项目实践</p><h2>AI 开源项目<br>观察站</h2><div class="folio-rule"></div><p class="folio-caption">观察一个项目<br>理解一种机制<br>创造一份有用的成果</p><div class="folio-bottom"><span>DeepSeek × DSH</span><span>AtomGit ↗</span></div></div><span class="folio-label label-one">从真实项目开始</span><span class="folio-label label-two">让成果帮助别人</span></div></section>
-<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('序言与前六章图文已开放评审','Preface and Chapters 1–6 ready for review')}</strong><span>{bi('围绕一页导览，依次创作、核对来源、补齐使用说明；前三章已完成联合修订，第四章用小实验理解模型学习，第五章观察上下文怎样影响生成，第六章追踪工具反馈与文件修订；其余六章为提纲。','Create a guide, check its sources and explain reuse. Chapters 1–3 have been revised together; Chapters 4–6 explore learning, generation and tool actions. Six chapters remain outlines.')}</span></p></div>
+<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('序言与前九章图文已开放评审','Preface and Chapters 1–9 ready for review')}</strong><span>{bi('前三章从一页导览开始，第四至六章理解模型与工具，第七至九章为具体读者选择问题、借助 AI 创作并检验作品；最后三章为提纲。','Start with a guide, understand models and tools, then design, create and review a useful artifact. Chapters 10–12 remain outlines.')}</span></p></div>
 <section class="section"><div class="section-heading"><div><span class="eyebrow">A JOURNEY IN FOUR PARTS</span><h2>从第一次创作，到第一份贡献</h2></div><a class="text-link" href="preface/">{bi('先读序言','Read the preface')} →</a></div><div class="pathways">{pathways}</div></section>
 <section class="project-feature"><div><span class="eyebrow">ONE PROJECT, MANY POSSIBILITIES</span><h2>边学边建，<br>让观察站持续生长。</h2><p>师生都围绕 AI 开源项目开展观察、实验与创作。你的成果可以是一份指南、一幅图解、一个交互演示，也可以是一件小工具。</p><a class="text-link" href="practice/">{bi('查看贯穿实践与模板','Explore practice and templates')} →</a></div><div class="station-list"><div><b>01</b><span><strong>项目档案</strong><small>对象、材料、来源与问题</small></span></div><div><b>02</b><span><strong>理解与创作</strong><small>观察、核验与可用作品</small></span></div><div><b>03</b><span><strong>协作与积累</strong><small>反馈、修订与个人成长</small></span></div></div></section>
 <section class="roles"><p><b>DeepSeek · DSH</b><span>既是学习对象，也是创作工具</span></p><span class="roles-cross">×</span><p><b>AtomGit</b><span>保存版本，分享成果，共同改进</span></p><span class="roles-cross">→</span><p><b>你的技能集与作品集</b><span>让每一次学习有迹可循</span></p></section></div>'''
@@ -69,7 +72,7 @@ def home():
 def learn():
     intro=f'''<section class="page-intro"><span class="eyebrow">LEARNING PATH</span><h1>四篇十二章，<br>一步步参与创造。</h1><p>认识开源、理解 AI、开展创作、进入社区。每一章都推进同一个项目实践。</p></section><div class="learn-tools"><a class="preface-link" href="../preface/"><span>00</span><strong>{bi('序言 · 从这里开始','Preface · Start here')}</strong><span aria-hidden="true">→</span></a><label class="search-box">{bi('查找章节','Find a chapter')}<input id="chapter-search" type="search" placeholder="标题、主题或问题" autocomplete="off"></label></div>'''
     groups=''.join(f'''<section class="chapter-group" id="part-{part['id']}"><div class="group-heading"><span class="part-index">0{i+1} / {part['en'].upper()}</span><h2>{part['name']}<span>{part['title']}</span></h2><p>{part['intro']}</p></div><div class="chapter-list">{chapter_rows('../',part['id'])}</div></section>''' for i,part in enumerate(C['parts']))
-    shell('learn/','学习路径',f'<div class="wrap narrow-wrap">{intro}<p class="catalog-note">{bi("序言与前六章为图文评审稿。前三章围绕同一份导览逐步完善，按顺序取用材料即可；第四至六章接着理解参数学习、文字生成与工具行动，其余六章为提纲。","Preface and Chapters 1–6 are in review. Keep improving one guide across the first three chapters. Chapters 4–6 explore learning, generation and tool actions. Six chapters remain outlines.")}</p>{groups}<p id="search-empty" class="empty-state" hidden>没有找到相关章节，请尝试“模型”“创作”或“协作”。</p><p id="search-status" class="sr-only" aria-live="polite"></p></div>')
+    shell('learn/','学习路径',f'<div class="wrap narrow-wrap">{intro}<p class="catalog-note">{bi("序言与前九章为图文评审稿。先做导览，再理解模型与工具；第七至九章复用观察站材料，完成问题设计、AI 创作与检验修订。按当前章节取用材料即可，最后三章仍为提纲。","Preface and Chapters 1–9 are in review. Build a guide, understand models and tools, then design, create and revise an artifact. Download materials as needed. Chapters 10–12 remain outlines.")}</p>{groups}<p id="search-empty" class="empty-state" hidden>没有找到相关章节，请尝试“模型”“创作”或“协作”。</p><p id="search-status" class="sr-only" aria-live="polite"></p></div>')
 
 def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=''):
     p=prefix(route);md.PAGE_PREFIX=p
@@ -145,6 +148,11 @@ def main():
             if not f.is_file(): continue
             name='ch06/'+f.relative_to(ROOT/'practice/ch06').as_posix()
             zi=zipfile.ZipInfo(name,date_time=(2026,10,29,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
+    for key, slug, label, subtitle in CREATION_KITS:
+        with zipfile.ZipFile(OUT/'downloads'/f'{key}-{slug}.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for f in sorted((ROOT/'practice'/key).rglob('*')):
+                if not f.is_file(): continue
+                zi=zipfile.ZipInfo(key+'/'+f.relative_to(ROOT/'practice'/key).as_posix(),date_time=(2026,10,30,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
     home();learn()
     reader('preface/','PREFACE','textbook/preface.md','从使用 AI，\n到共同创造。','序言 · 打开，才能理解')
     for c in C['chapters']:reader(f"chapters/{c['number']:02d}/",c['id'],c['source'],c['title'],c['subtitle'],c)
@@ -166,8 +174,11 @@ def main():
     reader('practice/ch05/','CH05-KIT','practice/ch05/README.md','第五章材料包','比较两次生成，解释新增材料怎样改变回答',active='practice',extra=kit5)
     kit6='<div class="practice-actions"><a class="button primary" href="../../downloads/ch06-task-kit.zip" download>下载第六章材料包 ↓</a><a class="text-link" href="../../chapters/06/">返回第六章 →</a></div>'
     reader('practice/ch06/','CH06-KIT','practice/ch06/README.md','第六章材料包','沿读取、写入和反馈，改进同一份导览',active='practice',extra=kit6)
+    for key, slug, label, subtitle in CREATION_KITS:
+        kit=f'<div class="practice-actions"><a class="button primary" href="../../downloads/{key}-{slug}.zip" download>下载{label}材料包 ↓</a><a class="text-link" href="../../chapters/{key[2:]}/">返回{label} →</a></div>'
+        reader(f'practice/{key}/',key.upper()+'-KIT',f'practice/{key}/README.md',label+'材料包',subtitle,active='practice',extra=kit)
     (OUT/'.nojekyll').write_text('')
     (OUT/'build.json').write_text(json.dumps({'version':C['version'],'commit':COMMIT,'chapters':[{ 'id':c['id'],'status':status(c['source']),'source':c['source']} for c in C['chapters']]},ensure_ascii=False,indent=2))
-    print('Built 25 static pages, chapter status labels and seven downloadable practice kits')
+    print(f'Built {25+len(CREATION_KITS)} static pages and {7+len(CREATION_KITS)} downloadable practice kits')
 
 if __name__=='__main__': main()
