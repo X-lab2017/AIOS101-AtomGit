@@ -99,5 +99,16 @@ with zipfile.ZipFile(out/'downloads/ch03-reuse-kit.zip') as z:
     expected={'ch03/'+f.relative_to(kit3_root).as_posix():f.read_bytes() for f in kit3_root.rglob('*') if f.is_file()}
     require(len(expected)==8 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 3 archive is invalid')
     require(all(z.read(name)==data for name,data in expected.items()),'Chapter 3 archive content differs')
-require(len(parsed)==22,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all four practice archives, Chapter 1 prompt and JavaScript syntax')
+kit4_root=R/'practice/ch04'
+with zipfile.ZipFile(out/'downloads/ch04-learning-kit.zip') as z:
+    expected={'ch04/'+f.relative_to(kit4_root).as_posix():f.read_bytes() for f in kit4_root.rglob('*') if f.is_file()}
+    require(len(expected)>=7 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 4 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 4 archive content differs')
+# Independently recompute the chapter's explicitly synthetic arithmetic.
+training=[(100,30),(200,60),(300,90)]
+errors={a:sum(abs(a*n/100-t) for n,t in training)/len(training) for a in (20,30,40)}
+require(errors=={20:20,30:0,40:20},'Training example arithmetic differs')
+require([30*n/100 for n in (150,250)]==[45,75],'Held-out predictions differ')
+require((abs(45-48)+abs(75-72))/2==3 and abs(60-150)==90,'Held-out errors differ')
+require(len(parsed)==23,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all five practice archives and Chapter 4 arithmetic, Chapter 1 prompt and JavaScript syntax')

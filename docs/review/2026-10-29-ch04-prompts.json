@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-29",
+  "output": "textbook/assets/figures/ag-04-01-learning-workbench.webp",
+  "initial_prompt": "Editorial textbook illustration, two college students in a library exploring reading-time prediction, mechanical parameter slider, three practice paper cards, stopwatch, separate closed envelope of unseen cards, folded guide. Open Folio cream/ink/indigo/coral/teal, hand-drawn gouache. No text, logos or watermark. Conceptual not measurement evidence.",
+  "revision_prompt": "Change only contents of three cards and folded guide: short reading passages and project reading guide, NOT landscape photographs. Replace landscape pictures with abstract ink paragraph lines and document block layouts. Preserve students, slider, stopwatch, closed envelope, library and warm gouache composition.",
+  "review": "Inspected final image: paragraph-like cards and guide, separated envelope; image is conceptual and never used as data evidence."
+}

@@ -309,5 +309,60 @@
     "locations": [
       "CH01-KIT"
     ]
+  },
+  {
+    "id": "SRC-CH04-01",
+    "title": "概念参考：线性回归中的损失",
+    "url": "https://developers.google.com/machine-learning/crash-course/linear-regression/loss",
+    "accessed": "2026-10-29",
+    "use": "第四章概念核对；不是本课程实测或 DeepSeek 特定训练证据",
+    "locations": [
+      "CH04",
+      "CH04-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH04-02",
+    "title": "概念参考：划分数据集",
+    "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+    "accessed": "2026-10-29",
+    "use": "第四章概念核对；不是本课程实测或 DeepSeek 特定训练证据",
+    "locations": [
+      "CH04",
+      "CH04-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH04-03",
+    "title": "token 的基础说明",
+    "url": "https://huggingface.co/learn/llm-course/chapter2/4",
+    "accessed": "2026-10-29",
+    "use": "第四章概念核对；不是本课程实测或 DeepSeek 特定训练证据",
+    "locations": [
+      "CH04",
+      "CH04-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH04-04",
+    "title": "概念参考：Hugging Face 的语言模型说明",
+    "url": "https://huggingface.co/learn/llm-course/chapter1/4",
+    "accessed": "2026-10-29",
+    "use": "第四章概念核对；不是本课程实测或 DeepSeek 特定训练证据",
+    "locations": [
+      "CH04",
+      "CH04-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH04-05",
+    "title": "概念参考：使用已训练模型进行推理",
+    "url": "https://huggingface.co/learn/llm-course/chapter1/8",
+    "accessed": "2026-10-29",
+    "use": "第四章概念核对；不是本课程实测或 DeepSeek 特定训练证据",
+    "locations": [
+      "CH04",
+      "CH04-KIT"
+    ]
   }
 ]

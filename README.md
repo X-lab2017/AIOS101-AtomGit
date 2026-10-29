@@ -23,7 +23,9 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 - [第二章：打开一个项目](textbook/chapters/CH02.md)——三幅图、[七文件观察包](practice/ch02/README.md)，建立档案并检查导览中的一句话。
 - [第三章：开放的力量](textbook/chapters/CH03.md)——三幅图、[八文件复用包](practice/ch03/README.md)，为一项材料补齐使用说明。
 
-[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。其余九章仍为提纲；本轮不表示工具实测或真人试学已经完成。
+- [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——三幅图、[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
+
+[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。第四章新增 0.2.0 图文评审稿，其余八章仍为提纲；本轮不表示工具实测或真人试学已经完成。
 
 ## 创作方式
 
