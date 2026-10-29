@@ -94,5 +94,10 @@ with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
     expected={'ch02/'+f.relative_to(kit2_root).as_posix():f.read_bytes() for f in kit2_root.rglob('*') if f.is_file()}
     require(len(expected)==7 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 2 archive is invalid')
     require(all(z.read(name)==data for name,data in expected.items()),'Chapter 2 archive content differs')
-require(len(parsed)==21,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all three practice archives, Chapter 1 prompt and JavaScript syntax')
+kit3_root=R/'practice/ch03'
+with zipfile.ZipFile(out/'downloads/ch03-reuse-kit.zip') as z:
+    expected={'ch03/'+f.relative_to(kit3_root).as_posix():f.read_bytes() for f in kit3_root.rglob('*') if f.is_file()}
+    require(len(expected)==8 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 3 archive is invalid')
+    require(all(z.read(name)==data for name,data in expected.items()),'Chapter 3 archive content differs')
+require(len(parsed)==22,'Unexpected page count')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all four practice archives, Chapter 1 prompt and JavaScript syntax')

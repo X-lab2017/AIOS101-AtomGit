@@ -110,5 +110,47 @@
     "date": "2026-10-29",
     "sha256": "0144962b0ca359b5f02f7c7b20da4a4426a573122ef8b6c4378a82c74751efa8",
     "bytes": 2520
+  },
+  {
+    "id": "AG-03-01",
+    "file": "ag-03-01-open-source-history.webp",
+    "title": "软件开源的三个历史坐标",
+    "alt": "Richard Stallman 对应 1983 年 GNU 声明，Linus Torvalds 对应 1991 年 Linux 早期发布，Christine Peterson 与 Eric S. Raymond 对应 1998 年 open source 与 OSI。三组人物说明自由、协作与共同规则，非完整编年史。",
+    "width": 1536,
+    "height": 1024,
+    "source": "复用 AIOS101 固定提交 9acf393293ed629cdf1ffd1162d1257814aa57e7 的已评审历史人物插画；内置图像工具移除旧内嵌图号。人物参照和修改记录见 ch03-history-provenance.md。",
+    "credit": "AI 辅助肖像插画 · 上游评审图适配",
+    "license": "沿用上游肖像来源及许可记录；第三方参照和正式出版授权仍按来源记录逐项核对，不新增整体通用授权",
+    "date": "2026-10-29",
+    "sha256": "c29780c70ee721b6c7dff55b5c1d952d60b6d69bcb44e3dd13415de3f21064ea",
+    "bytes": 406884
+  },
+  {
+    "id": "AG-03-02",
+    "file": "ag-03-02-materials-and-conditions.svg",
+    "title": "同一份作品中的材料，需要分别确认条件",
+    "alt": "程序代码、模型权重、数据、图文与 AI 输出分别对应不同来源和使用说明；自己的新增内容另作说明，不能用一个总许可标签替代逐项核对。",
+    "width": 1080,
+    "height": 1080,
+    "source": "X-lab / AIOS101-AtomGit 第三章原创可编辑 SVG。依据本章已读许可材料组织的阅读提示，不是对任意项目的自动许可判定。",
+    "credit": "课程绘制 · 材料阅读提示",
+    "license": "本课程原创图件；统一对外许可待维护者确定",
+    "date": "2026-10-29",
+    "sha256": "7e2701ff5ec132748e3cd44c287701adad29758a452470482bd6c4e964a066f5",
+    "bytes": 3539
+  },
+  {
+    "id": "AG-03-03",
+    "file": "ag-03-03-improve-with-a-reader.webp",
+    "title": "读者指出的一个卡点，可以成为下一次改进",
+    "alt": "大学图书馆中，一位读者指出折页导览的困惑处，另一位在保留来源卡与旧内容的同时补充解释；纸面只有文件和项目阅读示意，不是真实软件界面。",
+    "width": 1536,
+    "height": 1024,
+    "source": "X-lab / AIOS101-AtomGit 第三章原创构思，内置图像生成工具辅助绘制并定向修订纸面内容。概念插画，不是实际试读或社区反馈记录。",
+    "credit": "AI 辅助绘制 · 概念插画",
+    "license": "本课程原创图件；统一对外许可待维护者确定",
+    "date": "2026-10-29",
+    "sha256": "a125a8ea349546cfa9a7d3e471dd5d32120a4f06ee8e218b4f1d325e51be4260",
+    "bytes": 366338
   }
 ]

@@ -35,7 +35,9 @@
     "accessed": "2026-10-29",
     "use": "序言软件开源含义：源代码、使用、修改与再分发许可；非具体项目法律意见",
     "locations": [
-      "PREFACE"
+      "PREFACE",
+      "CH03",
+      "CH03-KIT"
     ]
   },
   {
@@ -121,7 +123,9 @@
     "use": "模型名称、下载条目、本地运行与许可入口；非本课程实测",
     "locations": [
       "CH02",
-      "CH02-KIT"
+      "CH02-KIT",
+      "CH03",
+      "CH03-KIT"
     ]
   },
   {
@@ -143,7 +147,9 @@
     "use": "项目身份、文档、预览与讨论入口；图 AG-02-02 的实际截图来源",
     "locations": [
       "CH02",
-      "CH02-KIT"
+      "CH02-KIT",
+      "CH03",
+      "CH03-KIT"
     ]
   },
   {
@@ -154,7 +160,9 @@
     "use": "该版本暂不接收外部 PR，欢迎指南、答疑和讨论；不推断所有未来版本",
     "locations": [
       "CH02",
-      "CH02-KIT"
+      "CH02-KIT",
+      "CH03",
+      "CH03-KIT"
     ]
   },
   {
@@ -165,7 +173,119 @@
     "use": "README 截图的 MIT 许可与版权声明，原样保留于 SVG metadata 和随附 notice",
     "locations": [
       "CH02",
-      "CH02-KIT"
+      "CH02-KIT",
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-GNU-ANNOUNCEMENT",
+    "title": "GNU 工程初始声明（1983）",
+    "url": "https://www.gnu.org/gnu/initial-announcement.html",
+    "accessed": "2026-10-29",
+    "use": "GNU 声明和启动时间；本轮通过搜索返回的官方页内容核对，直接打开曾超时",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-GNU-FREEDOMS",
+    "title": "GNU · 自由软件定义",
+    "url": "https://www.gnu.org/philosophy/free-sw.html",
+    "accessed": "2026-10-29",
+    "use": "四类自由与价格的区别；通过搜索返回的官方原页内容核对",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-LINUX-001",
+    "title": "Linux 0.01 发布说明（1991）",
+    "url": "https://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.01",
+    "accessed": "2026-10-29",
+    "use": "源码发布、限制、反馈与当时的版权条件；不是当前安装教程",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-OSI-HISTORY",
+    "title": "OSI · 组织与 open source 称呼的历史",
+    "url": "https://opensource.org/about/history-of-the-open-source-initiative",
+    "accessed": "2026-10-29",
+    "use": "Peterson 提出术语，Raymond 与 Perens 共同创立 OSI；不是单线英雄史",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-DSH-THIRD-PARTY",
+    "title": "DSH 第三方声明（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/THIRD_PARTY_NOTICES.md",
+    "accessed": "2026-10-29",
+    "use": "已阅读开头与首批条目，第三方项目保留自身许可；不声称完成全部依赖审计",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-R1-LICENSE",
+    "title": "R1 LICENSE（固定版本）",
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/LICENSE",
+    "accessed": "2026-10-29",
+    "use": "与 README 指定材料对应的许可原文；不扩大到全部上游模型",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-OSI-MIT",
+    "title": "OSI · MIT 许可标准文本",
+    "url": "https://opensource.org/license/mit",
+    "accessed": "2026-10-29",
+    "use": "允许行为、保留版权和许可声明、无相应担保的文字对照",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-CC-BY",
+    "title": "Creative Commons · CC BY 4.0 官方摘要",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.en",
+    "accessed": "2026-10-29",
+    "use": "举例说明署名、许可链接与修改标注；不替代完整条款",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-GITHUB-LICENSE",
+    "title": "GitHub · 仓库许可说明",
+    "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "accessed": "2026-10-29",
+    "use": "公开可见、平台浏览/分叉规则与广泛复用授权的区别",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH03-HISTORY-ART",
+    "title": "图 AG-03-01 · 肖像参照与适配记录",
+    "url": "https://github.com/X-lab2017/AIOS101-AtomGit/blob/main/textbook/assets/figures/ch03-history-provenance.md",
+    "accessed": "2026-10-29",
+    "use": "上游固定版本、人物参照、修改及授权边界；不是新授予完整图件通用许可",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
     ]
   }
 ]

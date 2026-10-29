@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+<title id="title">同一份作品中的材料，需要分别确认条件</title>
+<desc id="desc">程序代码查对应文件及第三方声明，模型权重查具体条目和上游许可，数据查数据集自身说明，图文查作者出处和授权，AI 输出核对输入输出和服务约定。自己的新增内容另作说明，不用一个总标签代替逐项核对。</desc>
+<rect width="1080" height="1080" fill="#F6F3EB"/>
+<path d="M34 25 L1045 29 L1039 1047 L39 1051 Z" fill="#FEFCF6" stroke="#C5C0B2" stroke-width="2"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#1D2433">
+<text x="65" y="95" font-size="48" font-weight="700">先分材料，再找对应说明</text>
+<text x="66" y="146" font-size="30" fill="#626878">不必把所有材料都用上；使用哪一项，就核对哪一项。</text>
+<path d="M63 177 Q551 169 1012 179" stroke="#1D2433" stroke-width="2" fill="none"/>
+<path d="M63 202 L77 200 L75 306 L63 300 Z" fill="#5146D9"/>
+<text x="98" y="238" font-size="44" font-weight="700">程序代码</text>
+<text x="98" y="296" font-size="26" fill="#626878">01 / 材料类别</text>
+<text x="357" y="238" font-size="42" font-weight="700" fill="#5146D9">对应文件与第三方声明</text>
+<text x="357" y="297" font-size="35">不把主项目许可套给所有依赖</text>
+<path d="M64 341 L1009 341" stroke="#D9D4C8" stroke-width="1.5"/>
+<path d="M63 357 L77 355 L75 461 L63 455 Z" fill="#3F958D"/>
+<text x="98" y="393" font-size="44" font-weight="700">模型权重</text>
+<text x="98" y="451" font-size="26" fill="#626878">02 / 材料类别</text>
+<text x="357" y="393" font-size="42" font-weight="700" fill="#3F958D">具体模型条目与上游许可</text>
+<text x="357" y="452" font-size="35">相近的名称，不代表相同条件</text>
+<path d="M64 496 L1009 496" stroke="#D9D4C8" stroke-width="1.5"/>
+<path d="M63 512 L77 510 L75 616 L63 610 Z" fill="#A74831"/>
+<text x="98" y="548" font-size="44" font-weight="700">数据材料</text>
+<text x="98" y="606" font-size="26" fill="#626878">03 / 材料类别</text>
+<text x="357" y="548" font-size="42" font-weight="700" fill="#A74831">数据集自身的使用说明</text>
+<text x="357" y="607" font-size="35">不从模型的许可反推数据条件</text>
+<path d="M64 651 L1009 651" stroke="#D9D4C8" stroke-width="1.5"/>
+<path d="M63 667 L77 665 L75 771 L63 765 Z" fill="#5146D9"/>
+<text x="98" y="703" font-size="44" font-weight="700">外来图文</text>
+<text x="98" y="761" font-size="26" fill="#626878">04 / 材料类别</text>
+<text x="357" y="703" font-size="42" font-weight="700" fill="#5146D9">作者、出处与适用授权</text>
+<text x="357" y="762" font-size="35">标出复制、翻译或改编的范围</text>
+<path d="M64 806 L1009 806" stroke="#D9D4C8" stroke-width="1.5"/>
+<path d="M63 822 L77 820 L75 926 L63 920 Z" fill="#3F958D"/>
+<text x="98" y="858" font-size="44" font-weight="700">AI 输出</text>
+<text x="98" y="916" font-size="26" fill="#626878">05 / 材料类别</text>
+<text x="357" y="858" font-size="42" font-weight="700" fill="#3F958D">输入来源、输出与服务约定</text>
+<text x="357" y="917" font-size="35">不把工具许可当成输出许可</text>
+<path d="M63 949 Q537 945 1011 949" stroke="#B8B1A2" stroke-width="2" fill="none"/>
+<text x="65" y="995" font-size="35">自己的新增内容另作说明；未知项保留待确认。</text>
+</g></svg>
