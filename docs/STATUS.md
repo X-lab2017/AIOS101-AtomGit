@@ -27,3 +27,5 @@
 - 骨架发布记录、首页截图与验收范围见 [骨架验收记录](review/2026-10-29-skeleton.md)。序言本轮创作与验收记录见 [序言评审记录](review/2026-10-29-preface.md)。
 
 序言 0.2.0 已由 [Course Pages 40857840146](https://github.com/X-lab2017/AIOS101-AtomGit/actions/runs/40857840146) 成功发布；线上已核对正文、两幅原图与来源入口，等待维护者内容评审。
+
+第一章 0.2.0 已由 [Course Pages 40863660879](https://github.com/X-lab2017/AIOS101-AtomGit/actions/runs/40863660879) 成功发布；线上正文、三幅图与材料包已核对，下载归档与本地一致。详见 [第一章评审记录](review/2026-10-29-ch01.md)。下一步为维护者评审，并落实 DSH 接入与真实最小任务试学。
