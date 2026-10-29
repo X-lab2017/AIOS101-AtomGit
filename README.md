@@ -23,13 +23,13 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 - [第二章：打开一个项目](textbook/chapters/CH02.md)——三幅图、[七文件观察包](practice/ch02/README.md)，建立档案并检查导览中的一句话。
 - [第三章：开放的力量](textbook/chapters/CH03.md)——三幅图、[八文件复用包](practice/ch03/README.md)，为一项材料补齐使用说明。
 
-- [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——三幅图、[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
+- [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
 
-- [第五章：AI 为什么会答错](textbook/chapters/CH05.md)——三幅图、[十文件证据对照包](practice/ch05/README.md)，理解生成与上下文，并为同一导览做一次有依据的修订。
+- [第五章：AI 为什么会答错](textbook/chapters/CH05.md)——[生成对照材料包](practice/ch05/README.md)，理解生成与上下文，并为同一导览做一次有依据的修订。
 
-- [第六章：从回答到行动](textbook/chapters/CH06.md)——三幅图、[任务追踪材料包](practice/ch06/README.md)，分清读取、生成、执行和人的授权核验。
+- [第六章：从回答到行动](textbook/chapters/CH06.md)——[任务追踪材料包](practice/ch06/README.md)，分清读取、生成、执行和人的授权核验。
 
-[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。第四至六章新增 0.2.0 图文评审稿，其余六章仍为提纲；本轮不表示工具实测或真人试学已经完成。
+[序言](textbook/preface.md)含两幅概念插画，入门路径同步对齐。第四至六章已作 0.3.0 机制与实践重构，等待内容复核，其余六章仍为提纲；本轮不表示工具实测或真人试学已经完成。
 
 ## 创作方式
 

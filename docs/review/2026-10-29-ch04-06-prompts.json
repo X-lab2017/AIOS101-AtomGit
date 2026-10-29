@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "mode": "generate",
+  "assets": [
+    {
+      "file": "textbook/assets/figures/ag-05-01-context-continuation.webp",
+      "source_path": "generated_images/exec-4c7f1bc0-87d2-4641-826d-0f782b343bf7.png",
+      "prompt": "Use case: scientific-educational. An elegant Chinese AI textbook illustration in a sophisticated science magazine / Communications of the ACM editorial style: graphite linework, dry gouache, paper grain, warm ivory #F6F3EB, dark ink #1D2433, restrained indigo #5146D9, teal #3F958D, coral #F27A59. A close-up tabletop with two parallel physical strips of printed Chinese sentence tiles, one upper indigo strip and one lower teal strip. At left above the upper strip a small paper context card reads exactly “任务：先看原稿”; the upper strip reads exactly “DSH” then “先” then one highlighted indigo tile “读取” then a pale outline empty tile. At left above the lower strip a small paper context card reads exactly “任务：另存新稿”; lower strip reads exactly “DSH” then “先” then one highlighted teal tile “创建” then a pale outline empty tile. To the right, loosely arranged unused small tiles read “文件”, “目录”, “材料”, implying subsequent choices. The two rows are perfectly separate and readable, visual focus on the different highlighted next phrase after identical prefix. Three-quarter shallow tabletop view, minimal physical depth, no people, no book shelves, no robot or brain, no UI, no graph or fake probabilities. Landscape 3:2, ample blank margins. This illustrates different context guiding a continuation, not exact tokenization. No other text or logos. Text spellings must be exact.",
+      "review": "已实际查看文字、句卡顺序与两种背景，正文明确完整短语非真实分词，且另存不强制先创建。WebP quality 90。"
+    },
+    {
+      "file": "textbook/assets/figures/ag-06-01-tool-bridge.webp",
+      "source_path": "generated_images/exec-9263e68b-9aad-4f74-8576-a0bb617f9db0.png",
+      "prompt": "Use case: scientific-educational. Create an explanatory editorial illustration for a Chinese introductory AI textbook, sophisticated Communications of the ACM-style cutaway scientific publishing illustration, graphite contours and flat dry gouache on warm paper. Landscape 3:2. Explain ONE idea: a language model cannot directly reach files; software tools mediate file access, and returned file content becomes input for the next model step. On left a clearly stylized translucent computer module labeled exactly “模型”, holding a small outgoing request slip labeled exactly “读取 guide.md”. In the center a tangible small tool workstation labeled exactly “工具”, a mechanical paper feeder takes a copy from the file folder on right labeled exactly “工作区”. Folder contains a visible document labeled “guide.md”. Two very clear broad separate curved arrows: upper indigo arrow from model through tool to file; lower teal arrow returning a paper copy from file through tool to model, labelled exactly “返回文件内容”. Keep geometric hierarchy and physical objects clean, not robot fantasy. Show file remains in folder while copy travels back. Only these five short Chinese labels and filename. No humans, no library, no bookshelves, no mountains, no simulated software screenshots, no decorative unrelated code or binary, no busy tiny text, no glow, no brain icon. Palette paper #F6F3EB, ink #1D2433, indigo #5146D9, teal #3F958D with tiny coral #F27A59. Generous negative space, strong legible visual direction, not a generic boxes-and-arrows flowchart. This is a conceptual cutaway, not real UI.",
+      "review": "已实际查看模型、工具、工作区与返回内容；大箭头概括方向，正文明确请求与内容都经工具。机械装置比喻，非真实UI。WebP quality 90。"
+    }
+  ]
+}

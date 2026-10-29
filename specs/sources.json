@@ -440,5 +440,16 @@
       "CH06",
       "CH06-KIT"
     ]
+  },
+  {
+    "id": "SRC-CH06-DSH-ARCH",
+    "title": "DSH 架构：轮次流程与会话日志（固定版本）",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/docs/architecture.zh.md#turn-flow",
+    "accessed": "2026-10-29",
+    "use": "模型请求、工具调用与结果、后续步骤、会话历史的职责解释；本轮通过GitHub连接器读取官方原文，非运行记录",
+    "locations": [
+      "CH06",
+      "CH06-KIT"
+    ]
   }
 ]
