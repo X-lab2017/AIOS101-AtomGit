@@ -2,6 +2,14 @@
 
 > ID：PRACTICE-OBSERVATORY · 上游：CONSTITUTION.md、course.json
 
+## v0.2 实践方向
+
+直接以 OpenDipper 作为学习教学工具与真实项目案例，围绕聚焦研究问题形成专业开源研究报告和配套动态展示页面，并在 AtomGit 作为同一开源项目持续维护。项目名称、交付要求和五维学习目标以[宪法](../CONSTITUTION.md)为准。
+
+下列实践结构及历史 ID 对应已上线的 0.1.0 实施；材料包、示范、模板和里程碑待逐章迁移，不作为 v0.2 综合大作业的完整要求。迁移顺序见 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md)。保留旧 ID 用于追溯，不重用它表示已完成新版。
+
+## 已实施实践结构与历轮增量
+
 AI 开源项目观察站是贯穿载体，不另立为课程名。M01—M12 对应十二章，每个里程碑的任务与证据由 course.json 生成。实践说明在 practice/README.md，示范在 practice/demo/，可复制模板在 practice/template/。
 
 教师与学生采用同一种组织方式；示范材料的阅读、运行与反馈状态独立记录，不替学生预填成果。课程社区、同伴项目与上游贡献按实际位置标注。

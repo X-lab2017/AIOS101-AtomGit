@@ -1,11 +1,13 @@
 # 规格入口与单一正本
 
-先读 [课程宪法](../CONSTITUTION.md)。结构化课程正本是 [course.json](course.json)：章节身份、名称、目标、任务、学习证据及顺序均由它维护。
+先读 [课程宪法 v0.2](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
+
+**迁移状态：**[course.json](course.json) 仍为已实施的 0.1.0 结构正本，维护现有章节身份、名称、目标、任务、证据及顺序；下游章节、实践和网站尚未全部对齐新宪法。其旧任务用于定位现有内容，不能覆盖 v0.2 目标。先按 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md) 完成新规格与逐章迁移，再同步生成产物。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [序言规格](preface-spec.md)：读者动机、入门背景、贯穿实践与开篇图件。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
-- [贯穿实践规格](practice-spec.md)：观察站、里程碑、示范与模板。
+- [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。
 - [内容与证据规范](content-evidence-spec.md)：背景、术语、来源及运行状态。
 - [网站规格](website-spec.md)：路由、阅读体验、状态和发布。
