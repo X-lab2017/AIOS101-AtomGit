@@ -4,6 +4,8 @@
 
 **实施状态：**course.json 为 0.4.0；宪法、引言、目录、关于课程、前三章与配套实践已通过维护者内容评审，见 [ADR-0018](../docs/decisions/ADR-0018-first-part-content-approved.md)。CH04—06 已完成正文与独立实践升级，当前为 review，见 [第二部分评审](../docs/review/2026-10-30-second-part-textbook.md)；CH07—12 仍标记正文、任务待迁移。内容审定、真人试学与打印验收分别记录；本次不重建 PDF。
 
+CH04—06 正文及材料包现为 0.5.0，已补齐入门解释和人机合作支持，并按正文字号控制图件尺度，见[本轮阅读评审](../docs/review/2026-10-31-second-part-reading-ux.md)。章目、目标与映射未变，结构元数据保持 0.4.0。
+
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与独立实践。
 - [目录评审规格](outline-review-spec.md) · [全书目录](../textbook/contents-review.md)：四篇十二章与前三章三级标题，已通过本轮内容评审。

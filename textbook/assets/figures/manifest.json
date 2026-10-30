@@ -53,7 +53,8 @@
     "license": "课程原创，统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "fd6743e40294f000d81988110ce59c87c097b449ad5b78a239cb88a4013843da",
-    "bytes": 2029
+    "bytes": 2029,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-01-01",
@@ -81,7 +82,8 @@
     "license": "课程原创结构与矢量设计；随课程仓库的对外许可约定使用。",
     "date": "2026-10-30",
     "sha256": "54f83a80960ff3166030e1c05d5e4694d8985fdf5a5ea2e859a2e852c5bc8a88",
-    "bytes": 3901
+    "bytes": 3901,
+    "webMaxWidthEm": 30.76
   },
   {
     "id": "AG-01-03",
@@ -95,7 +97,8 @@
     "license": "依维护者授权用于课程的项目界面引用；源项目、数据与标识权利保留，不据截图声明全部素材开放许可。",
     "date": "2026-10-30",
     "sha256": "045050e8e2b2503adc5b224cc3abdd63669c66b12aaa53320a8151f24fe4b436",
-    "bytes": 458255
+    "bytes": 458255,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-01-04",
@@ -123,7 +126,8 @@
     "license": "课程原创 SVG；第三方项目材料权利分别保留。",
     "date": "2026-10-30",
     "bytes": 2912,
-    "sha256": "91f46f772226d6db06669c6f8afd4de2d332c49013e3393239f7b8239311c285"
+    "sha256": "91f46f772226d6db06669c6f8afd4de2d332c49013e3393239f7b8239311c285",
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-02-02",
@@ -165,7 +169,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "f7de08888ad7741e78edbf4a2dc4b3aaf50b0d5cd1b386d473a48c7faad391a5",
-    "bytes": 1968
+    "bytes": 1968,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-03-03",
@@ -179,7 +184,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "bytes": 2608,
-    "sha256": "f46bc2824bbceaa59151814345e406dbc8b7a89c436407bfb8ac25892885910b"
+    "sha256": "f46bc2824bbceaa59151814345e406dbc8b7a89c436407bfb8ac25892885910b",
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-03-04",
@@ -207,7 +213,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "e9f9b61b33e1ba1167a40db6c133bcb780fe1629401299f3cd69a0b129af9f69",
-    "bytes": 247648
+    "bytes": 247648,
+    "webMaxWidthEm": 32
   },
   {
     "id": "AG-04-02",
@@ -221,7 +228,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "11f50119e0e63c80c89b8c0d4d64177f10bb132e2ae3847cb49904dd70a340d5",
-    "bytes": 2644
+    "bytes": 2644,
+    "webMaxWidthEm": 24.44
   },
   {
     "id": "AG-04-03",
@@ -235,7 +243,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "cf24fa94fe6c356c20d4cedd0f2f7bca76877f34613116f0c9f150bfcebd97ec",
-    "bytes": 2940
+    "bytes": 2940,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-05-01",
@@ -249,7 +258,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "35265a618f71c68f73b4729878d8953f7d10793ab9e43e5047b355b323fb3473",
-    "bytes": 340902
+    "bytes": 340902,
+    "webMaxWidthEm": 17
   },
   {
     "id": "AG-05-02",
@@ -263,7 +273,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "fb2fff2608233d718c37f58e77d0552c47370ff28f359d65ffb5822f32055c0d",
-    "bytes": 3058
+    "bytes": 3058,
+    "webMaxWidthEm": 22.0
   },
   {
     "id": "AG-05-03",
@@ -277,7 +288,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "b389f7eee89d5db28991a2a221e8bac7e6ba9e2dbaaba8edf217ce4fb2e6b9ab",
-    "bytes": 2937
+    "bytes": 2937,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-06-01",
@@ -291,7 +303,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "2befd08d69657aa30edc03214eaacab47b1df4a441b4012b7cc8068ae023884e",
-    "bytes": 204614
+    "bytes": 204614,
+    "webMaxWidthEm": 28
   },
   {
     "id": "AG-06-02",
@@ -305,7 +318,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "2bed384b846de98dda33d860f7fe08c8ce20e322043cf83482e8aaed9db3116a",
-    "bytes": 3013
+    "bytes": 3013,
+    "webMaxWidthEm": 24.44
   },
   {
     "id": "AG-06-03",
@@ -319,7 +333,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "6e543a66e182f5629b90770a9d9ee866715458f1762c4506f48f06d02227f6cd",
-    "bytes": 3570
+    "bytes": 3570,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-07-01",
@@ -347,7 +362,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "1ca853a1db4789da36bdf140ba08187a1d5b327ac371a40e41309256d845828e",
-    "bytes": 2727
+    "bytes": 2727,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-08-01",
@@ -375,7 +391,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "e44729e82801aeddddef7dc5e63c6b402e68f77c0e134fbd3f9d5cdb5d045c8a",
-    "bytes": 2528
+    "bytes": 2528,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-09-01",
@@ -389,7 +406,8 @@
     "license": "本课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-29",
     "sha256": "4670fc6c3618cf35f590d6f6c101269ad8e4dbfb6e05526e985cde9bf1f38bd4",
-    "bytes": 2004
+    "bytes": 2004,
+    "webMaxWidthEm": 32.0
   },
   {
     "id": "AG-10-01",
@@ -415,7 +433,8 @@
     "license": "课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "f24b4aacc3fcfb450e80586e4eeffbe1b23658b426f67d4a62d63ed1dd7379f3",
-    "bytes": 2933
+    "bytes": 2933,
+    "webMaxWidthEm": 23.52
   },
   {
     "id": "AG-11-01",
@@ -428,7 +447,8 @@
     "license": "课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "95c59cb48f0ffb82154a79e8b621c2981132319bbff34b04b38da11ff21e425f",
-    "bytes": 3334
+    "bytes": 3334,
+    "webMaxWidthEm": 24.24
   },
   {
     "id": "AG-12-01",
@@ -441,6 +461,7 @@
     "license": "课程原创图件；统一对外许可待维护者确定",
     "date": "2026-10-30",
     "sha256": "354323179a8b327ed8fbfa09c8a05eba89876e6f01674c032c106f8343a807b7",
-    "bytes": 3279
+    "bytes": 3279,
+    "webMaxWidthEm": 23.52
   }
 ]

@@ -39,6 +39,13 @@ for f in figures:
     data=(R/'textbook/assets/figures'/f['file']).read_bytes()
     require(hashlib.sha256(data).hexdigest()==f['sha256'] and len(data)==f['bytes'],'Figure integrity differs: '+f['id'])
     require(isinstance(f['width'],int) and isinstance(f['height'],int) and f['width']>0 and f['height']>0,'Invalid figure dimensions')
+    width_em=f.get('webMaxWidthEm',32)
+    require(isinstance(width_em,(int,float)) and 0<width_em<=48,'Invalid figure reading width: '+f['id'])
+    if f['file'].endswith('.svg'):
+        # Current registered SVGs have untransformed text in viewBox pixel units.
+        # Cap the largest lettering at one prose em, including diagram titles.
+        sizes=[float(x) for x in re.findall(r'font-size[=:]\s*[\"\']?(\d+(?:\.\d+)?)',data.decode())]
+        require(sizes and max(sizes)*width_em/f['width']<=1.001,'Diagram lettering exceeds body size: '+f['id'])
 for p in R.rglob('*.md'):
     if any(x in p.relative_to(R).parts for x in ['dist','.git']): continue
     raw=re.sub(r'```.*?```|`[^`]+`', '', p.read_text(), flags=re.S)

@@ -72,7 +72,10 @@ def figure_image(label, target, source):
     title = html.escape('图 '+record['id']+'　'+record['title'])
     alt = html.escape(record['alt'],quote=True)
     credit = html.escape(record.get('credit', record['source']))
-    return ('<figure class="textbook-figure" id="figure-'+html.escape(record['id'].lower(),quote=True)+'"><a href="'+url+'" target="_blank" rel="noopener" aria-label="放大查看 '+alt+'"><img src="'+url+'" alt="'+alt+'" width="'+str(record['width'])+'" height="'+str(record['height'])+'" loading="lazy" decoding="async"></a><figcaption>'+title+' · <a href="'+url+'" target="_blank" rel="noopener">放大查看</a><span class="figure-credit">'+credit+'</span></figcaption></figure>')
+    max_width = float(record.get('webMaxWidthEm', 32))
+    if not 0 < max_width <= 48: raise ValueError('无效的图件显示宽度：'+record['id'])
+    size = ' style="--figure-max-width:'+format(max_width, 'g')+'em"'
+    return ('<figure class="textbook-figure" id="figure-'+html.escape(record['id'].lower(),quote=True)+'"'+size+'><a href="'+url+'" target="_blank" rel="noopener" aria-label="放大查看 '+alt+'"><img src="'+url+'" alt="'+alt+'" width="'+str(record['width'])+'" height="'+str(record['height'])+'" loading="lazy" decoding="async"></a><figcaption>'+title+' · <a href="'+url+'" target="_blank" rel="noopener">放大查看</a><span class="figure-credit">'+credit+'</span></figcaption></figure>')
 
 
 def mermaid_block(code):
@@ -135,7 +138,7 @@ def render(text, source, commit, routes):
             header = cells(line); i += 2; rows = []
             while i < len(lines) and lines[i].strip().startswith('|'):
                 rows.append(cells(lines[i])); i += 1
-            result.append('<div class="reading-table" tabindex="0" role="region" aria-label="可横向滚动的表格 / Scrollable table"><table><thead><tr>' + ''.join('<th scope="col">'+x+'</th>' for x in header) + '</tr></thead><tbody>' + ''.join('<tr>'+''.join('<td>'+x+'</td>' for x in row)+'</tr>' for row in rows)+'</tbody></table></div>'); continue
+            result.append('<div class="reading-table" data-columns="'+str(len(header))+'" tabindex="0" role="region" aria-label="可横向滚动的表格 / Scrollable table"><table><thead><tr>' + ''.join('<th scope="col">'+x+'</th>' for x in header) + '</tr></thead><tbody>' + ''.join('<tr>'+''.join('<td>'+x+'</td>' for x in row)+'</tr>' for row in rows)+'</tbody></table></div>'); continue
         if line.startswith('>'):
             block = []
             while i < len(lines) and lines[i].strip().startswith('>'):
