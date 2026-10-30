@@ -187,6 +187,12 @@ for n,files in ((5,('brief.md','guide.md')),(6,('source-a.md','source-b.md'))):
         require(len(lines)==2 and all(line in card for line in lines),'Part II source card differs from textbook')
 require(re.search(r'```text\n(.*?)\n```',(R/'textbook/chapters/CH05.md').read_text(),re.S)[1]+'\n'==template,'Chapter 5 textbook prompt differs from kit')
 require(re.search(r'```markdown\n(.*?)\n```',ch6,re.S)[1]+'\n'==(kit6_root/'materials/guide-before.md').read_text(),'Chapter 6 starter differs from textbook')
+# A sample Markdown document must remain one literal code block, not pollute the page TOC.
+import course_markdown
+ch6_unit=course_markdown.unit(R/'textbook/chapters/CH06.md',R,'main',{},'CH06')
+require(not {'从哪里开始','想进一步了解'} & {s['title'] for s in ch6_unit['sections']},'Example headings leaked into Chapter 6 navigation')
+practice_section=next(s for s in ch6_unit['sections'] if s['title'].startswith('6.5 '))
+require('<pre><code># AIInfra 学习入口' in practice_section['html'] and '## 想进一步了解' in practice_section['html'] and '<h3>6.5.3 ' in practice_section['html'],'Chapter 6 example fence broke the following explanation')
 
 # Practice archives are validated against their actual source files, not a file-count quota.
 for chapter, required in {'ch04':['work/experiment-record.md','materials/check-values.md'], 'ch05':['prompt-a.txt','prompt-b.txt','work/comparison-record.md'], 'ch06':['prompt.txt','materials/guide-before.md','work/task-record.md']}.items():

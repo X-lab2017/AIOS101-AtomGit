@@ -169,11 +169,20 @@ def unit(path, root, commit, routes, unit_id):
     version = re.search(r'^> 版本：(.+)', raw, re.M)
     status = re.search(r'^> 状态：(.+)', raw, re.M)
     body = re.sub(r'^# .+\n(?:\s*\n|>[^\n]*\n)*', '', raw, count=1)
-    chunks = re.split(r'^## (.+)\n', body, flags=re.M)
     sections = []
-    if chunks[0].strip(): sections.append({'title':'从这里开始', 'id':'opening', 'markdown':chunks[0].strip()})
-    for i in range(1, len(chunks), 2):
-        sections.append({'title':chunks[i].strip(),'id':section_id(chunks[i].strip()),'markdown':chunks[i+1].strip()})
+    current_title = '从这里开始'; current_id = 'opening'; lines = []; in_fence = False
+    for line in body.splitlines():
+        if line.strip().startswith('```'):
+            in_fence = not in_fence
+        heading = re.match(r'^## (.+)$', line) if not in_fence else None
+        if heading:
+            if '\n'.join(lines).strip() or current_id != 'opening':
+                sections.append({'title':current_title,'id':current_id,'markdown':'\n'.join(lines).strip()})
+            current_title = heading[1].strip(); current_id = section_id(current_title); lines = []
+        else:
+            lines.append(line)
+    if '\n'.join(lines).strip() or current_id != 'opening':
+        sections.append({'title':current_title,'id':current_id,'markdown':'\n'.join(lines).strip()})
     for section in sections:
         section['html'] = render(section['markdown'], relative, commit, routes)
     return {'id':unit_id,'title':title,'version':version[1].strip() if version else '', 'status':status[1].strip() if status else '阅读支架', 'sourcePath':relative, 'digest':hashlib.sha256(raw.encode()).hexdigest(),'markdown':raw,'sections':sections, 'minutes':max(3,round(len(re.sub(r'\s+', '', body))/350))}
