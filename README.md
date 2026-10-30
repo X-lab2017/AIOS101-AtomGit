@@ -33,7 +33,11 @@ DeepSeek 模型与 DSH 智能体工具兼具学习对象和创作工具身份；
 - [第八章：把想法变成作品](textbook/chapters/CH08.md)——[创作材料包](practice/ch08/README.md)，从草图到实际候选，说明自己的关键取舍。
 - [第九章：让作品经得起检验](textbook/chapters/CH09.md)——[检验材料包](practice/ch09/README.md)，核验、修订并比较前后。
 
-[序言](textbook/preface.md)含两幅概念插画。第四至六章为 0.3.0 机制与实践修订稿，第七至九章为 0.2.0 图文评审稿，已按顺序完成编辑自审和联合修订，见[本轮记录](docs/review/2026-10-30-ch07-09.md)。最后三章保持提纲；工具实跑与真人试学未完成。
+- [第十章：让别人用上你的成果](textbook/chapters/CH10.md)——[分享材料包](practice/ch10/README.md)，用浏览器整理版本、检查访问和阅读路径。
+- [第十一章：在反馈中共同改进](textbook/chapters/CH11.md)——[协作材料包](practice/ch11/README.md)，从具体问题、差异走向回应与改进。
+- [第十二章：建立个人技能集与作品集](textbook/chapters/CH12.md)——[迁移材料包](practice/ch12/README.md)，从代表作品提炼方法，在新项目问题中检验。
+
+[序言](textbook/preface.md)与全部十二章现为图文评审稿。第四至九章为 0.3.0，第十至十二章为 0.2.0；后者已逐章自审并联合对齐，见[本轮记录](docs/review/2026-10-30-ch10-12.md)。第七至九章采用[观察站产品修订版](docs/review/2026-10-29-ch07-09-realignment.md)，不再沿用旧的角色地图主线。工具和平台实操、真人试学仍需继续验证。
 
 ## 创作方式
 

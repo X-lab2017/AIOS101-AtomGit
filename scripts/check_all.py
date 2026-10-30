@@ -144,7 +144,7 @@ for f in chapter6_figures:
 # Practice archives are validated against their actual source files, not a file-count quota.
 for chapter, required in {'ch04':['work/experiment-record.md','materials/check-values.md'], 'ch05':['prompt-a.txt','prompt-b.txt','work/comparison-record.md'], 'ch06':['prompt.txt','materials/guide-before.md','work/task-record.md']}.items():
     require(all((R/'practice'/chapter/name).is_file() for name in required), 'Missing learning task input: '+chapter)
-creation_kits={'ch07':'design-kit','ch08':'creation-kit','ch09':'review-kit'}
+creation_kits={'ch07':'design-kit','ch08':'creation-kit','ch09':'review-kit','ch10':'sharing-kit','ch11':'collaboration-kit','ch12':'portfolio-kit'}
 active=[key for key in creation_kits if (R/'practice'/key/'README.md').exists()]
 for key in active:
     with zipfile.ZipFile(out/'downloads'/f'{key}-{creation_kits[key]}.zip') as z:
@@ -166,5 +166,20 @@ if 'ch08' in active:
             require((R/'practice/ch08'/target).is_file(),'Chapter 8 prompt input missing: '+target)
 if 'ch09' in active:
     require(not (R/'practice/ch09/materials/candidate.md').exists(),'Chapter 9 must receive the learner candidate')
-require(len(parsed)==25+len(active)+3,'Unexpected page count')
+# The authored diff exercise must remain inspectable and must not quietly endorse its false candidate claim.
+if 'ch11' in active:
+    ex=R/'practice/ch11/examples'
+    before=(ex/'before.txt').read_text()
+    candidate=(ex/'candidate.txt').read_text()
+    reference=(ex/'reference.txt').read_text()
+    old='[阅读导览](guide.md)'
+    new='[先读 DSH 入门导览](works/guide.md)'
+    require(reference==before.replace(old,new),'Chapter 11 reference changed more than the stated repair')
+    require(old in before and new in reference and new in candidate,'Chapter 11 diff no longer matches the lesson')
+    require((ex/'works/guide.md').is_file() and not (ex/'guide.md').exists(),'Chapter 11 path exercise lost its actual contrast')
+    require('已通过同伴试学' in candidate and '已通过同伴试学' not in reference,'Chapter 11 candidate and accepted evidence states drifted')
+    require(not (R/'practice/ch11/work/review-draft.md').exists(),'Chapter 11 must not prefill a learner review')
+if 'ch12' in active:
+    require(not (R/'practice/ch12/work/transfer-result.md').exists(),'Chapter 12 must not prefill a transfer result')
+require(len(parsed)==25+len(active)+4,'Unexpected page count')
 print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')

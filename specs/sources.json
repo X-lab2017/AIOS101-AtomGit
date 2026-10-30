@@ -515,5 +515,155 @@
     "accessed": "2026-10-29",
     "use": "实际读PDF提取文本p24—25、47—53；产品方法重新用于观察站。课件非公开原文，方法与页码见ADR，不复制原图。",
     "locations": []
+  },
+  {
+    "id": "SRC-ATOMGIT-WEB",
+    "title": "AtomGit · 文件的在线操作",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/project_manage/file_operations/online_file_operations/",
+    "accessed": "2026-10-30",
+    "use": "浏览器创建、编辑与路径；操作卡根据文档，不是账号实操。",
+    "locations": [
+      "CH10",
+      "CH10-KIT",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-QUICK",
+    "title": "AtomGit · 快速入门",
+    "url": "https://docs.atomgit.com/docs/start/quick/",
+    "accessed": "2026-10-30",
+    "use": "项目类型、可见性、初始化与历史入口；不承诺当前账号功能。",
+    "locations": [
+      "CH10",
+      "CH10-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-COMMIT",
+    "title": "AtomGit · 提交",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/project_manage/file_operations/commit/",
+    "accessed": "2026-10-30",
+    "use": "提交说明、历史及版本回查。",
+    "locations": [
+      "CH10",
+      "CH10-KIT"
+    ]
+  },
+  {
+    "id": "SRC-GITHUB-REPOSITORY",
+    "title": "GitHub Docs · About repositories",
+    "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+    "accessed": "2026-10-30",
+    "use": "仓库承载文件、历史及协作，不将平台能力作排他分类。",
+    "locations": [
+      "CH10"
+    ]
+  },
+  {
+    "id": "SRC-HF-HUB",
+    "title": "Hugging Face · Hub documentation",
+    "url": "https://huggingface.co/docs/hub/index",
+    "accessed": "2026-10-30",
+    "use": "模型、数据集、演示应用及版本协作；不引用动态规模数字。",
+    "locations": [
+      "CH10"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-PPT",
+    "title": "用户提供 · AtomGit.pptx（三页）",
+    "url": "../docs/decisions/ADR-0006-observatory-sharing-and-growth.md",
+    "accessed": "2026-10-30",
+    "use": "实际读全部三页文本；平台作为协作底座，提交与评审，开放对象变化。商业判断不直接转成教材事实。",
+    "locations": []
+  },
+  {
+    "id": "SRC-ATOMGIT-ISSUE",
+    "title": "AtomGit · 创建 Issue",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/issue/create_issue/",
+    "accessed": "2026-10-30",
+    "use": "问题反馈与持续讨论。",
+    "locations": [
+      "CH11",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-PR",
+    "title": "AtomGit · 创建 Pull Request",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/pullrequests/pr-create/",
+    "accessed": "2026-10-30",
+    "use": "源与目标分支、目的、评审与合并权限。",
+    "locations": [
+      "CH11",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-FORK",
+    "title": "AtomGit · Fork 工作流",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/pullrequests/pr-fork/",
+    "accessed": "2026-10-30",
+    "use": "个人副本、分支修改与向原项目请求合并。",
+    "locations": [
+      "CH11",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-REVIEW",
+    "title": "AtomGit · 代码审查",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/pullrequests/pr-code-review/",
+    "accessed": "2026-10-30",
+    "use": "文件差异、评论、更新与处理状态。",
+    "locations": [
+      "CH11",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-ATOMGIT-CONFLICT",
+    "title": "AtomGit · 解决冲突",
+    "url": "https://docs.atomgit.com/docs/help/home/org_project/pullrequests/pr-sovle-conflict/",
+    "accessed": "2026-10-30",
+    "use": "系统不能自动组合改动时需要人工判断；不照搬一键保留某侧为教学原则。",
+    "locations": [
+      "CH11",
+      "CH11-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH12-TRANSFORMERS-INTRO",
+    "title": "Hugging Face · Transformers v4.57.1 项目介绍",
+    "url": "https://huggingface.co/docs/transformers/v4.57.1/en/index",
+    "accessed": "2026-10-30",
+    "use": "固定版本阅读示范：辨认软件库、运行依赖与所用模型；不代表当前最新版或本课程运行结果。",
+    "locations": [
+      "CH12",
+      "CH12-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH12-TRANSFORMERS-INSTALL",
+    "title": "Hugging Face · Transformers v4.57.1 安装说明",
+    "url": "https://huggingface.co/docs/transformers/v4.57.1/en/installation",
+    "accessed": "2026-10-30",
+    "use": "固定版本阅读示范：辨认软件库、运行依赖与所用模型；不代表当前最新版或本课程运行结果。",
+    "locations": [
+      "CH12",
+      "CH12-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH12-TRANSFORMERS-QUICK",
+    "title": "Hugging Face · Transformers v4.57.1 入门说明",
+    "url": "https://huggingface.co/docs/transformers/v4.57.1/en/quicktour",
+    "accessed": "2026-10-30",
+    "use": "固定版本阅读示范：辨认软件库、运行依赖与所用模型；不代表当前最新版或本课程运行结果。",
+    "locations": [
+      "CH12",
+      "CH12-KIT"
+    ]
   }
 ]
