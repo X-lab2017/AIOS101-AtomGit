@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .openai/
 node_modules/
+
+textbook/print/ch02/*.pdf
+tmp/

@@ -1,35 +1,23 @@
-# 来源导航：从入口到具体材料
+# 第二章来源导航
 
-课程核对日期：2026-10-29；材料版本：0.2.1。请在自己的档案里填写实际阅读日期。
+材料核对日期：2026-10-30。请记录自己的实际访问日期。
 
-## 先确认官方入口
+[OpenDipper 开源星系](https://www.x-lab.info/open-dipper/#ecosystem) 提供对象与关系线索；原项目入口用于继续阅读。
 
-- **O1 · [DeepSeek-R1 发布页](https://deepseek.com/en/news/deepseek-r1/)**。页面标示发布日期为 2025-01-20，其技术报告链接指向 deepseek-ai/DeepSeek-R1 仓库。用于确认对象与材料来路；旧发布页中的服务、性能或价格信息不能直接当作今天的条件。
-- **O2 · [DeepSeek Harness 产品页](https://www.deepseek.com/en/harness/)**。其中的 GitHub 入口指向 deepseek-ai/deepseek-harness。用于确认工具的官方入口，不把页面演示当成本课程实测。
 
-这两个网页未在本课程中保存完整历史快照；记录的是上述日期查阅到的入口关系。下面的文件则使用固定版本链接。
+[1] DeepSeek-AI. DeepSeek-R1 README，固定提交 `0cf78561f1d51c84a21b2190626b21116d5c68bb`。使用 Introduction、Model Summary、Model Downloads 等部分，作为项目方公开说明。[原始材料](https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md)
 
-## 四份核心阅读材料
+[2] DeepSeek-AI. DeepSeek-R1 模型文件目录，固定版本 `56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad`。用于辨认说明、配置与权重文件。[文件目录](https://huggingface.co/deepseek-ai/DeepSeek-R1/tree/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad)
 
-建议先读 D-A、D-B，再读 R-A、R-B。这些是材料导航编号，DeepSeek-R1 才是本章模型的名称。
+[3] GitHub Docs. About the repository README file。用于解释 README 的入口与导航作用。[官方文档](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
-| 编号 | 材料与位置 | 先回答什么 |
-| --- | --- | --- |
-| R-A | [模型项目 README](https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md)；Introduction、Model Downloads、How to Run Locally、License | 名称是什么？模型链接和说明分别在哪里？ |
-| R-B | [模型文件目录](https://huggingface.co/deepseek-ai/DeepSeek-R1/tree/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad)；README.md、config.json 与 model-…safetensors 文件 | 文件页提供了哪些类型的材料？只看目录，不下载模型 |
-| D-A | [DSH 中文 README](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md)；开头、文档链接、开发者预览 | 这是什么工具？去哪里继续读？项目说明了什么阶段条件？ |
-| D-B | [DSH 中文贡献指南](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/CONTRIBUTING.zh.md)；开头说明、参与方式列表 | 这个版本实际欢迎哪些帮助？ |
+[4] Hugging Face. Model Cards。用于解释模型卡、README 与元数据的关系。[官方文档](https://huggingface.co/docs/hub/model-cards)
 
-## 版本要分开记录
+[5] X-lab2017. OpenDipper / Open Galaxy，固定提交 `465c4737a36c4c5e67e39f971b3e09d28d1e84f5`。用于说明发现、关系类型与数据范围。[模块说明](https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/docs/OPEN_GALAXY.md)
 
-- R-A 的 GitHub 文档提交：`0cf78561f1d51c84a21b2190626b21116d5c68bb`。
-- R-B 的 Hugging Face 文件目录提交：`56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad`。
-- D-A、D-B 的 GitHub 文档提交：`f3803c96974ad4a94195fb97e5c637e9c2a3afe3`。
+[6] DeepSeek-AI. DeepSeek Harness 中文 README，固定提交 `f3803c96974ad4a94195fb97e5c637e9c2a3afe3`。图中保留该版本页面；说明项目身份与文档入口。[中文说明](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md)
 
-这些记录点属于不同仓库或平台，不能彼此替代，也不是你安装的 DSH 应用版本。固定文件里的外链仍可能指向持续更新的网页；继续点开时，为新页面另外记录位置和日期。
+[7] DeepSeek-AI. DeepSeek Harness 中文贡献指南，同一固定提交。用于分析该版本的参与方式。[贡献指南](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/CONTRIBUTING.zh.md)
 
-在 GitHub 固定文件页可直接阅读 Preview（预览）内容；若显示代码形式，查找预览入口。R1 的英文标题保留原名，方便用页面查找定位。浏览器翻译或 AI 解释只是辅助，关键限定词需要回到原文核对。
 
-## 遇到访问障碍
-
-打不开原站时，先读 [课程摘记](materials/reading-cards.md)，保存原始链接并标记尚未复核。不需要为了完成本章创建新账号或下载模型。后来能够访问时，补做来源确认，保留这次更新的日期。
+[DSH 许可入口](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/LICENSE)：本章只保留入口，第三章细读。

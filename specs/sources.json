@@ -868,5 +868,36 @@
     "locations": [
       "CH01"
     ]
+  },
+  {
+    "id": "SRC-CH02-HF-CARDS",
+    "title": "Hugging Face Model Cards",
+    "url": "https://huggingface.co/docs/hub/model-cards",
+    "accessed": "2026-10-30",
+    "use": "模型卡与 README、元数据的关系；正文和材料图",
+    "locations": [
+      "CH02"
+    ]
+  },
+  {
+    "id": "SRC-CH02-GH-README",
+    "title": "GitHub Docs About READMEs",
+    "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+    "accessed": "2026-10-30",
+    "use": "README 的入口作用",
+    "locations": [
+      "CH02"
+    ]
+  },
+  {
+    "id": "SRC-CH02-OD-GALAXY",
+    "title": "OpenDipper Open Galaxy 数据与关系说明",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/docs/OPEN_GALAXY.md",
+    "accessed": "2026-10-30",
+    "use": "发现入口、记录关系、推断关系与方向信息；非性能测试",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
   }
 ]
