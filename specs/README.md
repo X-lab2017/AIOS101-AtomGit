@@ -7,6 +7,7 @@
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与贯穿作品。
 - [目录评审规格](outline-review-spec.md) · [全书目录提案](../textbook/contents-review.md)：四篇十二章与前三章三级标题，待审定后实施。
+- [章名与独立实践的新一轮评审](../docs/review/2026-10-30-titles-and-practice.md)：标题建议、各章实践、工具分工与作品库；本轮审定后联动迁移上述正本与规格，见 ADR-0016。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
 - [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。

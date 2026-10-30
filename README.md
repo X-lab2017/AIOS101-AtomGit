@@ -12,6 +12,7 @@
 
 ## 从这里开始
 
+- [章名与独立实践设计评审稿](docs/review/2026-10-30-titles-and-practice.md)：最新标题建议、各章独立任务、案例与作品库预留；尚待审定并联动上述宪法与引言。
 - [在线评审站](https://www.x-lab.info/AIOS101-AtomGit/)
 - [全书目录评审稿](textbook/contents-review.md) · [引言](textbook/preface.md)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
