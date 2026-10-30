@@ -1,0 +1,30 @@
+[
+  {
+    "id": "AG-00-02",
+    "upstreamPath": "textbook/assets/figures/AIOS101_Fig-00-04_opendipper-global_v01.svg",
+    "upstreamBlob": "6ba654255cff1670906b748ac8fd9cd1a017704c",
+    "upstreamCommit": "9acf393293ed629cdf1ffd1162d1257814aa57e7",
+    "embeddedImagesUnchanged": true,
+    "bytes": 329666,
+    "sha256": "ac6c5ea95f991d644efdaf007ddf3363add714608377320e52b2e5119e95a016",
+    "dimensions": [
+      2000,
+      1660
+    ],
+    "webpQuality": 92
+  },
+  {
+    "id": "AG-00-03",
+    "upstreamPath": "textbook/assets/figures/AIOS101_Fig-00-05_opendipper-galaxy_v01.svg",
+    "upstreamBlob": "6e6911842151727c60b23c0578fd230a0446df16",
+    "upstreamCommit": "9acf393293ed629cdf1ffd1162d1257814aa57e7",
+    "embeddedImagesUnchanged": true,
+    "bytes": 365846,
+    "sha256": "e40b5c4a6715d78b43c116e1d115b2339bfecebf3a73326f4aa3d9bc55fa9cf9",
+    "dimensions": [
+      2000,
+      1660
+    ],
+    "webpQuality": 92
+  }
+]

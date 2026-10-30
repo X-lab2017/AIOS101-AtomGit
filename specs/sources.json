@@ -729,5 +729,64 @@
     "locations": [
       "PREFACE"
     ]
+  },
+  {
+    "id": "SRC-PREFACE-15FYP",
+    "title": "中华人民共和国国民经济和社会发展第十五个五年规划纲要",
+    "url": "https://www.forestry.gov.cn/lyj/1/szxx/20260314/663252.html",
+    "publisher": "新华社；国家林业和草原局转载",
+    "published": "2026-03-14",
+    "accessed": "2026-10-30",
+    "use": "第四篇第十三章：人工智能应用与开源体系建设；第十四章：国际合作与全球南方能力建设。仅据实际条文概述。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-PREFACE-AI-PLUS",
+    "title": "国务院关于深入实施“人工智能+”行动的意见（国发〔2025〕11号）",
+    "url": "https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm",
+    "publisher": "国务院；中国网信网转载",
+    "published": "2025-08-27",
+    "accessed": "2026-10-30",
+    "use": "二（六）全球合作；三（十一）开源生态及高校贡献认定、（十二）通识教育。面向全球的开源技术体系和社区生态表述归属于这份文件。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-PREFACE-UN-78311",
+    "title": "联合国大会 A/RES/78/311：加强人工智能能力建设国际合作",
+    "url": "https://mandates.un.org/mandate/A/RES/78/311?subject=International+Cooperation",
+    "publisher": "联合国",
+    "accessed": "2026-10-30",
+    "use": "执行段第1、5、7、8、12段：可持续发展目标、能力建设、开源 AI 的负责任使用及包容性。通过日期另与联合国数字图书馆记录和中国常驻联合国代表团报道交叉核对，不使用该检索页面的年度分类作为通过年份。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-PREFACE-UN-ADOPTION",
+    "title": "第78届联合国大会协商一致通过加强人工智能能力建设国际合作决议",
+    "url": "https://un.china-mission.gov.cn/chn/zgylhg/jsyfz/202407/t20240702_11445457.htm",
+    "publisher": "中国常驻联合国代表团",
+    "published": "2024-07-01",
+    "accessed": "2026-10-30",
+    "use": "中国主提、2024年7月1日通过及能力建设与联合国2030年可持续发展议程的关系。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-PREFACE-AI-INCLUSION",
+    "title": "人工智能能力建设普惠计划",
+    "url": "https://www.mfa.gov.cn/web/wjb_673085/zzjg_673183/jks_674633/fywj_674643/202412/t20241218_11496414.shtml",
+    "publisher": "中国外交部",
+    "published": "2024-09-27",
+    "accessed": "2026-10-30",
+    "use": "联合国框架下的国际合作、人工智能素养和人才培养、教育资源共享，以及中国行动（四）的开源开放社区建设。",
+    "locations": [
+      "PREFACE"
+    ]
   }
 ]

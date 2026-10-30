@@ -65,7 +65,7 @@ for index, key, title, old_title, blob, steps in [
     embedded = [e.attrib['href'] for e in svg.findall(f'{{{NS}}}image')]
     groups = [g for g in svg.findall(f'{{{NS}}}g') if 'aria-label' in g.attrib]
     assert len(groups) == 8
-    figure_id = f'AG-00-{index:02d}'
+    figure_id = f'AG-00-{index+1:02d}'
     new_title = f'图 {figure_id}　{title}'
     assert groups[0].attrib['aria-label'] == f'图 {old_number}　{old_title}'
     replace_text(groups[0], new_title, 100, 95, 38, '#1D2433')
@@ -77,7 +77,7 @@ for index, key, title, old_title, blob, steps in [
     svg.find(f'{{{NS}}}title').text = new_title
     assert embedded == [e.attrib['href'] for e in svg.findall(f'{{{NS}}}image')]
     native = ET.tostring(svg, encoding='utf-8', xml_declaration=True)
-    name = f'ag-00-{index:02d}-opendipper-{key}'
+    name = f'ag-00-{index+1:02d}-opendipper-{key}'
     (qa / (name + '.svg')).write_bytes(native)
     rendered = cairosvg.svg2png(bytestring=native, output_width=2000, output_height=1660)
     (qa / (name + '.png')).write_bytes(rendered)
@@ -105,7 +105,7 @@ for index, key, title, old_title, blob, steps in [
 
 manifest_path = figures / 'manifest.json'
 manifest = json.loads(manifest_path.read_text())
-manifest = records + [f for f in manifest if f['id'] not in {'AG-00-01', 'AG-00-02'}]
+manifest = sorted(records + [f for f in manifest if 'opendipper-global' not in f['file'] and 'opendipper-galaxy' not in f['file']], key=lambda f: f['id'])
 manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
-(ROOT / 'docs/review/2026-10-30-preface-od-figures.json').write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + '\n')
+(ROOT / 'docs/review/2026-10-30-preface-policy-od-figures.json').write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(provenance, ensure_ascii=False, indent=2))

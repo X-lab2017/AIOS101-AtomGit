@@ -1,7 +1,21 @@
 [
   {
     "id": "AG-00-01",
-    "file": "ag-00-01-opendipper-global.webp",
+    "file": "ag-00-01-open-ai-for-all.webp",
+    "title": "从国家发展到全球普惠：在开源协作中学习与创造",
+    "alt": "人民大会堂、十五五与人工智能加政策文稿，经展开的纸页连接联合国日内瓦万国宫、全球教育健康与绿色发展场景，落到共同研究的学生及报告和可视化页面。",
+    "width": 1536,
+    "height": 1024,
+    "source": "课程构思，内置图像生成工具辅助绘制。参考维护者提供的政策示意图、人民大会堂与万国宫建筑照片，以及本课程已有手绘装帧；为概念拼贴，不是实际活动记录。详见 2026-10-30-preface-policy.md。",
+    "credit": "AI 辅助绘制 · 政策背景概念插画",
+    "license": "课程原创构思与 AI 辅助绘制；建筑参照与第三方标识权利分别保留，统一对外许可待维护者确定",
+    "date": "2026-10-30",
+    "sha256": "d404e72b44994ca59f59084a744a202e0a194c6dc20fb045be720d0c6aa3ec16",
+    "bytes": 702588
+  },
+  {
+    "id": "AG-00-02",
+    "file": "ag-00-02-opendipper-global.webp",
     "title": "OpenDipper 全球观测：发现值得追问的问题",
     "alt": "OpenDipper 全球观测界面置于手绘观测手册中，左侧图层、中间地图和右侧观察面板引导读者选择对象、查看分布并追查来源。",
     "width": 2000,
@@ -10,12 +24,12 @@
     "credit": "OpenDipper 界面快照 · 复用 AIOS101 手绘装帧并适配导读",
     "license": "依维护者明确指令用于本课程；源项目、地图、数据及品牌的各自条件保持不变",
     "date": "2026-10-30",
-    "sha256": "7d60552d0ce4c703db1fecf52d43e9e742898af451a1afa1aec4104fdd12dc0e",
-    "bytes": 329708
+    "sha256": "ac6c5ea95f991d644efdaf007ddf3363add714608377320e52b2e5119e95a016",
+    "bytes": 329666
   },
   {
-    "id": "AG-00-02",
-    "file": "ag-00-02-opendipper-galaxy.webp",
+    "id": "AG-00-03",
+    "file": "ag-00-03-opendipper-galaxy.webp",
     "title": "OpenDipper 开源星系：看见项目之间的联系",
     "alt": "OpenDipper 开源星系真实界面置于手绘星图档案中，两组网络展示软件与模型等对象，引导读者寻找项目、探索关系并提出研究问题。",
     "width": 2000,
@@ -24,8 +38,8 @@
     "credit": "OpenDipper 界面快照 · 复用 AIOS101 手绘装帧并适配导读",
     "license": "依维护者明确指令用于本课程；源项目、地图、数据及品牌的各自条件保持不变",
     "date": "2026-10-30",
-    "sha256": "8060ed7fff596ccfa3df16918cebd53f95771f4cc47cb2605ada386af25c7090",
-    "bytes": 365872
+    "sha256": "e40b5c4a6715d78b43c116e1d115b2339bfecebf3a73326f4aa3d9bc55fa9cf9",
+    "bytes": 365846
   },
   {
     "id": "AG-01-01",
