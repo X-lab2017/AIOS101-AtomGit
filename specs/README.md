@@ -2,13 +2,14 @@
 
 先读 [课程宪法 v0.2.1](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
 
-**迁移状态：**[course.json](course.json) 已更新到 0.2.0；序言、关于与 CH01 对齐 OpenDipper 研究主线，CH02—03 补齐前置衔接，CH02—12 的完整任务继续逐章迁移。版本提升不代表全书迁移完成。其旧任务用于定位现有内容，不能覆盖 v0.2 目标。先按 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md) 完成新规格与逐章迁移，再同步生成产物。
+**迁移状态：**[course.json](course.json) 已更新到 0.2.1；序言、关于与 CH01 对齐 OpenDipper 研究主线，CH02—03 补齐前置衔接，CH02—12 的完整任务继续逐章迁移。版本提升不代表全书迁移完成。其旧任务用于定位现有内容，不能覆盖 v0.2 目标。先按 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md) 完成新规格与逐章迁移，再同步生成产物。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [序言规格](preface-spec.md)：读者动机、入门背景、贯穿实践与开篇图件。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
 - [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。
+- [教材体例规范](textbook-style-spec.md)：书籍与在线自学共用正文、概念解释、例题和练习反馈。
 - [内容与证据规范](content-evidence-spec.md)：背景、术语、来源及运行状态。
 - [网站规格](website-spec.md)：路由、阅读体验、状态和发布。
 - [视觉规范](visual-spec.md)：品牌复用、图件及手机阅读。

@@ -145,11 +145,12 @@ def render(text, source, commit, routes):
         match = re.match(r'^(?:([-*])|(\d+)\.)\s+(.+)', line)
         if match:
             ordered = bool(match[2]); tag = 'ol' if ordered else 'ul'; items = []
+            start = ' start="'+str(int(match[2]))+'"' if ordered and int(match[2]) != 1 else ''
             while i < len(lines):
                 item = re.match(r'^(?:([-*])|(\d+)\.)\s+(.+)', lines[i].strip())
                 if not item or bool(item[2]) != ordered: break
                 items.append('<li>'+fmt(item[3])+'</li>'); i += 1
-            result.append('<'+tag+'>'+''.join(items)+'</'+tag+'>'); continue
+            result.append('<'+tag+start+'>'+''.join(items)+'</'+tag+'>'); continue
         if re.fullmatch(r'[-*_]{3,}', line):
             result.append('<hr>'); i += 1; continue
         paragraph = [line]; i += 1

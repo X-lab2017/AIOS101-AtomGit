@@ -100,6 +100,10 @@ for letter, filename in [('A','source-a.md'),('B','source-b.md')]:
     clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch1,re.M)
     require(len(clauses)==4 and all(x in (kit_root/'materials'/filename).read_text() for x in clauses),'Chapter 1 material card differs: '+letter)
 require(re.findall(r'图 AG-01-0[14]',ch1)==['图 AG-01-01','图 AG-01-04'],'Chapter 1 illustration placeholders must stay uniquely numbered')
+# A section break must not reset textbook exercise numbers or disconnect answers.
+ch1_html=(out/'chapters/01/index.html').read_text()
+exercise_groups=re.findall(r'<h3>(?:基础理解|材料分析|拓展与迁移)</h3>\s*<ol([^>]*)>',ch1_html)
+require(exercise_groups==['',' start="4"',' start="6"'],'Chapter 1 exercise numbers no longer match their six answers')
 kit2_root=R/'practice/ch02'
 with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
     expected={'ch02/'+f.relative_to(kit2_root).as_posix():f.read_bytes() for f in kit2_root.rglob('*') if f.is_file()}

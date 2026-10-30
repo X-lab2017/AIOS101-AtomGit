@@ -87,7 +87,8 @@ def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=
     st=status(source)
     st_note= '<div class="outline-note"><strong>本章当前为学习提纲</strong><p>这里先呈现学习路线、实践任务和完成证据，完整教材正文将在后续创作中补充。</p></div>' if st=='outline' else ''
     goals=''
-    if chapter:
+    section_titles={s['title'] for s in u['sections']}
+    if chapter and '学习目标与阅读准备' not in section_titles:
         goals='<div class="learning-goals"><span class="eyebrow">'+chapter['id']+' / '+next(x['name'] for x in C['parts'] if x['id']==chapter['part'])+'</span><p class="core-question">'+esc(chapter['question'])+'</p><ul>'+''.join('<li>'+esc(g)+'</li>' for g in chapter['goals'])+'</ul></div>'
     neighbours=''
     if chapter:
@@ -98,7 +99,7 @@ def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=
     elif active=='practice': neighbours=f'<div class="next-step"><a class="text-link" href="{p}learn/">← 返回学习路径</a></div>'
     source_url=REPO+'/blob/'+REF+'/'+source
     source_records=json.loads((ROOT/'specs/sources.json').read_text())
-    references=[r for r in source_records if key in r.get('locations',[])]
+    references=[] if '参考文献与配套资源' in section_titles else [r for r in source_records if key in r.get('locations',[])]
     reference_html=('<p>本页事实核对来源（访问日期见链接项）：</p><ul>'+''.join('<li><a href="'+esc(r['url'])+'" target="_blank" rel="noopener">'+esc(r['title'])+'</a> · '+esc(r['accessed'])+'</li>' for r in references)+'</ul>') if references else ''
     body=f'''<div class="wrap reader-layout"><aside class="reader-sidebar">{sidebar}</aside><div class="reader-main"><header class="reader-heading"><div class="reader-meta">{chip(st)}<span>v{esc(u['version'])}</span></div><h1>{esc(title)}</h1>{'<p class="reader-subtitle">'+esc(subtitle)+'</p>' if subtitle else ''}<div class="reading-controls"><span>{bi('正文字号','Text size')}</span><button data-font="-1" aria-label="减小正文字号">A−</button><button data-font="1" aria-label="增大正文字号">A＋</button></div></header>{st_note}{goals}{extra}<article class="prose">{section_html}</article>{neighbours}<details class="source-details"><summary>{bi('来源与版本','Source and version')}</summary><p>正文版本 {esc(u['version'])} · {STATUS[st][0]}</p><a href="{source_url}">查看 Markdown 正本 ↗</a><span> · </span><a href="{p}downloads/{key}.md">下载本页 Markdown</a>{reference_html}</details></div></div>'''
     shell(route,title,body,active)

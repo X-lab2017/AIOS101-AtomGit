@@ -30,11 +30,12 @@
     "title": "OSI · The Open Source Definition",
     "url": "https://opensource.org/osd",
     "accessed": "2026-10-30",
-    "use": "序言与第一章的软件开源含义、第三章开放条件；2026-10-29 联合评审重新核对原文，不替代具体项目判断",
+    "use": "序言和 CH01 的软件开源含义、第三章开放条件；2026-10-30 再读原文；访问、价格与复用权利分开说明",
     "locations": [
       "PREFACE",
       "CH03",
-      "CH03-KIT"
+      "CH03-KIT",
+      "CH01"
     ]
   },
   {
@@ -835,6 +836,37 @@
     "locations": [
       "CH01",
       "CH01-KIT"
+    ],
+    "version": "README blob SHA 200f70d71f5a5177a990c3ddaf0062b7a06b21c0"
+  },
+  {
+    "id": "SRC-CH01-GOOGLE-ML",
+    "title": "Google for Developers · What is Machine Learning?",
+    "url": "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml",
+    "accessed": "2026-10-30",
+    "use": "CH01 1.2：机器学习、训练/使用模型与生成式 AI 的基础说明；校园通知分类例子为教材自行构造",
+    "locations": [
+      "CH01"
+    ]
+  },
+  {
+    "id": "SRC-CH01-GOOGLE-LLM",
+    "title": "Google for Developers · Introduction to Large Language Models",
+    "url": "https://developers.google.com/machine-learning/crash-course/llm",
+    "accessed": "2026-10-30",
+    "use": "CH01 1.2：语言模型、模型规模与上下文的直观解释，不将生成等同事实验证",
+    "locations": [
+      "CH01"
+    ]
+  },
+  {
+    "id": "SRC-CH01-OSAID",
+    "title": "OSI · The Open Source AI Definition 1.0",
+    "url": "https://opensource.org/ai/open-source-ai-definition",
+    "accessed": "2026-10-30",
+    "use": "CH01 1.3：数据说明、代码、参数与复用条件；不将开放权重自动等同完整开源 AI，也不在本章裁定具体项目合规性",
+    "locations": [
+      "CH01"
     ]
   }
 ]
