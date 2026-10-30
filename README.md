@@ -13,10 +13,10 @@ OpenDipper 是可选的生态数据观察入口与真实案例；DSH 和其他�
 - [在线课程](https://www.x-lab.info/AIOS101-AtomGit/) · [引言](https://www.x-lab.info/AIOS101-AtomGit/preface/) · [全书目录](https://www.x-lab.info/AIOS101-AtomGit/outline/)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
 - [章节实践与作品资源](practice/README.md) · [关于课程](textbook/about.md)
-- [本轮分项评审](docs/review/2026-10-30-independent-practice-implementation.md) · [已采纳的标题与实践设计](docs/review/2026-10-30-titles-and-practice.md)
+- [第二部分逐章评审](docs/review/2026-10-30-second-part-textbook.md) · [已采纳的标题与实践设计](docs/review/2026-10-30-titles-and-practice.md)
 - [作者指南](docs/AUTHORING.md) · [当前状态](docs/STATUS.md) · [AI 协作者指南](AGENTS.md)
 
-## 本轮已审定内容
+## 第一部分已审定基线
 
 宪法 0.3.0、引言 0.6.0、目录 0.2.0 与前三章依次更新并逐项自审，维护者于 2026-10-30 确认本次内容全部评审通过，见 [ADR-0018](docs/decisions/ADR-0018-first-part-content-approved.md)。五维目标、学习矩阵和自主性阶梯保留，取消同一研究作品的强制延续。教材案例与授权分享的学生作品库预留方向，具体画像案例待后续设计。
 
@@ -28,9 +28,21 @@ OpenDipper 是可选的生态数据观察入口与真实案例；DSH 和其他�
 
 前三章各五节、十五小节，保留例题、六题及反馈和十幅图；引言保留四幅图。两幅结构图的文字与新设计同步，其余有效图件复用。本轮正文与配套材料已通过维护者内容评审；真人试学、全部工具流程与新版打印排版另行验证。
 
-第四至十二章本轮仅对齐章名，正文与任务保留上一版，并明确标注待优化。已有示范和模板供选择参考，不再作为新版课程各章必交路径。
+## 第二部分：理解 AI（0.4.0，待内容评审）
 
-**PDF 暂不更新。**旧 PDF 和打印输入摘要保留历史交付身份；内容已审定，后续按本次内容基线统一排版并验收。本轮仓库与 Pages 不提供新版 PDF。见[打印说明](textbook/print/README.md)。
+按“逐章立题、研究先行、材料补充、图文共创、上线评审”完成第四至六章。保留第一部分基线，逐章自审后进入下一章，研究取舍见[来源记录](docs/research/2026-10-30-second-part-source-map.md)。
+
+| 章节 | 重点 | 独立实践 |
+| --- | --- | --- |
+| [第四章：机器学习基础](textbook/chapters/CH04.md) | 样本、参数、误差与泛化 | [比较学习结果，解释适用条件](practice/ch04/README.md) |
+| [第五章：大语言模型的生成与局限](textbook/chapters/CH05.md) | 上下文、生成、来源与比较 | [改善材料组织，比较生成结果](practice/ch05/README.md) |
+| [第六章：智能体的工作机制](textbook/chapters/CH06.md) | 工具请求、执行、反馈与检查 | [观察或运行一次智能体任务](practice/ch06/README.md) |
+
+三章各自有完整材料、例题、实践、六道练习与反馈；复用六幅有效图件，新增三幅原创矢量图。Neo Lee 课件、AIInfra、李博杰及贡献者的书与 Chip Huyen 配套资源分别按问题选材，不复制整份资料或将摘要视为原书全文。当前为编写自审完成、等待维护者评审；未宣称真实试学或工具实跑验收。
+
+第七至十二章仍保留上一版正文与任务，并明确标注待优化。已有示范和模板供选择参考，不再作为新版课程各章必交路径。
+
+**PDF 暂不更新。**旧 PDF 和打印输入摘要保留历史交付身份；第一部分已审定，第二部分待维护者评审；后续再统一排版并验收。本轮仓库与 Pages 不提供新版 PDF。见[打印说明](textbook/print/README.md)。
 
 ## 创作与验证
 
@@ -41,7 +53,7 @@ python scripts/sync_specs.py --check
 python scripts/check_all.py
 ```
 
-main 检查通过后由 GitHub Actions 发布 Pages，PR 仅检查。决策与版本记录见 [ADR-0017](docs/decisions/ADR-0017-independent-practice-implementation.md) 和 [当前状态](docs/STATUS.md)。
+main 检查通过后由 GitHub Actions 发布 Pages，PR 仅检查。决策与版本记录见 [ADR-0019](docs/decisions/ADR-0019-second-part-textbook-upgrade.md) 和 [当前状态](docs/STATUS.md)。
 
 ## 复用与使用条件
 

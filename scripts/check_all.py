@@ -172,6 +172,22 @@ for f in chapter6_figures:
     data=(R/'textbook/assets/figures'/f['file']).read_bytes()
     require(hashlib.sha256(data).hexdigest()==f['sha256'] and len(data)==f['bytes'],'Chapter 6 figure integrity differs')
     require(ch6.count('../assets/figures/'+f['file'])==1,'Chapter 6 figure reference differs')
+# Part II print-readable inputs and downloadable task cards must stay identical.
+for n in (4,5,6):
+    prose=(R/f'textbook/chapters/CH{n:02}.md').read_text()
+    expected_headings=re.findall(r'^- ('+str(n)+r'\.[1-5] .+)$',(R/'textbook/contents-review.md').read_text(),re.M)
+    require(re.findall(r'^## ('+str(n)+r'\.[1-5] .+)$',prose,re.M)==expected_headings,'Part II headings differ from approved contents')
+    image_files=re.findall(r'^!\[[^\]]+\]\(../assets/figures/([^\)]+)\)',prose,re.M)
+    require(image_files==[f['file'] for f in figures if f['id'].startswith(f'AG-{n:02}-')],'Part II figure sequence differs')
+for n,files in ((5,('brief.md','guide.md')),(6,('source-a.md','source-b.md'))):
+    prose=(R/f'textbook/chapters/CH{n:02}.md').read_text()
+    for letter,filename in zip('AB',files):
+        lines=re.findall(r'^- \*\*'+letter+r'[12]\*\*.*$',prose,re.M)
+        card=(R/f'practice/ch{n:02}/materials'/filename).read_text()
+        require(len(lines)==2 and all(line in card for line in lines),'Part II source card differs from textbook')
+require(re.search(r'```text\n(.*?)\n```',(R/'textbook/chapters/CH05.md').read_text(),re.S)[1]+'\n'==template,'Chapter 5 textbook prompt differs from kit')
+require(re.search(r'```markdown\n(.*?)\n```',ch6,re.S)[1]+'\n'==(kit6_root/'materials/guide-before.md').read_text(),'Chapter 6 starter differs from textbook')
+
 # Practice archives are validated against their actual source files, not a file-count quota.
 for chapter, required in {'ch04':['work/experiment-record.md','materials/check-values.md'], 'ch05':['prompt-a.txt','prompt-b.txt','work/comparison-record.md'], 'ch06':['prompt.txt','materials/guide-before.md','work/task-record.md']}.items():
     require(all((R/'practice'/chapter/name).is_file() for name in required), 'Missing learning task input: '+chapter)

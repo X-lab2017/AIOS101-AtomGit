@@ -1,20 +1,9 @@
-# 来源、版本与记录类型
+# 来源与使用范围
 
-访问日期：2026-10-29。材料 A 是课程转述；材料 B 是课程设计的本地任务卡，非官方默认设置。包中不提供预填模型输出。来源版本与学习者实际运行的软件版本分别记录。
+本包阅读卡依据 Infrasys-AI/AIInfra 固定提交 b97c0385ba07a62a717d82a0e7aed2927f12fc35 改写，查阅于 2026-10-30。
 
-## 本次任务材料
+- [README](https://github.com/Infrasys-AI/AIInfra/blob/b97c0385ba07a62a717d82a0e7aed2927f12fc35/README.md)：A1 的课程定位、A2 的更新状态与入口。
+- [训练专题](https://github.com/Infrasys-AI/AIInfra/blob/b97c0385ba07a62a717d82a0e7aed2927f12fc35/00Summary/04TrainingStack.md)：B1 的内容目录。
+- [推理专题](https://github.com/Infrasys-AI/AIInfra/blob/b97c0385ba07a62a717d82a0e7aed2927f12fc35/00Summary/05InferStack.md)：B2 的内容目录。
 
-1. [DSH README.zh.md](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md)：开头、开发者预览。对应 A1。
-2. [DSH Web UI 指南](https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/docs/user/guide/index.zh.md)：“运行任务”中的文件操作。对应 A2。
-
-源提交均为 `f3803c96974ad4a94195fb97e5c637e9c2a3afe3`，本轮重新阅读原段。它们说明该文档版本，不能证明当前账户、环境或某次操作已经成功。原站不可访问时使用材料卡，记明只读了课程转述。
-
-## 机制与方法背景
-
-- [Google：语言模型入门](https://developers.google.com/machine-learning/crash-course/llm)：词元、上下文与候选选择。
-- [Google：大语言模型](https://developers.google.com/machine-learning/crash-course/llm/transformers)：生成式模型利用已生成文字继续生成；本章不讲结构推导。
-- [Google：提示与微调](https://developers.google.com/machine-learning/crash-course/llm/tuning)：提示改变当前输入，通常不改变参数。
-- [NIST AI 600-1，2024 年 7 月版](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)：2.2 Confabulation，报告正文第 6 页（PDF 第 10 页），错误内容、引用和自信表达的边界。
-- [Lewis 等，Retrieval-Augmented Generation，v4](https://arxiv.org/abs/2005.11401v4)：摘要中的外部检索与生成结合。仅用来交代 RAG 的基本思路，不借论文结果宣称本课程方法已被验证。
-
-课程原创建议：先确定问题与判断标准，只改变材料，保留全部结果和无法控制的条件。纸面续写与真实模型输出比较分开记录。
+只以目录与项目说明为本次证据，不从文件存在推断全部实践可运行。卡片、任务、候选与反馈为课程编写材料；不转载上游课件图片。更多机制来源见[正文参考文献](../../textbook/chapters/CH05.md)。
