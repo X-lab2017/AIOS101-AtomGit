@@ -156,7 +156,7 @@ def main():
                 if not f.is_file(): continue
                 zi=zipfile.ZipInfo(key+'/'+f.relative_to(ROOT/'practice'/key).as_posix(),date_time=(2026,10,30,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
     home();learn()
-    reader('preface/','PREFACE','textbook/preface.md','从使用 AI，\n到共同创造。','序言 · 打开，才能理解')
+    reader('preface/','PREFACE','textbook/preface.md','从一个开源项目说起','序言 · 从全球观测，到你的第一份研究')
     for c in C['chapters']:reader(f"chapters/{c['number']:02d}/",c['id'],c['source'],c['title'],c['subtitle'],c)
     reader('about/','ABOUT','textbook/about.md','关于这门课程',active='about')
     downloads='<div class="practice-actions"><a class="button primary" href="ch01/">从第一章材料开始 →</a><a class="text-link" href="../chapters/01/">阅读第一章 →</a></div>'

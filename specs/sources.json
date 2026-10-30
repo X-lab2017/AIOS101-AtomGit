@@ -13,7 +13,6 @@
     "accessed": "2026-10-29",
     "use": "示范档案中的官方自述；非本课程实测",
     "locations": [
-      "PREFACE",
       "DEMO",
       "CH01",
       "CH01-KIT",
@@ -32,7 +31,7 @@
     "id": "SRC-OSI-OSD",
     "title": "OSI · The Open Source Definition",
     "url": "https://opensource.org/osd",
-    "accessed": "2026-10-29",
+    "accessed": "2026-10-30",
     "use": "序言与第一章的软件开源含义、第三章开放条件；2026-10-29 联合评审重新核对原文，不替代具体项目判断",
     "locations": [
       "PREFACE",
@@ -46,11 +45,12 @@
     "id": "SRC-DSH-README",
     "title": "DeepSeek Harness 官方 README",
     "url": "https://github.com/deepseek-ai/deepseek-harness",
-    "accessed": "2026-10-29",
-    "use": "序言 DSH 项目身份、工具与模型的分工；未用官方演示代替本课程实测",
+    "accessed": "2026-10-30",
+    "use": "序言关于 DeepSeek Harness 智能体工具的身份与模型、工具分工；读取官方 README。",
     "locations": [
       "PREFACE"
-    ]
+    ],
+    "sourceBlob": "7941e30f7bdca9391befe39b9115d211157fa42d"
   },
   {
     "id": "SRC-ATOMGIT-DOCS",
@@ -664,6 +664,70 @@
     "locations": [
       "CH12",
       "CH12-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CCOSI-2026-RELEASE",
+    "title": "中国国际科技交流中心：日内瓦发出“中国强音”：CCOSI 发布《开源创新国际合作宣言》",
+    "url": "https://www.ciste.org.cn/gzdt/kxzs/art/2026/art_bed9ae4a12b049e7b4ae56083023159e.html",
+    "published": "2026-07-17",
+    "accessed": "2026-10-30",
+    "use": "序言真实背景：日内瓦活动期间的宣言发布、同期报告预览版及宣言收录；不延伸为今天在线版的全部内容已于七月完成。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-GOSD-2026-ONLINE",
+    "title": "2026 全球开源发展报告：在线目录",
+    "url": "https://www.x-lab.info/2026-Global-Open-Source-Development-Report/2026/zh/",
+    "accessed": "2026-10-30",
+    "use": "序言中报告、地图、榜单、技术全景与关系研究的互补表达。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-GOSD-2026-REPOSITORY",
+    "title": "2026 全球开源发展报告：项目说明与协作方式",
+    "url": "https://github.com/X-lab2017/2026-Global-Open-Source-Development-Report/blob/c51e3441361407b68f10b339d97eff288319b503/README.md",
+    "accessed": "2026-10-30",
+    "sourceBlob": "200f70d71f5a5177a990c3ddaf0062b7a06b21c0",
+    "use": "报告正文、相关材料与方法在公开仓库维护；报告与可视化的教学借鉴。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-OPENDIPPER-PREFACE",
+    "title": "OpenDipper · 开源北斗：项目说明",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/da08d0edd190a58c37127d94eb773fd45134043e/README.md",
+    "accessed": "2026-10-30",
+    "sourceBlob": "17b6b36c91ecf8c39c5b794380bc8ba19570f17e",
+    "use": "OD 的全球观测、项目发现、关系探索、资料与研究用途，以及 OpenDigger 数据基础。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-OPENDIGGER-PREFACE",
+    "title": "OpenDigger：开源数据分析项目说明",
+    "url": "https://github.com/X-lab2017/open-digger/blob/master/README.md",
+    "accessed": "2026-10-30",
+    "sourceBlob": "fff40cacc33bd2692665233aa7113ccd6cbf881b",
+    "use": "区分 OpenDigger 数据分析职责与 OpenDipper 观测研究工具定位。",
+    "locations": [
+      "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-AIOS101-PREFACE-FIGURES",
+    "title": "AIOS101 序言：OpenDipper 双图来源与制作记录",
+    "url": "https://github.com/X-lab2017/AIOS101/blob/9acf393293ed629cdf1ffd1162d1257814aa57e7/textbook/assets/figures/sources/preface-opendipper-2026-10-29.md",
+    "accessed": "2026-10-30",
+    "use": "维护者指定复用的真实界面、手绘装帧及来源；本版仅适配原生矢量标签并重新导出。",
+    "locations": [
+      "PREFACE"
     ]
   }
 ]

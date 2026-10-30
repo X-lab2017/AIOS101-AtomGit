@@ -2,13 +2,13 @@
 
 **用开源来理解 AI，用 AI 来贡献开源。**
 
-理解 AI，学会判断，在开放协作中创造。X-lab 出品，面向所有专业的学生、教师与自学者。
+理解 AI，学会判断，在开放协作中创造。X-lab 开放实验室与奇点智能研究院联合出品，面向所有专业的学生、教师与自学者。
 
 **开源北斗 OpenDipper（OD）**是全球开源生态的数据观测与研究项目。本课程将它同时作为学习教学工具与真实项目案例，结合 DeepSeek 模型、DSH 智能体工具和 AtomGit 协作实践。
 
 课程采用 **理解—判断—创造—协作—迁移** 的 AI 时代五维学习目标框架。综合大作业是利用 OpenDipper 完成**专业开源研究报告及配套动态展示页面**，将报告、页面及相关材料作为同一个开源项目托管在 AtomGit，积累个人技能集与作品集。
 
-**当前迁移状态：**[宪法 v0.2.1](CONSTITUTION.md) 与[关于课程](https://www.x-lab.info/AIOS101-AtomGit/about/)已对齐新的设计理念；十二章与实践材料将按 OpenDipper 主线逐步完善。实施安排见 [ADR-0007](docs/decisions/ADR-0007-opendipper-research-course.md)，本轮简化原则见 [ADR-0008](docs/decisions/ADR-0008-constitution-and-about.md)。
+**当前迁移状态：**[宪法 v0.2.1](CONSTITUTION.md)、[序言](https://www.x-lab.info/AIOS101-AtomGit/preface/)与[关于课程](https://www.x-lab.info/AIOS101-AtomGit/about/)已对齐新的设计理念；十二章与实践材料将按 OpenDipper 主线逐步完善。实施安排见 [ADR-0007](docs/decisions/ADR-0007-opendipper-research-course.md)，本轮简化原则见 [ADR-0008](docs/decisions/ADR-0008-constitution-and-about.md)。
 
 ## 从这里开始
 
@@ -21,7 +21,9 @@
 
 宪法版本为 0.2.1；已实施课程结构仍为 0.1.0。现有四篇十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
 
-序言与前三章现为 0.2.1 图文评审稿。前三章已完成一轮[联合编辑评审与修订](docs/review/2026-10-29-ch01-03.md)，围绕同一份导览推进：
+[序言 0.3.0](textbook/preface.md)从 OpenDipper 与《2026 全球开源发展报告》的真实实践出发，连接研究报告、动态页面与 AtomGit 综合项目；复用并适配两幅手绘界面图。见[本轮图文记录](docs/review/2026-10-30-preface-opendipper.md)。
+
+前三章现为 0.2.1 图文评审稿，已完成一轮[联合编辑评审与修订](docs/review/2026-10-29-ch01-03.md)，围绕同一份导览推进：
 
 - [第一章：先做成一件事](textbook/chapters/CH01.md)——三幅图、[八文件练习包](practice/ch01/README.md)，做出并核对初稿。
 - [第二章：打开一个项目](textbook/chapters/CH02.md)——三幅图、[七文件观察包](practice/ch02/README.md)，建立档案并检查导览中的一句话。
