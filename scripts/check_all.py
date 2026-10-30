@@ -225,7 +225,25 @@ if 'ch08' in active:
         for target in re.findall(r'materials/[a-z-]+\.md',prompt):
             require((R/'practice/ch08'/target).is_file(),'Chapter 8 prompt input missing: '+target)
 if 'ch09' in active:
-    require(not (R/'practice/ch09/materials/candidate.md').exists(),'Chapter 9 must receive the learner candidate')
+    require((R/'practice/ch09/materials/resource-before.md').is_file(),'Chapter 9 needs an independent starter')
+# Part III must work without previous learner outputs; print and kit inputs agree.
+for n,letter,prompt_name in ((7,'A','plan-prompt.txt'),(8,'B','create-prompt.txt'),(9,'C','revise-prompt.txt')):
+    prose=(R/f'textbook/chapters/CH{n:02}.md').read_text()
+    root=R/f'practice/ch{n:02}'
+    expected_headings=re.findall(r'^- ('+str(n)+r'\.[1-5] .+)$',(R/'textbook/contents-review.md').read_text(),re.M)
+    require(re.findall(r'^## ('+str(n)+r'\.[1-5] .+)$',prose,re.M)==expected_headings,'Part III headings differ from approved contents')
+    clauses=re.findall(r'^- \*\*'+letter+r'[1-4]\*\*.*$',prose,re.M)
+    card=(root/'materials/reading-cards.md').read_text()
+    require(len(clauses)==4 and all(line in card for line in clauses),'Part III source card differs from textbook')
+    prompt=re.search(r'```text\n(.*?)\n```',prose,re.S)
+    require(prompt and prompt[1]+'\n'==(root/prompt_name).read_text(),'Part III textbook prompt differs from kit')
+    require((root/'examples/self-check.md').is_file(),'Part III task feedback missing')
+ch9=(R/'textbook/chapters/CH09.md').read_text()
+require(re.search(r'```markdown\n(.*?)\n```',ch9,re.S)[1]+'\n'==(R/'practice/ch09/materials/resource-before.md').read_text(),'Chapter 9 starter differs from textbook')
+ch9_unit=course_markdown.unit(R/'textbook/chapters/CH09.md',R,'main',{},'CH09')
+require(not {'快速开始','质量说明'} & {s['title'] for s in ch9_unit['sections']},'Example headings leaked into Chapter 9 navigation')
+check_section=next(s for s in ch9_unit['sections'] if s['title'].startswith('9.2 '))
+require('<pre><code># AI Engineering：开源全文与即用代码' in check_section['html'] and '<h3>9.2.2 ' in check_section['html'],'Chapter 9 example fence broke the following explanation')
 # The authored diff exercise must remain inspectable and must not quietly endorse its false candidate claim.
 if 'ch11' in active:
     ex=R/'practice/ch11/examples'
@@ -242,4 +260,4 @@ if 'ch11' in active:
 if 'ch12' in active:
     require(not (R/'practice/ch12/work/transfer-result.md').exists(),'Chapter 12 must not prefill a transfer result')
 require(len(parsed)==27+len(active)+4,'Unexpected page count')
-print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')
+print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, figure scale, content states, all practice archives, Chapter 4 arithmetic, textbook/kit inputs, literal examples and JavaScript syntax')

@@ -1,22 +1,22 @@
-# 第八章材料包：把观察站做成可用候选
+# 第八章材料包：制作一份 Agent 概念导览
 
 > 状态：review
-> 版本：0.3.0
+> 版本：0.4.0
 
-## 选择输入
+本包包含独立方案与阅读卡，无需第七章文件、编程或实时模型接口。目标是借助可用 AI，把材料组织成可阅读、有依据的概念导览。
 
-将 `ch08` 放进观察站，用自己的设计替换 [materials/design.md](materials/design.md)。把本次需要的项目档案、来源、探究与作品片段放入 [materials/station-content.md](materials/station-content.md)，用实际导览替换 [materials/project-guide.md](materials/project-guide.md)。保留各自来源与状态，不必重写前六章。
+## 从给定材料开始
 
-材料中的参考内容为作者整理，不是你的运行与学习证据。也可先浏览[完整示范](../demo/README.md)，比较它如何连接项目与作品。
+阅读[方案](materials/design.md)、[阅读卡](materials/reading-cards.md)和[角色提示](materials/role-notes.md)。先画出从问题到解释、例子、选读入口的一条阅读路径，用实际短内容做原型。
 
-## 先流程，后候选
+## 与 AI 形成作品
 
-画出读者的一条路径与每步输入输出，再选择 `ch08` 文件夹本身为 DSH 工作区。发送 [plan-prompt.txt](plan-prompt.txt)，作出一项自己的决定，再发送 [create-prompt.txt](create-prompt.txt)。本例产物为单文件 `work/station-v1.md`；网页或多页文档应自行同步输出约定与链接检查。
+把材料直接粘贴给聊天工具，或让具有文件能力的 DSH、其他 Agent 实际读取本目录文件。用[结构提示](plan-prompt.txt)讨论内容组织，说明自己的取舍，再用[创作提示](create-prompt.txt)形成候选。工具不需要联网、安装软件或发布页面；若自愿增加这些操作，应另行说明条件。
 
-打开候选，从入口走到作品和下一步。按实际问题反馈，修订另存 `work/station-v2.md`；已存在时另取新名称。在 [work/decision.md](work/decision.md) 留下一项具体取舍。没有接入时先做原型，DSH 文件协作目标待补。
+打开实际候选，核对说法、来源和入口，依据发现的问题修订并复查。自行保存前后版本，在[过程说明](work/decision.md)记录一次个人决定。没有 AI 时先做原型与材料分析，标记实际 AI 创作待补；不要把参考稿填成自己的运行成果。
 
-## 带往第九章
+## 对照与继续
 
-保留原件，将选定候选复制为 `ch09/materials/candidate.md`，同时带上设计、来源及全部附件。多页形式保持原目录结构，在 candidate.md 写实际入口，不只复制首页。
+完成后可看[参考导览](examples/guide-reference.md)与[自查反馈](examples/self-check.md)。参考稿是编写者示范，包含可点击的原文入口。核心交付是一份作品和简短过程说明，不按文件数量或对话轮次评分。
 
-返回[第八章正文](../../textbook/chapters/CH08.md)。
+第九章有独立待改作品，本章成果可自愿带去检查。返回[第八章正文](../../textbook/chapters/CH08.md)，原始材料与使用范围见[来源说明](sources.md)。

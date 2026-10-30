@@ -13,6 +13,7 @@ OpenDipper 是可选的生态数据观察入口与真实案例；DSH 和其他�
 - [在线课程](https://www.x-lab.info/AIOS101-AtomGit/) · [引言](https://www.x-lab.info/AIOS101-AtomGit/preface/) · [全书目录](https://www.x-lab.info/AIOS101-AtomGit/outline/)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
 - [章节实践与作品资源](practice/README.md) · [关于课程](textbook/about.md)
+- [第三部分逐章与联合评审](docs/review/2026-10-31-third-part-textbook.md) · [第三部分研究与取舍](docs/research/2026-10-31-third-part-source-map.md)
 - [第二部分逐章评审](docs/review/2026-10-30-second-part-textbook.md) · [已采纳的标题与实践设计](docs/review/2026-10-30-titles-and-practice.md)
 - [作者指南](docs/AUTHORING.md) · [当前状态](docs/STATUS.md) · [AI 协作者指南](AGENTS.md)
 
@@ -42,9 +43,21 @@ OpenDipper 是可选的生态数据观察入口与真实案例；DSH 和其他�
 
 三章各自有完整材料、例题、实践、六道练习与反馈；复用六幅有效图件，新增三幅原创矢量图。Neo Lee 课件、AIInfra、李博杰及贡献者的书与 Chip Huyen 配套资源分别按问题选材，不复制整份资料或将摘要视为原书全文。当前为编写自审完成、等待维护者评审；未宣称真实试学或工具实跑验收。
 
-第七至十二章仍保留上一版正文与任务，并明确标注待优化。已有示范和模板供选择参考，不再作为新版课程各章必交路径。
+## 第三部分：开展 AI 创作（0.4.0，待内容评审）
 
-**PDF 暂不更新。**旧 PDF 和打印输入摘要保留历史交付身份；第一部分已审定，第二部分待维护者评审；后续再统一排版并验收。本轮仓库与 Pages 不提供新版 PDF。见[打印说明](textbook/print/README.md)。
+沿用已审定章目与入门阅读基线，按第七章→第八章→第九章完成研究、图文编写与逐章自审。Neo Lee 课件用于需求、范围、流程、原型与持续改进；项目材料按用途选取，来源版本及取舍见[研究记录](docs/research/2026-10-31-third-part-source-map.md)。
+
+| 章节 | 重点 | 独立实践 |
+| --- | --- | --- |
+| [第七章：创作选题与方案设计](textbook/chapters/CH07.md) | 需要、假设、范围、材料与完成标准 | [根据 AIInfra 材料设计一件作品](practice/ch07/README.md) |
+| [第八章：作品的构建与表达](textbook/chapters/CH08.md) | 内容结构、图文依据、原型与人机合作 | [依据给定方案制作 Agent 概念导览](practice/ch08/README.md) |
+| [第九章：作品的评价与改进](textbook/chapters/CH09.md) | 主张核验、表达一致、任务走查与复查 | [评议并改进 aie-book 资源导览](practice/ch09/README.md) |
+
+三章均补齐章首术语、概念解释、材料卡、三例题、六道练习与反馈。复用两幅插画，重绘三幅原创 SVG；图中文字按正文尺度控制。三套材料包各自可开始，方法递进不要求作品串联。编写者示范、AI 建议和真人试读分别记录，不虚构实际运行或学习效果。见[逐章与联合评审](docs/review/2026-10-31-third-part-textbook.md)。
+
+第十至十二章仍保留上一版正文与任务，并明确标注待优化。已有示范和模板供选择参考，不再作为新版课程各章必交路径。
+
+**PDF 暂不更新。**旧 PDF 和打印输入摘要保留历史交付身份；第一部分已审定，第二、三部分待维护者评审；后续再统一排版并验收。本轮仓库与 Pages 不提供新版 PDF。见[打印说明](textbook/print/README.md)。
 
 ## 创作与验证
 
@@ -55,7 +68,7 @@ python scripts/sync_specs.py --check
 python scripts/check_all.py
 ```
 
-main 检查通过后由 GitHub Actions 发布 Pages，PR 仅检查。决策与版本记录见 [ADR-0019](docs/decisions/ADR-0019-second-part-textbook-upgrade.md) 和 [当前状态](docs/STATUS.md)。
+main 检查通过后由 GitHub Actions 发布 Pages，PR 仅检查。决策与版本记录见 [ADR-0021](docs/decisions/ADR-0021-third-part-creation-upgrade.md) 和 [当前状态](docs/STATUS.md)。
 
 ## 复用与使用条件
 

@@ -2,9 +2,9 @@
 
 先读 [课程宪法 v0.3.0](../CONSTITUTION.md)。五维目标为“理解—判断—创造—协作—迁移”。各章实践独立起步，允许延续和整合成果；报告与交互展示是综合示范方向。OpenDipper 提供可选材料，DSH 及其他合适工具支持创作。
 
-**实施状态：**course.json 为 0.4.0；宪法、引言、目录、关于课程、前三章与配套实践已通过维护者内容评审，见 [ADR-0018](../docs/decisions/ADR-0018-first-part-content-approved.md)。CH04—06 已完成正文与独立实践升级，当前为 review，见 [第二部分评审](../docs/review/2026-10-30-second-part-textbook.md)；CH07—12 仍标记正文、任务待迁移。内容审定、真人试学与打印验收分别记录；本次不重建 PDF。
+**实施状态：**course.json 为 0.5.0；宪法、引言、目录、关于课程、前三章与配套实践已通过维护者内容评审，见 [ADR-0018](../docs/decisions/ADR-0018-first-part-content-approved.md)。CH04—06 已完成正文与独立实践升级，当前为 review，见 [第二部分评审](../docs/review/2026-10-30-second-part-textbook.md)；CH07—09 已完成正文及独立实践升级，为 0.4.0 review，见[第三部分评审](../docs/review/2026-10-31-third-part-textbook.md)；CH10—12 仍标记正文、任务待迁移。内容审定、真人试学与打印验收分别记录；本次不重建 PDF。
 
-CH04—06 正文及材料包现为 0.5.0，已补齐入门解释和人机合作支持，并按正文字号控制图件尺度，见[本轮阅读评审](../docs/review/2026-10-31-second-part-reading-ux.md)。章目、目标与映射未变，结构元数据保持 0.4.0。
+CH04—06 正文及材料包现为 0.5.0，已补齐入门解释和人机合作支持，并按正文字号控制图件尺度，见[本轮阅读评审](../docs/review/2026-10-31-second-part-reading-ux.md)。第二部分章目、目标与映射未变；本轮第三部分结构与任务迁移使课程元数据更新至 0.5.0。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与独立实践。

@@ -56,11 +56,7 @@
     "accessed": "2026-10-30",
     "use": "仓库、版本管理、文档与协作能力；不引用营销统计或保证教学空间已配置",
     "locations": [
-      "PREFACE",
-      "CH08",
-      "CH08-KIT",
-      "CH09",
-      "CH09-KIT"
+      "PREFACE"
     ]
   },
   {
@@ -158,11 +154,7 @@
       "CH03",
       "CH03-KIT",
       "CH05",
-      "CH05-KIT",
-      "CH08",
-      "CH08-KIT",
-      "CH09",
-      "CH09-KIT"
+      "CH05-KIT"
     ]
   },
   {
@@ -446,19 +438,15 @@
     "use": "模型请求、工具调用与结果、后续步骤、会话历史的职责解释；本轮通过GitHub连接器读取官方原文，非运行记录",
     "locations": [
       "CH06",
-      "CH06-KIT",
-      "CH08",
-      "CH08-KIT",
-      "CH09",
-      "CH09-KIT"
+      "CH06-KIT"
     ]
   },
   {
     "id": "SRC-CH07-USER-NEEDS",
     "title": "GOV.UK · Learning about users and their needs",
     "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
-    "accessed": "2026-10-30",
-    "use": "旧0.2.0使用的补充方法来源，保留历史；本轮产品主线以Neo Lee课件和恢复的观察站蓝图为依据。",
+    "accessed": "2026-10-31",
+    "use": "本轮重读正文，补充需要与方案、观察与假设的区别；课程读者情境不冒充用户研究。",
     "locations": [
       "CH07",
       "CH07-KIT"
@@ -471,10 +459,6 @@
     "accessed": "2026-10-30",
     "use": "重新读取工作区选择、模型配置和工具动作；只证明文档说明，不表示本课程实际运行通过。",
     "locations": [
-      "CH08",
-      "CH08-KIT",
-      "CH09",
-      "CH09-KIT",
       "DEMO",
       "DEMO-DSH",
       "DEMO-GUIDE"
@@ -484,7 +468,7 @@
     "id": "SRC-CH09-USABILITY",
     "title": "GOV.UK · Using moderated usability testing",
     "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
-    "accessed": "2026-10-30",
+    "accessed": "2026-10-31",
     "use": "以任务观察使用、避免提示答案、区分独立完成与协助，以及尊重参与者；本课程的小练习不声称达到完整用户研究覆盖。",
     "locations": [
       "CH09",
@@ -494,10 +478,17 @@
   {
     "id": "SRC-NEO-LEE-PRODUCT",
     "title": "Neo Lee · Skill Set in AI Era（Autumn 2026，用户提供课件）",
-    "url": "../docs/decisions/ADR-0005-observatory-product.md",
-    "accessed": "2026-10-29",
-    "use": "实际读PDF提取文本p24—25、47—53；产品方法重新用于观察站。课件非公开原文，方法与页码见ADR，不复制原图。",
-    "locations": []
+    "url": "https://github.com/X-lab2017/AIOS101-AtomGit/blob/main/docs/research/2026-10-31-third-part-source-map.md",
+    "accessed": "2026-10-31",
+    "use": "本轮读取用户提供 58 页课件的可提取文本，重点第 24—27、39—40、47—53 页；需求、范围、流程、原型与改进用于独立创作任务。未公开 PDF、原图或沿用旧安装命令。",
+    "locations": [
+      "CH07",
+      "CH07-KIT",
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
+    ]
   },
   {
     "id": "SRC-ATOMGIT-WEB",
@@ -965,5 +956,84 @@
       "CH03-KIT"
     ],
     "use": "读取 PR 正文、files、issue comments、reviews；一文件中 16 字节改 2 字节，2025-12-22 合并；评论与正式 review 列表为空，不虚构讨论、测试或教学受益"
+  },
+  {
+    "id": "SRC-P3-AIINFRA",
+    "title": "AIInfra README：项目与概述目录",
+    "url": "https://github.com/Infrasys-AI/AIInfra/blob/b97c0385ba07a62a717d82a0e7aed2927f12fc35/README.md",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH07",
+      "CH07-KIT"
+    ],
+    "use": "实际读取项目定位、大纲与概述目录，形成 A1—A4；不评价耗时、完成率或学习效果。"
+  },
+  {
+    "id": "SRC-P3-AGENT-CH1",
+    "title": "李博杰及贡献者：AI Agent 入门",
+    "url": "https://github.com/bojieli/ai-agent-book/blob/dbc046eb896ac4e39aa19c7774c8bf49583b89a6/book/chapter1.md",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH08",
+      "CH08-KIT"
+    ],
+    "use": "读取组成、Model–Harness 与环境相关内容，并读取同版本 README 介绍；形成 B1—B3，不声称读完全书。"
+  },
+  {
+    "id": "SRC-P3-AGENT-CH2",
+    "title": "李博杰及贡献者：上下文工程",
+    "url": "https://github.com/bojieli/ai-agent-book/blob/dbc046eb896ac4e39aa19c7774c8bf49583b89a6/book/chapter2.md",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH08",
+      "CH08-KIT"
+    ],
+    "use": "读取开头上下文组织与工具返回相关说明，形成 B4 与制作方法，不采用性能排名。"
+  },
+  {
+    "id": "SRC-P3-AIE-README",
+    "title": "Chip Huyen：AI Engineering 配套仓库",
+    "url": "https://github.com/chiphuyen/aie-book/blob/f375e0065ef19e4f411b809a2f9a2d65582db287/README.md",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH09",
+      "CH09-KIT"
+    ],
+    "use": "实际读取资源入口、书籍定位与获取说明；不将公开配套仓库视为完整开源正文。"
+  },
+  {
+    "id": "SRC-P3-AIE-SUMMARY",
+    "title": "Chip Huyen：AI Engineering 章节摘要",
+    "url": "https://github.com/chiphuyen/aie-book/blob/f375e0065ef19e4f411b809a2f9a2d65582db287/chapter-summaries.md",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH07",
+      "CH07-KIT",
+      "CH08",
+      "CH08-KIT",
+      "CH09",
+      "CH09-KIT"
+    ],
+    "use": "采用第 1、3、4、5、10 章摘要及开头使用说明：价值、评价、应用标准、上下文、反馈；未声称阅读全文。"
+  },
+  {
+    "id": "SRC-P3-PROTOTYPES",
+    "title": "GOV.UK：Making prototypes",
+    "url": "https://www.gov.uk/service-manual/design/making-prototypes",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH08"
+    ],
+    "use": "按要检查的问题选择原型形式；不移植生产开发要求。"
+  },
+  {
+    "id": "SRC-P3-COMPLEX-IMAGES",
+    "title": "W3C WAI：Complex Images",
+    "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+    "accessed": "2026-10-31",
+    "locations": [
+      "CH08"
+    ],
+    "use": "重要图中关系同时有文字解释；不展开网页规范实现。"
   }
 ]
