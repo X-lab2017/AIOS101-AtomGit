@@ -37,7 +37,7 @@
 <text x="76" y="791" font-size="23">整理分享 · 共同改进 · 技能与作品集</text>
 <text x="76" y="827" font-size="23" fill="#5146D9">在 AtomGit 持续维护并迁移方法</text>
 <rect x="48" y="896" width="704" height="100" rx="10" fill="#E8E5F5"/>
-<text x="400" y="936" text-anchor="middle" font-size="26" font-weight="700">专业研究报告 ＋ 配套动态展示页面</text>
+<text x="400" y="936" text-anchor="middle" font-size="24" font-weight="700">开源生态专题研究报告 ＋ 开源生态研究展示</text>
 <text x="400" y="974" text-anchor="middle" font-size="23">同一个 AtomGit 项目，持续积累与共同改进</text>
 <text x="400" y="1041" text-anchor="middle" font-size="23" fill="#5146D9">理解 · 判断 · 创造 · 协作 · 迁移</text>
 </g></svg>

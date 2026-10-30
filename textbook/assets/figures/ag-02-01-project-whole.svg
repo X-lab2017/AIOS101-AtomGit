@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="650" viewBox="0 0 760 650" role="img" aria-labelledby="title desc">
+<title id="title">从目的、成果、材料与协作读懂一个项目</title><desc id="desc">目的指导成果，材料支持实现；使用反馈进入协作，评审与修订改善材料。以 OpenDipper 为例，这是阅读框架，不是软件架构。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#66667c"/></marker></defs>
+<rect width="760" height="650" rx="16" fill="#f6f3eb"/>
+<g fill="none" stroke="#66667c" stroke-width="2" marker-end="url(#arrow)">
+<path d="M270 150V192H188V232"/><path d="M412 342H351"/><path d="M185 430V475H270V502"/><path d="M493 502V477H573V430"/>
+</g>
+<g font-family="Noto Sans CJK SC, sans-serif" font-size="17" fill="#5a5a6c"><text x="98" y="190">指导设计</text><text x="366" y="326">支持</text><text x="84" y="473">使用反馈</text><text x="587" y="480">评审修订</text></g>
+<g font-family="Noto Sans CJK SC, sans-serif" fill="#1d2433">
+<rect x="165" y="26" width="430" height="124" rx="10" fill="#eeebfa" stroke="#5146d9"/>
+<text x="187" y="58" font-size="18" font-weight="700" fill="#5146d9">目的 · 为谁解决什么问题</text>
+<text x="187" y="93" font-size="17">帮助开发者与研究者发现对象、组织依据</text><text x="187" y="123" font-size="17">把 AI 与开源生态材料带入研究</text>
+<rect x="32" y="232" width="320" height="198" rx="10" fill="white" stroke="#bdb8ce"/>
+<text x="54" y="266" font-size="18" font-weight="700" fill="#5146d9">成果 · 人们能用到什么</text>
+<text x="54" y="303" font-size="17">观测、雷达与关系探索界面</text><text x="54" y="336" font-size="17">来源整理、研究与导出功能</text><text x="54" y="369" font-size="17">使用者据此形成自己的作品</text><text x="54" y="407" font-size="15" fill="#66667c">读功能，也读当前范围</text>
+<rect x="412" y="232" width="316" height="198" rx="10" fill="white" stroke="#bdb8ce"/>
+<text x="434" y="266" font-size="18" font-weight="700" fill="#5146d9">材料 · 成果依靠什么</text>
+<text x="434" y="303" font-size="17">程序、脚本与数据快照</text><text x="434" y="336" font-size="17">来源、范围与关系说明</text><text x="434" y="369" font-size="17">检查记录与权利说明</text><text x="434" y="407" font-size="15" fill="#66667c">按问题寻找不同职责的材料</text>
+<rect x="165" y="502" width="430" height="120" rx="10" fill="#eaf2ef" stroke="#3f958d"/>
+<text x="187" y="535" font-size="18" font-weight="700" fill="#28736d">协作 · 谁来持续改进</text>
+<text x="187" y="570" font-size="17">使用者提出需要，贡献者提供材料或变更</text><text x="187" y="601" font-size="17">维护者组织评审，按项目规则整合与发布</text>
+</g></svg>

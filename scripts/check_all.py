@@ -109,6 +109,13 @@ require('class="chapter-pdf"' not in ch1_html, 'PDF is delivered separately; rem
 require(not list(out.rglob('*.pdf')), 'PDF files must not be published to Pages')
 exercise_groups=re.findall(r'<h3>(?:基础理解|材料分析|拓展与迁移)</h3>\s*<ol([^>]*)>',ch1_html)
 require(exercise_groups==['',' start="4"',' start="6"'],'Chapter 1 exercise numbers no longer match their six answers')
+ch2=(R/'textbook/chapters/CH02.md').read_text()
+ch2_cards=(R/'practice/ch02/materials/reading-cards.md').read_text()
+for letter in 'ABC':
+    clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch2,re.M)
+    require(len(clauses)==4 and all(x in ch2_cards for x in clauses),'Chapter 2 material card differs: '+letter)
+ch2_images=re.findall(r'^!\[[^\]]+\]\(../assets/figures/([^\)]+)\)',ch2,re.M)
+require(ch2_images==[f['file'] for f in figures if f['id'].startswith('AG-02-')],'Chapter 2 figure order differs')
 kit2_root=R/'practice/ch02'
 with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
     expected={'ch02/'+f.relative_to(kit2_root).as_posix():f.read_bytes() for f in kit2_root.rglob('*') if f.is_file()}

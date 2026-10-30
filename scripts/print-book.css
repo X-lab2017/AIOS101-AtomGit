@@ -45,6 +45,12 @@ blockquote {margin:4mm 0;padding:3mm 5mm 1mm;border-left:.7mm solid #3F958D;back
 blockquote p {font-size:10.3pt;}
 pre {break-inside:avoid;font:9.4pt/1.8 BookSans;white-space:pre-wrap;overflow-wrap:anywhere;padding:4mm 5mm;background:#f5f4f9;border:.2mm solid #dedce8;margin:4mm 0;}
 pre code {font:inherit;}
-.reference-section {break-before:auto;}
+.reference-section {break-before:page;}
 .reference-section p {font-size:9.1pt;line-height:1.6;margin-bottom:3mm;}
 .reference-url {display:block;font:7.8pt/1.5 BookSans;color:#51515e;overflow-wrap:anywhere;word-break:break-all;}
+
+#figure-ag-02-01 img {width:145mm;}
+#figure-ag-02-02 img {width:140mm;}
+
+.example-intro {break-after:avoid;}
+.profile-table th:first-child {width:25%;}

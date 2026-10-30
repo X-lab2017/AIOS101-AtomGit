@@ -1,0 +1,44 @@
+[
+  {
+    "id": "AG-02-01",
+    "file": "ag-02-01-project-reading-map.svg",
+    "title": "按照问题选择项目材料",
+    "alt": "四组真实阅读任务对应 README、模型卡、技术报告、文件目录、运行文档与贡献指南。",
+    "width": 1040,
+    "height": 770,
+    "source": "课程依据 GitHub README、Hugging Face Model Cards 官方文档与本章项目材料绘制。",
+    "credit": "课程原创阅读图",
+    "license": "课程原创图形与标注；原项目内容及第三方标识的权利和使用条件分别保留。",
+    "date": "2026-10-30",
+    "sha256": "e6f08b00e0163223d5de4cb44523d2e7f595723b36ae5189a94bfef210bed280",
+    "bytes": 2438
+  },
+  {
+    "id": "AG-02-02",
+    "file": "ag-02-02-r1-relations.svg",
+    "title": "基础模型与训练样本：R1-Distill-Qwen 的两种联系",
+    "alt": "Qwen2.5-Math-7B 提供基础模型，DeepSeek-R1 提供生成样本，两者进入 R1-Distill-Qwen-7B 的微调过程。",
+    "width": 1040,
+    "height": 630,
+    "source": "依据 DeepSeek-R1 README@0cf78561f1d51c84a21b2190626b21116d5c68bb 的 Model Downloads 与 Distillation 说明绘制；非 OD 数据图。",
+    "credit": "依据项目说明重绘 · 非性能比较",
+    "license": "课程原创图形与标注；原项目内容及第三方标识的权利和使用条件分别保留。",
+    "date": "2026-10-30",
+    "sha256": "010158fb908f5f5c8b4124eccce8642a645d7dd420f125ef35ce3cb09cef5fa3",
+    "bytes": 2116
+  },
+  {
+    "id": "AG-02-03",
+    "file": "ag-02-03-dsh-reading.svg",
+    "title": "从 DSH 中文说明中读出身份、去向与阶段",
+    "alt": "真实 DSH README 的三处原像素局部放大，分别呈现框架身份、文档链接与开发者预览说明。",
+    "width": 1040,
+    "height": 740,
+    "source": "复用已登记截图 docs/review/sources/ch02-dsh-readme-f3803c9.jpg；对应 DSH README.zh.md@f3803c96974ad4a94195fb97e5c637e9c2a3afe3。课程新增 SVG 放大布局与阅读标注。",
+    "credit": "真实页面局部放大 · 课程阅读标注",
+    "license": "课程原创图形与标注；原项目内容及第三方标识的权利和使用条件分别保留。",
+    "date": "2026-10-30",
+    "sha256": "940895cee0abbc992b6edf75f1dd6bf75ce46ccb8de767e51fe3204bc5bf29c3",
+    "bytes": 185336
+  }
+]

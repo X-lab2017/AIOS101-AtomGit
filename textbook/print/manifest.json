@@ -1,29 +1,52 @@
 {
   "CH01": {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "source": "textbook/chapters/CH01.md",
     "file": "AIOS101-AtomGit-CH01.pdf",
-    "pages": 16,
+    "pages": 17,
     "paper": "A4",
-    "bytes": 2804702,
-    "sha256": "8cccb99edc0b89843c1465e273b515db7a6061a4918e959ab6e51aac2e5edc26",
-    "figureMetadataSha256": "8539d670f0dfa5f14ada82666ea5258f35be44467af7702c33876e5d998d020b",
+    "bytes": 2807518,
+    "sha256": "d7c746fa0233ec9beb166fb73b3e162d8ff38529ff548a9bc668f20d7cc702ee",
+    "figureMetadataSha256": "e60ca2d2ef3385e8792ac9557bf0623d26332463918d41a9d89bc75a3925da57",
     "inputs": {
-      "scripts/build_print.py": "ff0b704c2c0a8ecddbf9b0d268386e42cdc039e3a0566dfdf068cbac70958c98",
+      "scripts/build_print.py": "7b36934cdcbe54fa175f801b97619a6bee831cd3bb73130f3e9e4a771f07aca9",
       "scripts/course_markdown.py": "57e63aa6c2f85621da20ac130f02bf70fe0e484d8e6f13717e831acf6aafe119",
-      "scripts/print-book.css": "b765b40311999314a51422b62d37d96fbc75cc1d58208fd4806ce4ca9e5d3f30",
+      "scripts/print-book.css": "13a28b8b007ac1e541014d853db141bab250e95aefb3dd943b7ea165af0eb5f9",
       "site/assets/course/logo-light.svg": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
       "site/assets/logo-light.svg": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
       "textbook/assets/figures/ag-01-01-report-to-brief.webp": "da5cd5133d44b207f7f63d55ac36bb9f78752746f5e6a4c43cbab4ddedcaa1a5",
-      "textbook/assets/figures/ag-01-02-course-map.svg": "6fe38018563471524ea61b59abbf937b5f76636f610c9cb15e9106bd2e284804",
+      "textbook/assets/figures/ag-01-02-course-map.svg": "737661daab3df100a2687350dcfaef8cc525fbf1f31e2fba6e621362c4d1aff4",
       "textbook/assets/figures/ag-01-03-opendipper-r1-reading.svg": "045050e8e2b2503adc5b224cc3abdd63669c66b12aaa53320a8151f24fe4b436",
       "textbook/assets/figures/ag-01-04-editorial-brief.webp": "2cad55896c2e4da478b6aad4202a4a4a1e414ba55813511cbc78dab9109c98e9",
-      "textbook/chapters/CH01.md": "80e9d1b02d1e6f6e20fffe9fb2f006420a789bcffa3e0e0205a4d66ba4545cbc",
+      "textbook/chapters/CH01.md": "244f5319d267fc6e95bd0ca72e215f0fd47f3e9251e2352b5757e8a38ef8d88d",
       "textbook/print/assets/ag-01-01-report-to-brief.jpg": "adc9c6fd208cb08117caf38814115cd6c2401190c7e6a3df294d2552ccdc06be",
       "textbook/print/assets/ag-01-04-editorial-brief.jpg": "4aae869c63e4ac93541fa895fce4074f0033b3c0d87b942a0baf4561992b39fb",
-      "textbook/print/fonts/AIOSBookSans.ttf": "ec760ebde24459b2eb1c8f6a9cb95c276c242316b24d562a427880d2218bf67a",
-      "textbook/print/fonts/AIOSBookSansBold.ttf": "d23cd86959f76290abe5227c19f9858c46ab70641f2edb9d28c424cbb4a5f44f",
-      "textbook/print/fonts/AIOSBookSerif.ttf": "8de057213fb4b21fa7092b642a3984cb982d1565dbbc93e1d22b8b2f0a61ce0a"
+      "textbook/print/fonts/AIOSBookSans.ttf": "a878fdb7ef128757236f2151195240c8d821eb8da9ee517b8d4923c453f2d641",
+      "textbook/print/fonts/AIOSBookSansBold.ttf": "b0afa45f31f8a5107b8f5e43e6ef26ae352ddc75efe28da9ecb49626667ed07a",
+      "textbook/print/fonts/AIOSBookSerif.ttf": "a4c2b95a108d8fa8f8865cae733779862a551a8bf9a836d220a55230f9a747d5"
+    }
+  },
+  "CH02": {
+    "version": "0.4.0",
+    "source": "textbook/chapters/CH02.md",
+    "file": "AIOS101-AtomGit-CH02.pdf",
+    "pages": 15,
+    "paper": "A4",
+    "bytes": 2319689,
+    "sha256": "30897b3f4b11b6a2573e3546de78734536a3f4523b61503fa2fedf9f196a5403",
+    "figureMetadataSha256": "a440e13569bbb622a73f1681a97a4b1fe246fbd2a2f164455cd9cc84ad1f8ae3",
+    "inputs": {
+      "scripts/build_print.py": "7b36934cdcbe54fa175f801b97619a6bee831cd3bb73130f3e9e4a771f07aca9",
+      "scripts/course_markdown.py": "57e63aa6c2f85621da20ac130f02bf70fe0e484d8e6f13717e831acf6aafe119",
+      "scripts/print-book.css": "13a28b8b007ac1e541014d853db141bab250e95aefb3dd943b7ea165af0eb5f9",
+      "site/assets/course/logo-light.svg": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
+      "site/assets/logo-light.svg": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
+      "textbook/assets/figures/ag-02-01-project-whole.svg": "91f46f772226d6db06669c6f8afd4de2d332c49013e3393239f7b8239311c285",
+      "textbook/assets/figures/ag-02-02-issue-pr-workflow.webp": "7f374e6d3310b4bc4ebe3708fb34c6b2c36aeee11011c3565d1977773a77b81c",
+      "textbook/chapters/CH02.md": "05b21fb1dcbcf036d308144514f098029ef9218f1aa5db3d8161f36cee53ce06",
+      "textbook/print/fonts/AIOSBookSans.ttf": "a878fdb7ef128757236f2151195240c8d821eb8da9ee517b8d4923c453f2d641",
+      "textbook/print/fonts/AIOSBookSansBold.ttf": "b0afa45f31f8a5107b8f5e43e6ef26ae352ddc75efe28da9ecb49626667ed07a",
+      "textbook/print/fonts/AIOSBookSerif.ttf": "a4c2b95a108d8fa8f8865cae733779862a551a8bf9a836d220a55230f9a747d5"
     }
   }
 }

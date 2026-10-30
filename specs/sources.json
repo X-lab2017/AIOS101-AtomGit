@@ -3,8 +3,8 @@
     "id": "SRC-AIOS101",
     "title": "AIOS101 复用参照",
     "url": "https://github.com/X-lab2017/AIOS101/tree/9acf393293ed629cdf1ffd1162d1257814aa57e7",
-    "accessed": "2026-10-29",
-    "use": "品牌与阅读/SDD方法，正文不直接移植"
+    "accessed": "2026-10-30",
+    "use": "品牌与阅读方法；CH01 吸收使用—理解—创造、模型/产品/系统及生态材料视角；CH02 原样复用图 2-2。原章节结构重新分配，不直接整章移植。"
   },
   {
     "id": "SRC-DSH",
@@ -151,7 +151,7 @@
     "title": "DSH 中文 README（固定版本）",
     "url": "https://github.com/deepseek-ai/deepseek-harness/blob/f3803c96974ad4a94195fb97e5c637e9c2a3afe3/README.zh.md",
     "accessed": "2026-10-30",
-    "use": "项目身份、文档、预览与讨论入口；图 AG-02-02 的实际截图来源；第五章重新核对原段用于材料对照，非实际运行",
+    "use": "DSH 身份与阶段；旧版 CH02 截图保留历史，本轮 CH02 用贡献规则作短对照。第五章仍使用原段。",
     "locations": [
       "CH02",
       "CH02-KIT",
@@ -874,7 +874,7 @@
     "title": "Hugging Face Model Cards",
     "url": "https://huggingface.co/docs/hub/model-cards",
     "accessed": "2026-10-30",
-    "use": "模型卡与 README、元数据的关系；正文和材料图",
+    "use": "CH02 模型卡与 README、元数据的关系；2026-10-30 重读。",
     "locations": [
       "CH02"
     ]
@@ -895,6 +895,50 @@
     "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/docs/OPEN_GALAXY.md",
     "accessed": "2026-10-30",
     "use": "发现入口、记录关系、推断关系与方向信息；非性能测试",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-OD-README",
+    "title": "OpenDipper 固定项目说明",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/README.md",
+    "accessed": "2026-10-30",
+    "use": "项目目的、五模块、材料职责、演示与执行范围；主案例，不写成实测。",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-OD-CONTRIBUTING",
+    "title": "OpenDipper 固定贡献指南",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/CONTRIBUTING.md",
+    "accessed": "2026-10-30",
+    "use": "非代码参与、领域需要、来源整理、审核与维护者职责。",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-OD-RIGHTS",
+    "title": "OpenDipper 固定权利说明",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/docs/RIGHTS.md",
+    "accessed": "2026-10-30",
+    "use": "应用许可尚未确定，材料权利分别记录；不由公开推断统一授权。",
+    "locations": [
+      "CH02",
+      "CH02-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH02-OD-ISSUE19",
+    "title": "OpenDipper Issue #19：共建首批 AI 来源与情报样刊材料",
+    "url": "https://github.com/X-lab2017/open-dipper/issues/19",
+    "accessed": "2026-10-30",
+    "use": "真实任务邀请：一个主题、3—5 原始来源、日期与价值；当时 open、评论为空。不是完成案例。",
     "locations": [
       "CH02",
       "CH02-KIT"

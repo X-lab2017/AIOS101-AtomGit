@@ -23,10 +23,10 @@
 
 [序言 0.4.0](textbook/preface.md)从国家发展方向与全球 AI 普惠引出学习必要性，再走进 OpenDipper 与《2026 全球开源发展报告》的真实实践，连接研究报告、动态页面与 AtomGit 综合项目。三幅手绘图按阅读顺序统一编号。见[本轮图文记录](docs/review/2026-10-30-preface-policy.md)。
 
-第一章已更新为 0.6.0 教材图文与打印稿；第二章为 0.3.0 教材稿，第三章为 0.2.2 衔接修订版，完整任务继续迁移。前三章此前完成的[联合编辑记录](docs/review/2026-10-29-ch01-03.md)保留作为历史依据。
+第一章与第二章已联动精修为 0.7.0 / 0.4.0 图文教材与打印稿，第三章为 0.2.2 衔接修订版，完整任务继续迁移。前三章此前完成的[联合编辑记录](docs/review/2026-10-29-ch01-03.md)保留作为历史依据。
 
 - [第一章：初识 AI 开源](textbook/chapters/CH01.md)——四幅图、[八文件练习包](practice/ch01/README.md)；16 页 A4 打印书稿另行交付，不纳入 GitHub 或 Pages，从真实材料与 OD 观察形成一页研究简报。
-- [第二章：打开一个项目](textbook/chapters/CH02.md)——三幅图、[七文件观察包](practice/ch02/README.md)，从 R1 模型关系与 DSH 贡献材料建立项目档案。
+- [第二章：打开一个项目](textbook/chapters/CH02.md)——两幅图、[七文件材料包](practice/ch02/README.md)，从 OpenDipper 项目全貌、材料与协作建立档案。
 - [第三章：开放的力量](textbook/chapters/CH03.md)——三幅图、[八文件复用包](practice/ch03/README.md)，为一项材料补齐使用说明。
 
 - [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
@@ -65,3 +65,4 @@ main 检查通过后由 GitHub Actions 发布 Pages。PR 仅检查。详见 [作
 ## 使用条件
 
 本仓库保留源资产与第三方许可，课程及代码的统一对外许可待维护者确定，不自动新增授权。见 [素材来源](site/assets/NOTICE.md) 与 [参与指南](CONTRIBUTING.md)。
+

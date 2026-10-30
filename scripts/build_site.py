@@ -172,7 +172,7 @@ def main():
     kit='<div class="practice-actions"><a class="button primary" href="../../downloads/ch01-starter.zip" download>下载第一章材料包 ↓</a><a class="text-link" href="../../chapters/01/">返回第一章 →</a></div>'
     reader('practice/ch01/','CH01-KIT','practice/ch01/README.md','第一章材料包','做一页有依据、有自己判断的 R1 研究简报',active='practice',extra=kit)
     kit2='<div class="practice-actions"><a class="button primary" href="../../downloads/ch02-observation-kit.zip" download>下载第二章材料包 ↓</a><a class="text-link" href="../../chapters/02/">返回第二章 →</a></div>'
-    reader('practice/ch02/','CH02-KIT','practice/ch02/README.md','第二章材料包','为 R1 与 DSH 建立有依据的项目档案',active='practice',extra=kit2)
+    reader('practice/ch02/','CH02-KIT','practice/ch02/README.md','第二章材料包','从 OpenDipper 全貌到材料选择与协作',active='practice',extra=kit2)
     kit3='<div class="practice-actions"><a class="button primary" href="../../downloads/ch03-reuse-kit.zip" download>下载第三章材料包 ↓</a><a class="text-link" href="../../chapters/03/">返回第三章 →</a></div>'
     reader('practice/ch03/','CH03-KIT','practice/ch03/README.md','第三章材料包','为观察站补齐来源、使用条件与署名说明',active='practice',extra=kit3)
     kit4='<div class="practice-actions"><a class="button primary" href="../../downloads/ch04-learning-kit.zip" download>下载第四章材料包 ↓</a><a class="text-link" href="../../chapters/04/">返回第四章 →</a></div>'
