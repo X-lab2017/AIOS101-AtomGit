@@ -1,6 +1,6 @@
 {
   "id": "AIOS101-ATOMGIT",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "date": "2026-10-30",
   "title": "AI 开源通识",
   "edition": "AtomGit 版",
@@ -78,7 +78,7 @@
       "source": "textbook/chapters/CH01.md",
       "spec": "specs/chapters/CH01.md",
       "milestone": "M01",
-      "designStatus": "review"
+      "designStatus": "published"
     },
     {
       "id": "CH02",
@@ -113,7 +113,7 @@
       "source": "textbook/chapters/CH02.md",
       "spec": "specs/chapters/CH02.md",
       "milestone": "M02",
-      "designStatus": "review"
+      "designStatus": "published"
     },
     {
       "id": "CH03",
@@ -150,7 +150,7 @@
       "source": "textbook/chapters/CH03.md",
       "spec": "specs/chapters/CH03.md",
       "milestone": "M03",
-      "designStatus": "review"
+      "designStatus": "published"
     },
     {
       "id": "CH04",
@@ -453,7 +453,7 @@
       "CH11",
       "CH12"
     ],
-    "note": "宪法 0.3.0、引言 0.6.0、目录 0.2.0 与前三章已按独立实践设计更新，仍待维护者内容评审；后九章仅标题对齐，正文与任务待迁移。PDF 暂缓，工具流程和真人试学另行验证。"
+    "note": "宪法 0.3.0、引言 0.6.0、目录 0.2.0、关于课程及前三章与配套实践已于 2026-10-30 通过维护者内容评审。后九章仅标题对齐，正文与任务待迁移；PDF 尚未重建，工具流程和真人试学另行验证。"
   },
   "practiceContext": {
     "name": "开源生态中的研究与创作",
@@ -471,9 +471,27 @@
   },
   "outlineReview": {
     "version": "0.2.0",
-    "status": "review",
+    "status": "published",
     "source": "textbook/contents-review.md",
     "spec": "specs/outline-review-spec.md",
-    "note": "维护者已认可标题与独立实践方向；本轮正文仍待评审，前三章逐项落实，后九章继续修订。"
+    "note": "维护者已通过本轮目录、宪法、引言和前三章内容评审；后九章按已审定目录继续修订，不据此视为正文已完成。"
+  },
+  "contentApproval": {
+    "date": "2026-10-30",
+    "timezone": "Asia/Shanghai",
+    "status": "approved",
+    "reviewedCommit": "f71a37c1e26328e5900c625e093dd76e2e2b3970",
+    "scope": [
+      "CONSTITUTION",
+      "PREFACE",
+      "OUTLINE",
+      "ABOUT",
+      "CH01",
+      "CH02",
+      "CH03",
+      "PRACTICE-CH01-03"
+    ],
+    "decision": "docs/decisions/ADR-0018-first-part-content-approved.md",
+    "note": "只登记内容审定；不扩展为后九章正文、真人试学或新版 PDF 排版验收。"
   }
 }

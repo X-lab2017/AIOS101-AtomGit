@@ -1,8 +1,8 @@
 # 全书目录与章节实施规格
 
-> 版本：0.2.0 · 状态：review · 依据：CONSTITUTION.md v0.3.0
+> 版本：0.2.0 · 状态：published · 依据：CONSTITUTION.md v0.3.0
 
-维护者已采纳[章名与独立实践设计](../docs/review/2026-10-30-titles-and-practice.md)，要求按宪法、引言、目录、前三章顺序落实。方向与标题获得认可，更新稿仍需内容评审，不自动成为定稿。
+维护者已采纳[章名与独立实践设计](../docs/review/2026-10-30-titles-and-practice.md)，要求按宪法、引言、目录、前三章顺序落实。本轮目录与配套内容已获维护者评审通过，审定范围见 [ADR-0018](../docs/decisions/ADR-0018-first-part-content-approved.md)。
 
 [全书目录](../textbook/contents-review.md)覆盖四篇十二章；前三章列到三级标题并与正文逐项对应，后九章列到二级标题作为修订目标。course.json 同步十二章正式名称和迁移状态；后九章仅标题对齐，既有正文与任务不据此视为完成。
 
@@ -24,4 +24,4 @@
 4. 五维目标、矩阵与阶梯是否体现能力递进，允许作品和工具多样？
 5. 工程发布、编写者自审、维护者评审和真人试学是否分别记录？
 
-本轮 PDF 暂缓；定稿后统一重排。实施证据见 [ADR-0017](../docs/decisions/ADR-0017-independent-practice-implementation.md)。
+本次登记内容审定，PDF 仍未重建，后续按已审定内容统一重排。实施证据见 [ADR-0017](../docs/decisions/ADR-0017-independent-practice-implementation.md)。

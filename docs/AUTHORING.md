@@ -2,7 +2,7 @@
 
 ## 1. 找到章节
 
-维护者已采纳[章名与独立实践设计](review/2026-10-30-titles-and-practice.md)，宪法、引言、目录与前三章已按此更新，待内容评审。后九章目前仅标题对齐，正文与实践继续逐章优化；见 [ADR-0017](decisions/ADR-0017-independent-practice-implementation.md)。开源创作与 AI 创作贯穿，五维目标按阶段深化。
+维护者已采纳[章名与独立实践设计](review/2026-10-30-titles-and-practice.md)，宪法、引言、目录与前三章已按此更新并全部通过维护者评审，见 [ADR-0018](decisions/ADR-0018-first-part-content-approved.md)。后九章目前仅标题对齐，正文与实践继续逐章优化；见 [ADR-0017](decisions/ADR-0017-independent-practice-implementation.md)。开源创作与 AI 创作贯穿，五维目标按阶段深化。
 
 十二章正文在 textbook/chapters/CH01.md 至 CH12.md。目录、名称和任务正本在 specs/course.json；对应教学规格在 specs/chapters/。先阅读目标、前置知识与边界，再开始写正文。
 
@@ -37,4 +37,4 @@ python scripts/check_all.py
 
 按“宪法→引言→目录→CH01→CH02→CH03”完成本轮对齐，逐项记录自审与优化。后续以各章特点设计独立材料、任务和反馈，允许延续作品；完成一章再评审一章，不把知识递进等同于同一作品的强制延续。
 
-**本轮按维护者要求仅更新仓库与 Pages，PDF 暂不更新，待评审后定稿。**旧 PDF 与摘要保持历史身份，不声称与新正文一致。通常已提供打印稿的章节在确定交付后，应随正文、图件及排版输入重新生成 PDF，并逐页检查；交付前运行 `python scripts/print_manifest.py` 检查新鲜度。PDF 只单独交付，不提交 GitHub；普通网站构建不依赖 PDF。见 [打印构建说明](../textbook/print/README.md) 和 [打印规范](../specs/print-spec.md)。
+**本轮内容已审定，本次只登记状态并同步仓库与 Pages，PDF 仍未重建。**旧 PDF 与摘要保持历史身份，不声称与新正文一致。通常已提供打印稿的章节在确定交付后，应随正文、图件及排版输入重新生成 PDF，并逐页检查；交付前运行 `python scripts/print_manifest.py` 检查新鲜度。PDF 只单独交付，不提交 GitHub；普通网站构建不依赖 PDF。见 [打印构建说明](../textbook/print/README.md) 和 [打印规范](../specs/print-spec.md)。

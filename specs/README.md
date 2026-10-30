@@ -2,11 +2,11 @@
 
 先读 [课程宪法 v0.3.0](../CONSTITUTION.md)。五维目标为“理解—判断—创造—协作—迁移”。各章实践独立起步，允许延续和整合成果；报告与交互展示是综合示范方向。OpenDipper 提供可选材料，DSH 及其他合适工具支持创作。
 
-**实施状态：**course.json 为 0.3.0；引言与关于对齐宪法；目录已采纳新章名，本轮完整更新前三章，后九章仅更名且标记正文、任务待迁移。已上线、内容审定和真人试学分别记录；本轮不更新 PDF。依据见 [ADR-0017](../docs/decisions/ADR-0017-independent-practice-implementation.md)。
+**实施状态：**course.json 为 0.3.1；宪法、引言、目录、关于课程、前三章与配套实践已通过维护者内容评审，见 [ADR-0018](../docs/decisions/ADR-0018-first-part-content-approved.md)。后九章仅更名且标记正文、任务待迁移。内容审定、真人试学与打印验收分别记录；本次不重建 PDF。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与独立实践。
-- [目录评审规格](outline-review-spec.md) · [全书目录提案](../textbook/contents-review.md)：四篇十二章与前三章三级标题，按已认可方向实施。
+- [目录评审规格](outline-review-spec.md) · [全书目录](../textbook/contents-review.md)：四篇十二章与前三章三级标题，已通过本轮内容评审。
 - [章名与独立实践的新一轮评审](../docs/review/2026-10-30-titles-and-practice.md)：标题建议、各章实践、工具分工与作品库；本轮据此实施，见 ADR-0017。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
 - [章节实践规格](practice-spec.md)：独立任务、可选综合创作、案例和作品库设计。

@@ -1,6 +1,6 @@
 # 课程总规格
 
-> ID：COURSE-ATOMGIT · 结构版本：0.3.0 · 上游：CONSTITUTION.md v0.3.0 · 状态：逐章实施与评审
+> ID：COURSE-ATOMGIT · 结构版本：0.3.1 · 上游：CONSTITUTION.md v0.3.0 · 状态：前三章已审定，后九章逐章迁移
 
 ## 目标与实施状态
 
