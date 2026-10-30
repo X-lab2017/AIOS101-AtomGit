@@ -1,0 +1,40 @@
+{
+  "version": "0.2.3",
+  "file": "AIOS101-AtomGit-Part1.pdf",
+  "pages": 48,
+  "bytes": 10020840,
+  "sha256": "3512bbaf61dcd5f5277077c5de035a2efa6637512cb658b06f9d5db3dd32fbd0",
+  "paper": "A4",
+  "chapters": {
+    "CH01": "0.7.1",
+    "CH02": "0.4.1",
+    "CH03": "0.3.0"
+  },
+  "inputs": {
+    "scripts/build_print.py": "f1b5b0679d88c6c7a693334472b793ca912b8105e5a91b7628e74829ee54630d",
+    "scripts/course_markdown.py": "57e63aa6c2f85621da20ac130f02bf70fe0e484d8e6f13717e831acf6aafe119",
+    "scripts/print-book.css": "54f44708502b16423922c501c8ba717f67025639d27771de8a7dac7bcde6aefb",
+    "site/assets/course/logo-light.svg": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
+    "site/assets/logo-light.svg": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
+    "specs/course.json": "dca50d3026c8835c57b5adee45bc7e5e031c147bc0f5db7101e8d1e6dadd7d40",
+    "textbook/assets/figures/ag-01-01-report-to-brief.webp": "da5cd5133d44b207f7f63d55ac36bb9f78752746f5e6a4c43cbab4ddedcaa1a5",
+    "textbook/assets/figures/ag-01-02-course-map.svg": "737661daab3df100a2687350dcfaef8cc525fbf1f31e2fba6e621362c4d1aff4",
+    "textbook/assets/figures/ag-01-03-opendipper-r1-reading.svg": "045050e8e2b2503adc5b224cc3abdd63669c66b12aaa53320a8151f24fe4b436",
+    "textbook/assets/figures/ag-01-04-editorial-brief.webp": "2cad55896c2e4da478b6aad4202a4a4a1e414ba55813511cbc78dab9109c98e9",
+    "textbook/assets/figures/ag-02-01-project-whole.svg": "91f46f772226d6db06669c6f8afd4de2d332c49013e3393239f7b8239311c285",
+    "textbook/assets/figures/ag-02-02-issue-pr-workflow.webp": "7f374e6d3310b4bc4ebe3708fb34c6b2c36aeee11011c3565d1977773a77b81c",
+    "textbook/assets/figures/ag-03-01-open-source-history.webp": "c29780c70ee721b6c7dff55b5c1d952d60b6d69bcb44e3dd13415de3f21064ea",
+    "textbook/assets/figures/ag-03-02-materials-and-conditions.svg": "f7de08888ad7741e78edbf4a2dc4b3aaf50b0d5cd1b386d473a48c7faad391a5",
+    "textbook/assets/figures/ag-03-03-reuse-and-collaboration.svg": "f46bc2824bbceaa59151814345e406dbc8b7a89c436407bfb8ac25892885910b",
+    "textbook/assets/figures/ag-03-04-improve-with-a-reader.webp": "a125a8ea349546cfa9a7d3e471dd5d32120a4f06ee8e218b4f1d325e51be4260",
+    "textbook/chapters/CH01.md": "efa3ac5d1b975ee35f0541516d93e60f85f4fb84a5a275a086aace583897ca9e",
+    "textbook/chapters/CH02.md": "0a79743f716ed0f32853b25db1ca0e5c195062e6fe04f22a371223da3a4a965d",
+    "textbook/chapters/CH03.md": "0839d305e2a1d9eafd64505fbdbc70f75d1f626481dbca32f55ed2449ee357a2",
+    "textbook/print/assets/ag-01-01-report-to-brief.jpg": "adc9c6fd208cb08117caf38814115cd6c2401190c7e6a3df294d2552ccdc06be",
+    "textbook/print/assets/ag-01-04-editorial-brief.jpg": "4aae869c63e4ac93541fa895fce4074f0033b3c0d87b942a0baf4561992b39fb",
+    "textbook/print/fonts/AIOSBookSans.ttf": "defc9aec4a9b13c02ad86b4306492c7ed2d13d618f6d9304659d5566de056c31",
+    "textbook/print/fonts/AIOSBookSansBold.ttf": "02355bdc97cabcdc4409fe18bdc8a42288f68e39156de5a70bbfbcf5e3954ad7",
+    "textbook/print/fonts/AIOSBookSerif.ttf": "b030f561da6b1279ef479f8f1e2bc17910e052ae26f13cf16cd36fcd2d3c122a",
+    "textbook/print/manifest.json": "cf75049d66ce9e8922e56db71f1f88f2fe4d44cf49d74d256fc0638736ed942f"
+  }
+}

@@ -54,3 +54,13 @@ pre code {font:inherit;}
 
 .example-intro {break-after:avoid;}
 .profile-table th:first-child {width:25%;}
+
+#figure-ag-03-01 img {width:154mm;}
+#figure-ag-03-02 img {width:145mm;}
+#figure-ag-03-03 img {width:145mm;}
+#figure-ag-03-04 img {width:145mm;}
+
+.exercise-section {font-size:10.3pt;line-height:1.65;}
+.exercise-section p {margin-bottom:2.3mm;}
+.exercise-section li {margin-bottom:1mm;}
+.exercise-section h3 {margin-top:4mm;margin-bottom:2mm;}

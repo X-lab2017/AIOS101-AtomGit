@@ -13,9 +13,11 @@ def main():
     parser = argparse.ArgumentParser()
     for name in ('serif','sans','bold'): parser.add_argument('--'+name, type=Path, required=True)
     args = parser.parse_args()
-    paths = [ROOT/'textbook/chapters/CH01.md', ROOT/'textbook/chapters/CH02.md', ROOT/'scripts/build_print.py', ROOT/'scripts/print-book.css', ROOT/'textbook/assets/figures/manifest.json']
+    paths = [ROOT/'textbook/chapters'/f'CH{i:02d}.md' for i in (1,2,3)]
+    paths += [ROOT/'scripts/build_print.py', ROOT/'scripts/print-book.css', ROOT/'textbook/assets/figures/manifest.json']
     paths += list((ROOT/'textbook/assets/figures').glob('ag-01-*.svg'))
     paths += list((ROOT/'textbook/assets/figures').glob('ag-02-*.svg'))
+    paths += list((ROOT/'textbook/assets/figures').glob('ag-03-*.svg'))
     (ROOT/'textbook/print/fonts').mkdir(parents=True,exist_ok=True)
     text = ''.join(p.read_text() for p in paths)+''.join(chr(i) for i in range(32,127))+'•'
     notices = []

@@ -4,7 +4,7 @@
     "title": "AIOS101 复用参照",
     "url": "https://github.com/X-lab2017/AIOS101/tree/9acf393293ed629cdf1ffd1162d1257814aa57e7",
     "accessed": "2026-10-30",
-    "use": "品牌与阅读方法；CH01 吸收使用—理解—创造、模型/产品/系统及生态材料视角；CH02 原样复用图 2-2。原章节结构重新分配，不直接整章移植。"
+    "use": "品牌与阅读方法；CH01 吸收使用—理解—创造、模型/产品/系统及生态材料视角；CH02 原样复用图 2-2。原章节结构重新分配，不直接整章移植。；CH03 参考原版开放—复用—协作分析框架及 AIInfra 案例，重新核对原始 PR。"
   },
   {
     "id": "SRC-DSH",
@@ -943,5 +943,27 @@
       "CH02",
       "CH02-KIT"
     ]
+  },
+  {
+    "id": "SRC-CH03-OSGUIDES",
+    "title": "Open Source Guides：贡献指南、版权与许可",
+    "url": "https://github.com/github/opensource.guide/tree/e7ac98e94600c5eea834f9a026c000d26b28df24",
+    "accessed": "2026-10-30",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ],
+    "use": "读取 README、notices、完整 LICENSE 与指南相关部分；CC BY 4.0 内容改写主例，另行保留署名与免责；不复用第三方人物引语或头像"
+  },
+  {
+    "id": "SRC-CH03-AIINFRA-364",
+    "title": "AIInfra PR #364：量化文档字节数修订",
+    "url": "https://github.com/Infrasys-AI/AIInfra/pull/364",
+    "accessed": "2026-10-30",
+    "locations": [
+      "CH03",
+      "CH03-KIT"
+    ],
+    "use": "读取 PR 正文、files、issue comments、reviews；一文件中 16 字节改 2 字节，2025-12-22 合并；评论与正式 review 列表为空，不虚构讨论、测试或教学受益"
   }
 ]

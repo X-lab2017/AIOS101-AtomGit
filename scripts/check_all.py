@@ -124,8 +124,16 @@ with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
 kit3_root=R/'practice/ch03'
 with zipfile.ZipFile(out/'downloads/ch03-reuse-kit.zip') as z:
     expected={'ch03/'+f.relative_to(kit3_root).as_posix():f.read_bytes() for f in kit3_root.rglob('*') if f.is_file()}
-    require(len(expected)==8 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 3 archive is invalid')
+    require(set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 3 archive is invalid')
     require(all(z.read(name)==data for name,data in expected.items()),'Chapter 3 archive content differs')
+ch3=(R/'textbook/chapters/CH03.md').read_text()
+ch3_cards=(kit3_root/'materials/reading-cards.md').read_text()
+for letter in 'AB':
+    clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch3,re.M)
+    require(len(clauses)==4 and all(x in ch3_cards for x in clauses),'Chapter 3 material card differs: '+letter)
+ch3_images=re.findall(r'^!\[[^\]]+\]\(../assets/figures/([^\)]+)\)',ch3,re.M)
+require(ch3_images==[f['file'] for f in figures if f['id'].startswith('AG-03-')],'Chapter 3 figure order differs')
+require((kit3_root/'licenses/CC-BY-4.0.txt').is_file(),'Chapter 3 source license missing')
 kit4_root=R/'practice/ch04'
 with zipfile.ZipFile(out/'downloads/ch04-learning-kit.zip') as z:
     expected={'ch04/'+f.relative_to(kit4_root).as_posix():f.read_bytes() for f in kit4_root.rglob('*') if f.is_file()}

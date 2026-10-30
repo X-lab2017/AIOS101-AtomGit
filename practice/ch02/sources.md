@@ -1,6 +1,6 @@
 # 第二章来源导航
 
-本包对应 CH02 0.4.0。材料查阅日期：2026-10-30。OD 文档固定于 465c4737a36c4c5e67e39f971b3e09d28d1e84f5；Issue #19 当时为开放任务，无已完成贡献的含义。项目当前状态可能变化，实际参与前重读当前指南。
+本包对应 CH02 0.4.1。材料查阅日期：2026-10-30。OD 文档固定于 465c4737a36c4c5e67e39f971b3e09d28d1e84f5；Issue #19 当时为开放任务，无已完成贡献的含义。项目当前状态可能变化，实际参与前重读当前指南。
 
 
 [1] X-lab2017. OpenDipper README：Overview、First exploration、Technical view 与 Documentation。[项目说明](https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/README.md)

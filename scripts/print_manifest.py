@@ -29,7 +29,24 @@ def checked_prints(root):
     return manifest
 
 
+def checked_part(root, chapters):
+    path = root/'textbook/print/part-manifest.json'
+    if not path.exists(): return None
+    record = json.loads(path.read_text())
+    assert record['version'] == json.loads((root/'specs/course.json').read_text())['version'], 'Part structure version differs'
+    for key, version in record['chapters'].items():
+        assert chapters[key]['version']==version, 'Part chapter version differs: '+key
+    data = (root/'textbook/print'/record['file']).read_bytes()
+    assert len(data)==record['bytes'] and hashlib.sha256(data).hexdigest()==record['sha256'], 'Part PDF differs'
+    for relative, expected in record['inputs'].items():
+        target=(root/relative).resolve()
+        assert target.is_relative_to(root.resolve()), 'Invalid part input'
+        assert hashlib.sha256(target.read_bytes()).hexdigest()==expected, 'Part is stale: '+relative
+    return record
+
+
 if __name__ == "__main__":
     from pathlib import Path
     records = checked_prints(Path(__file__).resolve().parents[1])
-    print("PASS: " + ", ".join(records) + " print sources and PDF digests")
+    part = checked_part(Path(__file__).resolve().parents[1], records)
+    print("PASS: " + ", ".join(records) + (", PART1" if part else "") + " print sources and PDF digests")

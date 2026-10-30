@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build both A4 chapters from canonical Markdown, figures and one print style."""
+"""Build first-part A4 chapters from canonical Markdown and one print style."""
 import base64
 import hashlib
 import html
@@ -32,7 +32,7 @@ def build(number):
                 'assets/ag-01-01-report-to-brief.jpg', 'assets/ag-01-04-editorial-brief.jpg']
     missing = [name for name in required if not (PRINT/name).is_file()]
     if missing:
-        raise FileNotFoundError('Extract AIOS101-CH01-print-resources.zip at the repository root; missing: ' + ', '.join(missing))
+        raise FileNotFoundError('Extract AIOS101-Part1-print-resources.zip at the repository root; missing: ' + ', '.join(missing))
     figures = json.loads((ROOT/'textbook/assets/figures/manifest.json').read_text())
     chapter_figures = [f for f in figures if f['id'].startswith(f'AG-{number:02d}-')]
     assert chapter_figures
@@ -45,8 +45,9 @@ def build(number):
         if title == '学习目标与阅读准备': css = 'learning'
         if title.startswith(f'{number}.1 '): css += ' first'
         if title == '参考文献': css += ' reference-section'
+        if title == '思考与练习': css += ' exercise-section'
         heading = '' if section['id'] == 'opening' else '<h2>'+html.escape(title)+'</h2>'
-        parts.append('<section class="'+css+'">'+heading+section['html']+'</section>')
+        parts.append('<section id="'+key.lower()+'-'+section['id']+'" class="'+css+'">'+heading+section['html']+'</section>')
     body = BeautifulSoup(''.join(parts), 'html.parser')
     for figure in body.select('figure'):
         fid = figure['id'].removeprefix('figure-').upper()
@@ -98,9 +99,13 @@ def build(number):
                     paragraph.append(span)
                     shown.add(visible_url)
                 link.decompose()
-        # Do not leave a separator where the second source link was removed.
+        # Removed inline links can leave adjacent punctuation text nodes.
+        paragraph.smooth()
         for item in list(paragraph.children):
-            if isinstance(item, str) and item.strip() == '；': item.extract()
+            if isinstance(item, str):
+                cleaned = re.sub(r'([。；])(?:\s*[。；])+', '。', str(item))
+                if cleaned.strip() == '；': item.extract()
+                else: item.replace_with(cleaned)
     css_path = ROOT/'scripts/print-book.css'
     title = html.escape(unit['title'].split('：', 1)[0])
     doc = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>第 {number} 章 · {title} — AI 开源通识（AtomGit 版）</title><meta name="author" content="X-lab"><meta name="description" content="章节图文书稿，含完整正文、图件、练习与反馈。"></head><body>
@@ -142,14 +147,75 @@ def build(number):
         'inputs':{p:digest(ROOT/p) for p in sorted(set(inputs))}}
     (PRINT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in manifest[key].items() if k!='inputs'},ensure_ascii=False))
+    return doc
+
+
+def build_part(documents):
+    """Render a genuine book unit: shared text, linked contents and continuous pages."""
+    course = json.loads((ROOT/'specs/course.json').read_text())
+    chapters = course['chapters'][:3]
+    toc, articles, page_styles = [], [], []
+    for number, document in enumerate(documents, 1):
+        key = f'CH{number:02d}'
+        soup = BeautifulSoup(document, 'html.parser')
+        title = chapters[number-1]['title']
+        soup.body.h1['id'] = 'part-'+key.lower()
+        toc.append(f'<h2><a href="#part-{key.lower()}">第 {number} 章　{html.escape(title)}</a></h2><ol>')
+        for section in soup.body.select('section.main-section'):
+            if section.h2 and re.match(r'^\d+\.\d+ ', section.h2.get_text()):
+                toc.append('<li><a href="#'+section['id']+'">'+html.escape(section.h2.get_text())+'</a></li>')
+        toc.append('</ol>')
+        fragments = []
+        in_main = False
+        for node in list(soup.body.children):
+            if getattr(node, 'name', None) == 'section' and 'main-section' in node.get('class', []):
+                in_main = True
+            if getattr(node, 'name', None):
+                node['style'] = 'page:'+key.lower()+('' if in_main else '-open')
+                if 'chapter-number' in node.get('class', []):
+                    node['style'] += ';break-before:page'
+            fragments.append(str(node))
+        # Keep the same block nesting as the single chapters. Extra wrappers
+        # change collapsed top margins and can create almost-empty pages.
+        articles.append(''.join(fragments))
+        page_styles.append('@page '+key.lower()+' {@top-right {content:"第 '+str(number)+' 章  /  '+title+'";}}')
+        page_styles.append('@page '+key.lower()+'-open {@top-left {content:none;} @top-right {content:none;}}')
+    contents = '<div class="part-toc"><div class="chapter-number">AI 开源通识（AtomGit 版）</div><h1>第一部分　认识开源</h1><p>从一页研究简报开始，走进完整项目，理解开放、复用与共同创造。三章沿用同一份作品，在材料阅读、判断与修订中逐步形成自己的研究方法。</p><div class="toc-heading">目次</div>'+''.join(toc)+'</div>'
+    document = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>第一部分 认识开源 — AI 开源通识（AtomGit 版）</title><meta name="author" content="X-lab"></head><body>'+contents+''.join(articles)+'</body></html>'
+    style_path = ROOT/'scripts/print-book.css'
+    extra = """
+    .part-toc {page:contents;break-after:page;}
+    @page contents {@top-left {content:none;} @top-right {content:none;}}
+    .part-toc h1 {font-size:24pt;margin-bottom:6mm;}
+    .part-toc p {font-size:10.3pt;margin-bottom:6mm;}
+    .toc-heading {font:700 15pt BookSans;margin:5mm 0 3mm;}
+    .part-toc h2 {font-size:12pt;border:0;margin:4mm 0 1.5mm;padding:0;}
+    .part-toc ol {list-style:none;padding:0;margin:0 0 2mm;}
+    .part-toc li {font:10pt/1.65 BookSans;margin:0;}
+    .part-toc a {color:#1d2433;}
+    .part-toc a::after {content:leader('.') target-counter(attr(href),page);}
+    h2,h3 {margin-break:discard;}
+    """
+    font_config = FontConfiguration()
+    rendered = HTML(string=document,base_url=str(ROOT)).render(stylesheets=[CSS(string=style_path.read_text()+extra+''.join(page_styles),base_url=style_path.as_uri(),font_config=font_config)],font_config=font_config)
+    output = PRINT/'AIOS101-AtomGit-Part1.pdf'
+    rendered.write_pdf(output,optimize_images=True,jpeg_quality=95,pdf_identifier=('AIOS101-AtomGit-Part1-'+course['version']).encode())
+    (ROOT/'tmp/pdfs/PART1.html').write_text(document)
+    chapters_manifest = json.loads((PRINT/'manifest.json').read_text())
+    inputs = {'specs/course.json','textbook/print/manifest.json'}
+    for key in ['CH01','CH02','CH03']: inputs.update(chapters_manifest[key]['inputs'])
+    record = {'version':course['version'],'file':output.name,'pages':len(rendered.pages),'bytes':output.stat().st_size,'sha256':digest(output),'paper':'A4','chapters':{key:chapters_manifest[key]['version'] for key in ['CH01','CH02','CH03']},'inputs':{p:digest(ROOT/p) for p in sorted(inputs)}}
+    (PRINT/'part-manifest.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({k:v for k,v in record.items() if k!='inputs'},ensure_ascii=False))
 
 
 def main():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--chapter', type=int, choices=(1,2))
+    parser.add_argument('--chapter', type=int, choices=(1,2,3))
     args = parser.parse_args()
-    for number in ([args.chapter] if args.chapter else [1,2]): build(number)
+    documents = [build(number) for number in ([args.chapter] if args.chapter else [1,2,3])]
+    if not args.chapter: build_part(documents)
 
 
 if __name__ == '__main__': main()

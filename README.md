@@ -15,19 +15,21 @@
 - [在线评审站](https://www.x-lab.info/AIOS101-AtomGit/)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
 - [作者指南](docs/AUTHORING.md) · [当前状态](docs/STATUS.md) · [AI 协作者指南](AGENTS.md)
-- [观察站实践](practice/README.md) · [示范结构](practice/demo/README.md) · [实践模板](practice/template/README.md)
+- [实践与迁移说明](practice/README.md) · [示范结构](practice/demo/README.md) · [实践模板](practice/template/README.md)
 
 ## 已上线内容与迁移范围
 
-宪法与课程结构版本为 0.2.1；各章按新主线逐步迁移。现有四部分十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
+宪法版本为 0.2.1，课程结构为 0.2.3；各章按新主线逐步迁移。现有四部分十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
 
 [序言 0.4.0](textbook/preface.md)从国家发展方向与全球 AI 普惠引出学习必要性，再走进 OpenDipper 与《2026 全球开源发展报告》的真实实践，连接研究报告、动态页面与 AtomGit 综合项目。三幅手绘图按阅读顺序统一编号。见[本轮图文记录](docs/review/2026-10-30-preface-policy.md)。
 
-第一章与第二章已联动精修为 0.7.0 / 0.4.0 图文教材与打印稿，第三章为 0.2.2 衔接修订版，完整任务继续迁移。前三章此前完成的[联合编辑记录](docs/review/2026-10-29-ch01-03.md)保留作为历史依据。
+第一部分三章已完成本轮教材联动：第一章 0.7.1、第二章 0.4.1、第三章 0.3.0。统一章、节、小节标题与学习单元，沿用同一简报形成“创作—项目阅读—复用与改进”的递进。详见 [本轮评审](docs/review/2026-10-30-first-part-textbook.md)；前三章早期的 [联合记录](docs/review/2026-10-29-ch01-03.md)保留历史身份。
 
-- [第一章：初识 AI 开源](textbook/chapters/CH01.md)——四幅图、[八文件练习包](practice/ch01/README.md)；16 页 A4 打印书稿另行交付，不纳入 GitHub 或 Pages，从真实材料与 OD 观察形成一页研究简报。
-- [第二章：打开一个项目](textbook/chapters/CH02.md)——两幅图、[七文件材料包](practice/ch02/README.md)，从 OpenDipper 项目全貌、材料与协作建立档案。
-- [第三章：开放的力量](textbook/chapters/CH03.md)——三幅图、[八文件复用包](practice/ch03/README.md)，为一项材料补齐使用说明。
+- [第一章：初识 AI 开源](textbook/chapters/CH01.md)——四幅图与 [练习包](practice/ch01/README.md)，从真实材料与 OD 观察形成一页研究简报。
+- [第二章：打开一个开源项目](textbook/chapters/CH02.md)——两幅图与 [材料包](practice/ch02/README.md)，从项目全貌、材料与协作建立档案。
+- [第三章：开源的力量](textbook/chapters/CH03.md)——四幅图与 [九文件复用包](practice/ch03/README.md)，理解开放机制，完成材料复用与读者导向改进。
+
+三个 A4 单章和第一部分合订 PDF 在对话中单独交付，不纳入 GitHub 或 Pages。排版方法见 [打印说明](textbook/print/README.md)。
 
 - [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
 
@@ -60,7 +62,7 @@ main 检查通过后由 GitHub Actions 发布 Pages。PR 仅检查。详见 [作
 
 继承 [AIOS101](https://github.com/X-lab2017/AIOS101) 的 Open Folio 1.0.0 视觉、阅读方法和 SDD 经验，按新大纲独立组织。固定来源、资产哈希和适配说明见 [品牌复用记录](brand/README.md)。
 
-课程源码维护于 GitHub，AtomGit 承载学习者的观察站与社区实践。当前尚未配置统一 AtomGit 教学空间，不预设自动集成。
+课程源码维护于 GitHub，AtomGit 承载学习者的专题研究成果与社区实践。当前尚未配置统一 AtomGit 教学空间，不预设自动集成。
 
 ## 使用条件
 
