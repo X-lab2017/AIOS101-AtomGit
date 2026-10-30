@@ -23,4 +23,6 @@
 .prose .illustration-placeholder{border:1px dashed var(--aios-border);border-left:3px solid var(--aios-action);background:transparent;border-radius:8px;padding:1rem 1.25rem;font-size:.9em;}
 .prose .illustration-placeholder p:first-child{font-weight:700;color:var(--aios-text);}
 
-#figure-ag-01-02 img{max-width:620px}
+#figure-ag-01-02 img{max-width:520px}
+
+.textbook-figure figcaption a{white-space:nowrap;display:inline-block}

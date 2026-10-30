@@ -49,9 +49,9 @@
       "id": "CH01",
       "number": 1,
       "part": "P1",
-      "title": "先做成一件事",
-      "subtitle": "我的第一次 AI 开源探索",
-      "en": "First creation",
+      "title": "初识 AI 开源",
+      "subtitle": "从真实项目理解人工智能与开放协作",
+      "en": "Introduction to AI and open source",
       "question": "怎样借助 AI，把公开材料变成一页有依据、有自己判断的研究简报？",
       "topics": [
         "从真实报告认识 AI 创作与人机协作",

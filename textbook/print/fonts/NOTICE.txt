@@ -1,0 +1,10 @@
+AIOS101 print font subsets. Renamed derivatives, licensed under SIL OFL 1.1 (OFL.txt).
+Source: https://github.com/notofonts/noto-cjk
+AIOSBookSerif
+© 2017-2024 Adobe (http://www.adobe.com/).
+
+AIOSBookSans
+© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+
+AIOSBookSansBold
+© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.

@@ -1,39 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1090" viewBox="0 0 800 1090" role="img" aria-labelledby="title desc">
-<title id="title">四篇十二章：从一页发现到开放研究作品</title>
+<title id="title">四部分十二章：从一页发现到开放研究作品</title>
 <desc id="desc">认识开源积累问题与材料，理解 AI 改善研究判断，AI 创作形成报告与动态展示，开放协作在 AtomGit 持续维护。理解、判断、创造、协作、迁移贯穿全程。</desc>
 <rect width="800" height="1090" rx="18" fill="#F6F3EB"/>
 <g font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#1D2433">
-<text x="48" y="56" font-size="16" letter-spacing="2" fill="#5146D9">AIOS101 / ATOMGIT EDITION</text>
-<text x="48" y="108" font-size="34" font-weight="700">从一页发现，到一份开放研究作品</text>
+<text x="48" y="108" font-size="26" font-weight="700">从一页发现，到一份开放研究作品</text>
 <text x="48" y="147" font-size="22" fill="#5C6070">以 OpenDipper 贯穿学习、探索与创造</text>
 <rect x="48" y="181" width="704" height="151" rx="10" fill="#FFFEFA" stroke="#DAD6CD"/>
 <rect x="48" y="181" width="6" height="151" rx="3" fill="#5146D9"/>
-<text x="73" y="227" fill="#5146D9" font-size="30" font-weight="700">01</text>
-<text x="134" y="227" font-size="30" font-weight="700">认识开源</text>
+<text x="73" y="227" fill="#5146D9" font-size="26" font-weight="700">01</text>
+<text x="134" y="227" font-size="26" font-weight="700">认识开源</text>
 <text x="722" y="225" text-anchor="end" font-size="22" fill="#5C6070">第 1—3 章</text>
-<text x="76" y="269" font-size="23">先做成一件事 · 打开一个项目 · 开放的力量</text>
+<text x="76" y="269" font-size="23">初识 AI 开源 · 打开一个项目 · 开放的力量</text>
 <text x="76" y="305" font-size="23" fill="#5146D9">从一页简报出发，积累问题与材料</text>
 <path d="M400 334v17m-5-5 5 5 5-5" fill="none" stroke="#9C98AF" stroke-width="2"/>
 <rect x="48" y="355" width="704" height="151" rx="10" fill="#FFFEFA" stroke="#DAD6CD"/>
 <rect x="48" y="355" width="6" height="151" rx="3" fill="#3F958D"/>
-<text x="73" y="401" fill="#3F958D" font-size="30" font-weight="700">02</text>
-<text x="134" y="401" font-size="30" font-weight="700">理解 AI</text>
+<text x="73" y="401" fill="#3F958D" font-size="26" font-weight="700">02</text>
+<text x="134" y="401" font-size="26" font-weight="700">理解 AI</text>
 <text x="722" y="399" text-anchor="end" font-size="22" fill="#5C6070">第 4—6 章</text>
 <text x="76" y="443" font-size="23">模型怎样学习 · 为什么答错 · 怎样行动</text>
 <text x="76" y="479" font-size="23" fill="#3F958D">用机制与实验，改善研究判断</text>
 <path d="M400 508v17m-5-5 5 5 5-5" fill="none" stroke="#9C98AF" stroke-width="2"/>
 <rect x="48" y="529" width="704" height="151" rx="10" fill="#FFFEFA" stroke="#DAD6CD"/>
 <rect x="48" y="529" width="6" height="151" rx="3" fill="#B95B3E"/>
-<text x="73" y="575" fill="#B95B3E" font-size="30" font-weight="700">03</text>
-<text x="134" y="575" font-size="30" font-weight="700">AI 创作</text>
+<text x="73" y="575" fill="#B95B3E" font-size="26" font-weight="700">03</text>
+<text x="134" y="575" font-size="26" font-weight="700">AI 创作</text>
 <text x="722" y="573" text-anchor="end" font-size="22" fill="#5C6070">第 7—9 章</text>
 <text x="76" y="617" font-size="23">找到问题 · 制作作品 · 检验与改进</text>
 <text x="76" y="653" font-size="23" fill="#B95B3E">把研究发展为报告与动态展示</text>
 <path d="M400 682v17m-5-5 5 5 5-5" fill="none" stroke="#9C98AF" stroke-width="2"/>
 <rect x="48" y="703" width="704" height="151" rx="10" fill="#FFFEFA" stroke="#DAD6CD"/>
 <rect x="48" y="703" width="6" height="151" rx="3" fill="#5146D9"/>
-<text x="73" y="749" fill="#5146D9" font-size="30" font-weight="700">04</text>
-<text x="134" y="749" font-size="30" font-weight="700">开放协作</text>
+<text x="73" y="749" fill="#5146D9" font-size="26" font-weight="700">04</text>
+<text x="134" y="749" font-size="26" font-weight="700">开放协作</text>
 <text x="722" y="747" text-anchor="end" font-size="22" fill="#5C6070">第 10—12 章</text>
 <text x="76" y="791" font-size="23">整理分享 · 共同改进 · 技能与作品集</text>
 <text x="76" y="827" font-size="23" fill="#5146D9">在 AtomGit 持续维护并迁移方法</text>

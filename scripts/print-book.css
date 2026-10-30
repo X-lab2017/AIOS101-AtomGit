@@ -1,0 +1,50 @@
+@font-face {font-family: BookSerif; src:url('../textbook/print/fonts/AIOSBookSerif.ttf');}
+@font-face {font-family: BookSans; src:url('../textbook/print/fonts/AIOSBookSans.ttf');}
+@font-face {font-family: BookSans; src:url('../textbook/print/fonts/AIOSBookSansBold.ttf'); font-weight:700;}
+@page {
+  size:A4; margin:20mm 21mm 19mm 23mm;
+  @top-left {content:'AI 开源通识';font:8pt BookSans;color:#6a6a71;}
+  @top-right {content:'第 1 章  /  初识 AI 开源';font:8pt BookSans;color:#6a6a71;}
+  @bottom-right {content:counter(page);font:9pt BookSans;color:#5146D9;}
+}
+@page:left {margin-left:21mm;margin-right:23mm;}
+@page:first {@top-left {content:none;} @top-right {content:none;}}
+* {box-sizing:border-box;}
+html {font-family:BookSerif,serif;font-size:10.8pt;line-height:1.78;color:#1D2433;}
+body {margin:0;}
+p {margin:0 0 2.8mm;text-align:left;orphans:3;widows:3;}
+strong {font-family:BookSans,sans-serif;font-weight:700;}
+a {color:#3c3c91;text-decoration:none;overflow-wrap:anywhere;}
+code {font-family:BookSans,sans-serif;font-size:.93em;overflow-wrap:anywhere;}
+.book-brand {display:flex;justify-content:space-between;align-items:center;margin:0 0 13mm;padding-bottom:5mm;border-bottom:.4mm solid #5146D9;}
+.book-brand img {width:51mm;height:auto;}
+.book-brand .producer {width:25mm;}
+.chapter-number {font:11pt BookSans;letter-spacing:1.5px;color:#5146D9;margin:0 0 4mm;}
+h1 {font:700 26pt/1.45 BookSans;margin:0 0 9mm;letter-spacing:.3px;}
+h2 {font:700 15pt/1.5 BookSans;margin:7mm 0 4mm;break-after:avoid;border-bottom:.25mm solid #d8d7e2;padding-bottom:2.2mm;}
+h3 {font:700 11.8pt/1.5 BookSans;margin:5mm 0 2.5mm;break-after:avoid;}
+ul,ol {padding-left:6mm;margin:2mm 0 4mm;}
+li {margin-bottom:1.5mm;orphans:2;widows:2;}
+.opening {margin-bottom:5mm;}
+.learning {background:#f6f5fa;border-left:1mm solid #5146D9;padding:4mm 5mm 1mm;}
+.learning h2 {margin-top:0;border:0;padding:0;}
+.learning p,.learning li {font-size:10.3pt;}
+.main-section.first {break-before:page;}
+figure {margin:5mm 0 5mm;break-inside:avoid;}
+figure img {display:block;width:154mm;height:auto;margin:auto;}
+#figure-ag-01-02 img {width:110mm;}
+#figure-ag-01-03 img {width:154mm;}
+figcaption {font:9pt/1.5 BookSans;margin:2.5mm 0 0;text-align:center;}
+.figure-credit {display:block;font:7.5pt/1.5 BookSans;color:#63636c;margin-top:1mm;}
+table {break-inside:avoid;border-collapse:collapse;table-layout:fixed;width:100%;font:9.3pt/1.6 BookSans;margin:4mm 0;}
+th,td {padding:2.3mm 2.5mm;vertical-align:top;border-bottom:.2mm solid #dcdce5;overflow-wrap:anywhere;}
+th {background:#efedf7;font-weight:700;text-align:left;border-top:.4mm solid #5146D9;}
+tr {break-inside:avoid;}
+thead {display:table-header-group;}
+blockquote {margin:4mm 0;padding:3mm 5mm 1mm;border-left:.7mm solid #3F958D;background:#f3f7f5;}
+blockquote p {font-size:10.3pt;}
+pre {break-inside:avoid;font:9.4pt/1.8 BookSans;white-space:pre-wrap;overflow-wrap:anywhere;padding:4mm 5mm;background:#f5f4f9;border:.2mm solid #dedce8;margin:4mm 0;}
+pre code {font:inherit;}
+.reference-section {break-before:auto;}
+.reference-section p {font-size:9.1pt;line-height:1.6;margin-bottom:3mm;}
+.reference-url {display:block;font:7.8pt/1.5 BookSans;color:#51515e;overflow-wrap:anywhere;word-break:break-all;}

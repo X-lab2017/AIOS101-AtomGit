@@ -10,6 +10,7 @@
 - [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。
 - [教材体例规范](textbook-style-spec.md)：书籍与在线自学共用正文、概念解释、例题和练习反馈。
+- [打印书稿规范](print-spec.md)：单一正文、多端呈现、PDF 一致性与逐页验收。
 - [内容与证据规范](content-evidence-spec.md)：背景、术语、来源及运行状态。
 - [网站规格](website-spec.md)：路由、阅读体验、状态和发布。
 - [视觉规范](visual-spec.md)：品牌复用、图件及手机阅读。

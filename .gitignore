@@ -6,3 +6,6 @@ node_modules/
 
 textbook/print/ch02/*.pdf
 tmp/
+*.pdf
+textbook/print/assets/
+textbook/print/fonts/*.ttf

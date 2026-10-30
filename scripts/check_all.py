@@ -99,9 +99,14 @@ ch1=(R/'textbook/chapters/CH01.md').read_text()
 for letter, filename in [('A','source-a.md'),('B','source-b.md')]:
     clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch1,re.M)
     require(len(clauses)==4 and all(x in (kit_root/'materials'/filename).read_text() for x in clauses),'Chapter 1 material card differs: '+letter)
-require(re.findall(r'图 AG-01-0[14]',ch1)==['图 AG-01-01','图 AG-01-04'],'Chapter 1 illustration placeholders must stay uniquely numbered')
+require('插画占位' not in ch1,'Chapter 1 still has unfinished illustration placeholders')
+chapter_images=re.findall(r'^!\[[^\]]+\]\(../assets/figures/([^\)]+)\)',ch1,re.M)
+expected_images=[f['file'] for f in figures if f['id'].startswith('AG-01-')]
+require(chapter_images==expected_images,'Chapter 1 four figures must follow their registered order')
 # A section break must not reset textbook exercise numbers or disconnect answers.
 ch1_html=(out/'chapters/01/index.html').read_text()
+require('class="chapter-pdf"' not in ch1_html, 'PDF is delivered separately; remove the website download entry')
+require(not list(out.rglob('*.pdf')), 'PDF files must not be published to Pages')
 exercise_groups=re.findall(r'<h3>(?:基础理解|材料分析|拓展与迁移)</h3>\s*<ol([^>]*)>',ch1_html)
 require(exercise_groups==['',' start="4"',' start="6"'],'Chapter 1 exercise numbers no longer match their six answers')
 kit2_root=R/'practice/ch02'

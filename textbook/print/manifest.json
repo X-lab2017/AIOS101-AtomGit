@@ -1,0 +1,29 @@
+{
+  "CH01": {
+    "version": "0.6.0",
+    "source": "textbook/chapters/CH01.md",
+    "file": "AIOS101-AtomGit-CH01.pdf",
+    "pages": 16,
+    "paper": "A4",
+    "bytes": 2804702,
+    "sha256": "8cccb99edc0b89843c1465e273b515db7a6061a4918e959ab6e51aac2e5edc26",
+    "figureMetadataSha256": "8539d670f0dfa5f14ada82666ea5258f35be44467af7702c33876e5d998d020b",
+    "inputs": {
+      "scripts/build_print.py": "ff0b704c2c0a8ecddbf9b0d268386e42cdc039e3a0566dfdf068cbac70958c98",
+      "scripts/course_markdown.py": "57e63aa6c2f85621da20ac130f02bf70fe0e484d8e6f13717e831acf6aafe119",
+      "scripts/print-book.css": "b765b40311999314a51422b62d37d96fbc75cc1d58208fd4806ce4ca9e5d3f30",
+      "site/assets/course/logo-light.svg": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
+      "site/assets/logo-light.svg": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
+      "textbook/assets/figures/ag-01-01-report-to-brief.webp": "da5cd5133d44b207f7f63d55ac36bb9f78752746f5e6a4c43cbab4ddedcaa1a5",
+      "textbook/assets/figures/ag-01-02-course-map.svg": "6fe38018563471524ea61b59abbf937b5f76636f610c9cb15e9106bd2e284804",
+      "textbook/assets/figures/ag-01-03-opendipper-r1-reading.svg": "045050e8e2b2503adc5b224cc3abdd63669c66b12aaa53320a8151f24fe4b436",
+      "textbook/assets/figures/ag-01-04-editorial-brief.webp": "2cad55896c2e4da478b6aad4202a4a4a1e414ba55813511cbc78dab9109c98e9",
+      "textbook/chapters/CH01.md": "80e9d1b02d1e6f6e20fffe9fb2f006420a789bcffa3e0e0205a4d66ba4545cbc",
+      "textbook/print/assets/ag-01-01-report-to-brief.jpg": "adc9c6fd208cb08117caf38814115cd6c2401190c7e6a3df294d2552ccdc06be",
+      "textbook/print/assets/ag-01-04-editorial-brief.jpg": "4aae869c63e4ac93541fa895fce4074f0033b3c0d87b942a0baf4561992b39fb",
+      "textbook/print/fonts/AIOSBookSans.ttf": "ec760ebde24459b2eb1c8f6a9cb95c276c242316b24d562a427880d2218bf67a",
+      "textbook/print/fonts/AIOSBookSansBold.ttf": "d23cd86959f76290abe5227c19f9858c46ab70641f2edb9d28c424cbb4a5f44f",
+      "textbook/print/fonts/AIOSBookSerif.ttf": "8de057213fb4b21fa7092b642a3984cb982d1565dbbc93e1d22b8b2f0a61ce0a"
+    }
+  }
+}

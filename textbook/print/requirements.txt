@@ -1,0 +1,4 @@
+WeasyPrint==70.0
+beautifulsoup4==4.14.3
+fonttools>=4.60,<5
+lxml>=5,<7
