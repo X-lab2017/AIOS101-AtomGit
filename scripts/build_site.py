@@ -20,6 +20,7 @@ ROUTES.update({f'practice/{key}/README.md':f'practice/{key}/' for key,*_ in CREA
 DEMO_PAGES=[('dsh','DSH 项目档案'),('r1','DeepSeek-R1 项目档案'),('guide','DSH 入门导览'),('growth','作品与方法示范')]
 ROUTES.update({f'practice/demo/{slug}.md':f'practice/demo/{slug}/' for slug,_ in DEMO_PAGES})
 ROUTES.update({c['source']:f"chapters/{c['number']:02d}/" for c in C['chapters']})
+ROUTES['textbook/contents-review.md']='outline/'
 def esc(s): return html.escape(str(s),quote=True)
 def bi(zh,en,tag='span',attrs=''): return f'<{tag} data-zh="{esc(zh)}" data-en="{esc(en)}" {attrs}>{esc(zh)}</{tag}>'
 def status(source):
@@ -65,16 +66,16 @@ def home():
     pathways=''.join(f'''<a class="pathway p{i+1}" href="learn/#part-{part['id']}"><span class="part-index">0{i+1} / {part['en'].upper()}</span><h3>{part['name']}</h3><p>{part['intro']}</p><span class="pathway-end">{bi('第 '+str(i*3+1)+'—'+str(i*3+3)+' 章','Chapters '+str(i*3+1)+'–'+str(i*3+3))} <span aria-hidden="true">↗</span></span></a>''' for i,part in enumerate(C['parts']))
     body=f'''<div class="wrap"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> AIOS101 / ATOMGIT EDITION</div><h1>用开源来理解 AI，<br>用 AI 来<span class="highlight">贡献开源。</span></h1><p class="hero-goal">{C['goal']}</p><p class="hero-intro">打开真实的 AI 项目，把一个小问题变成有用的作品。<br class="desktop-break">在共同创造中，建立自己的技能集与作品集。</p><div class="hero-actions"><a class="button primary" href="learn/">{bi('查看学习路径','Explore the course')} <span aria-hidden="true">→</span></a><a class="text-link" href="practice/">{bi('认识项目实践','Meet the project')} ↗</a></div><p class="hero-note">{bi('面向所有专业 · 无需编程基础','For every discipline · No coding prerequisite')}</p></div>
 <div class="folio-scene" aria-label="OpenDipper 研究实践：观察、理解、创作、协作"><div class="folio-back"></div><div class="folio-page"><div class="folio-top"><span>FIELD NOTES / 001</span><span class="folio-stamp">OPEN</span></div><img class="folio-mark" src="assets/course/mark-light.svg" data-logo="mark" alt="开卷标志" width="160" height="160"><p class="folio-kicker">贯穿式项目实践</p><h2>开源北斗<br>OpenDipper</h2><div class="folio-rule"></div><p class="folio-caption">观察一个项目<br>理解一种机制<br>创造一份有用的成果</p><div class="folio-bottom"><span>DeepSeek × DSH</span><span>AtomGit ↗</span></div></div><span class="folio-label label-one">从真实项目开始</span><span class="folio-label label-two">让成果帮助别人</span></div></section>
-<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('序言与十二章图文已开放评审','Preface and all 12 chapters ready for review')}</strong><span>{bi('从第一章的一页研究简报出发，逐步理解 AI、开展创作，并在开放协作中积累能力。按当前章节取用材料，一步步完善自己的作品。','Start with a one-page research brief, understand AI, create, collaborate and apply your methods to a new project.')}</span></p></div>
-<section class="section"><div class="section-heading"><div><span class="eyebrow">A JOURNEY IN FOUR PARTS</span><h2>从第一次创作，到第一份贡献</h2></div><a class="text-link" href="preface/">{bi('先读序言','Read the preface')} →</a></div><div class="pathways">{pathways}</div></section>
+<div class="review-note"><span class="note-marker">i</span><p><strong>{bi('新版引言与全书目录开放评审','Updated introduction and proposed contents in review')}</strong><span>{bi('从开源创作与人机合作出发，用五维目标、学习矩阵与阶梯认识课程，再审阅全书目录。','Start with open creation and human–AI collaboration. Explore the learning goals, matrix, progression and proposed contents.')}</span></p></div>
+<section class="section"><div class="section-heading"><div><span class="eyebrow">A JOURNEY IN FOUR PARTS</span><h2>从第一次创作，到第一份贡献</h2></div><a class="text-link" href="preface/">{bi('先读引言','Read the introduction')} →</a></div><div class="pathways">{pathways}</div></section>
 <section class="project-feature"><div><span class="eyebrow">ONE PROJECT, MANY POSSIBILITIES</span><h2>边学边研究，<br>让作品持续生长。</h2><p>借助 OpenDipper 发现问题、理解关系与追查材料。让一页简报逐步发展为专业研究报告和配套动态页面，在 AtomGit 上持续分享与改进。</p><a class="text-link" href="practice/">{bi('查看贯穿实践与模板','Explore practice and templates')} →</a></div><div class="station-list"><div><b>01</b><span><strong>项目档案</strong><small>对象、材料、来源与问题</small></span></div><div><b>02</b><span><strong>理解与创作</strong><small>观察、核验与可用作品</small></span></div><div><b>03</b><span><strong>协作与积累</strong><small>反馈、修订与个人成长</small></span></div></div></section>
 <section class="roles"><p><b>DeepSeek · DSH</b><span>既是学习对象，也是创作工具</span></p><span class="roles-cross">×</span><p><b>AtomGit</b><span>保存版本，分享成果，共同改进</span></p><span class="roles-cross">→</span><p><b>你的技能集与作品集</b><span>让每一次学习有迹可循</span></p></section></div>'''
     shell('', '用开源来理解 AI，用 AI 来贡献开源',body,active='home')
 
 def learn():
-    intro=f'''<section class="page-intro"><span class="eyebrow">LEARNING PATH</span><h1>四篇十二章，<br>一步步参与创造。</h1><p>认识开源、理解 AI、开展创作、进入社区。每一章都推进同一个项目实践。</p></section><div class="learn-tools"><a class="preface-link" href="../preface/"><span>00</span><strong>{bi('序言 · 从这里开始','Preface · Start here')}</strong><span aria-hidden="true">→</span></a><label class="search-box">{bi('查找章节','Find a chapter')}<input id="chapter-search" type="search" placeholder="标题、主题或问题" autocomplete="off"></label></div>'''
+    intro=f'''<section class="page-intro"><span class="eyebrow">LEARNING PATH</span><h1>四篇十二章，<br>一步步参与创造。</h1><p>认识开源、理解 AI、开展创作、进入社区。每一章都推进同一个项目实践。</p></section><div class="learn-tools"><a class="preface-link" href="../preface/"><span>00</span><strong>{bi('引言 · 从这里开始','Introduction · Start here')}</strong><span aria-hidden="true">→</span></a><label class="search-box">{bi('查找章节','Find a chapter')}<input id="chapter-search" type="search" placeholder="标题、主题或问题" autocomplete="off"></label></div>'''
     groups=''.join(f'''<section class="chapter-group" id="part-{part['id']}"><div class="group-heading"><span class="part-index">0{i+1} / {part['en'].upper()}</span><h2>{part['name']}<span>{part['title']}</span></h2><p>{part['intro']}</p></div><div class="chapter-list">{chapter_rows('../',part['id'])}</div></section>''' for i,part in enumerate(C['parts']))
-    shell('learn/','学习路径',f'<div class="wrap narrow-wrap">{intro}<p class="catalog-note">{bi("序言与十二章均为图文评审稿。从一页研究简报出发，依次经历理解、创作与开放协作。每章都有实践材料和自查反馈，按当前进度取用即可。","The preface and all 12 chapters are in review. Develop your research through understanding, creation and open collaboration. Use each chapter’s materials as you progress.")}</p>{groups}<p id="search-empty" class="empty-state" hidden>没有找到相关章节，请尝试“模型”“创作”或“协作”。</p><p id="search-status" class="sr-only" aria-live="polite"></p></div>')
+    shell('learn/','学习路径',f'<div class="wrap narrow-wrap">{intro}<p class="catalog-note">{bi("新版引言说明课程方法与学习路径。全书目录正在评审，以下保留当前可读章节；新结构审定后逐章更新。","The updated introduction explains the course approach. Proposed contents are under review; current chapters remain available below.")}</p><p><a class="text-link" href="../outline/">全书目录评审稿 →</a></p>{groups}<p id="search-empty" class="empty-state" hidden>没有找到相关章节，请尝试“模型”“创作”或“协作”。</p><p id="search-status" class="sr-only" aria-live="polite"></p></div>')
 
 def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=''):
     p=prefix(route);md.PAGE_PREFIX=p
@@ -83,7 +84,7 @@ def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=
     section_links=''.join(f'<a href="#{esc(s["id"])}">{esc(s["title"])}</a>' for s in u['sections'])
     section_html=''.join(f'<section class="reading-section" id="{esc(s["id"])}"><h2>{esc(s["title"])}</h2>{s["html"]}</section>' for s in u['sections'])
     sidemenu=''.join(f'<a href="{p}chapters/{c["number"]:02d}/"'+(' aria-current="page"' if chapter and chapter['id']==c['id'] else '')+f'><span>{c["number"]:02d}</span>{esc(c["title"])}</a>' for c in C['chapters'])
-    sidebar=f'<a class="sidebar-back" href="{p}learn/">← {bi("学习路径","Learning path")}</a><details class="chapter-menu"><summary>{bi("全书目录","All chapters")}</summary><nav aria-label="全书目录">{sidemenu}</nav></details><nav class="section-nav" aria-label="本页目录"><b>{bi("本页内容","On this page")}</b>{section_links}</nav>'
+    sidebar=f'<a class="sidebar-back" href="{p}learn/">← {bi("学习路径","Learning path")}</a><details class="chapter-menu"><summary>{bi("当前章节","Current chapters")}</summary><nav aria-label="当前章节">{sidemenu}</nav></details><nav class="section-nav" aria-label="本页目录"><b>{bi("本页内容","On this page")}</b>{section_links}</nav>'
     st=status(source)
     st_note= '<div class="outline-note"><strong>本章当前为学习提纲</strong><p>这里先呈现学习路线、实践任务和完成证据，完整教材正文将在后续创作中补充。</p></div>' if st=='outline' else ''
     goals=''
@@ -92,10 +93,10 @@ def reader(route,key,source,title,subtitle='',chapter=None,active='learn',extra=
         goals='<div class="learning-goals"><span class="eyebrow">'+chapter['id']+' / '+next(x['name'] for x in C['parts'] if x['id']==chapter['part'])+'</span><p class="core-question">'+esc(chapter['question'])+'</p><ul>'+''.join('<li>'+esc(g)+'</li>' for g in chapter['goals'])+'</ul></div>'
     neighbours=''
     if chapter:
-        n=chapter['number'];prev=('preface/','序言') if n==1 else (f'chapters/{n-1:02d}/',C['chapters'][n-2]['title']);nxt=('practice/','项目实践') if n==12 else (f'chapters/{n+1:02d}/',C['chapters'][n]['title'])
+        n=chapter['number'];prev=('preface/','引言') if n==1 else (f'chapters/{n-1:02d}/',C['chapters'][n-2]['title']);nxt=('practice/','项目实践') if n==12 else (f'chapters/{n+1:02d}/',C['chapters'][n]['title'])
         next_label=bi('下一章 · 提纲预览','Next · Outline') if n<12 and status(C['chapters'][n]['source'])=='outline' else bi('下一步','Next')
         neighbours=f'<nav class="chapter-pagination" aria-label="章节切换"><a href="{p}{prev[0]}"><small>← {bi("上一章","Previous")}</small><strong>{esc(prev[1])}</strong></a><a href="{p}{nxt[0]}"><small>{next_label} →</small><strong>{esc(nxt[1])}</strong></a></nav>'
-    elif key=='PREFACE': neighbours=f'<div class="next-step"><a class="button primary" href="{p}chapters/01/">进入第 1 章 →</a></div>'
+    elif key=='PREFACE': neighbours=f'<div class="next-step"><a class="button primary" href="{p}chapters/01/">进入第 1 章 →</a> <a class="text-link" href="{p}outline/">查看全书目录评审稿 →</a></div>'
     elif active=='practice': neighbours=f'<div class="next-step"><a class="text-link" href="{p}learn/">← 返回学习路径</a></div>'
     if key=='CH01':
         neighbours='<p class="chapter-companion"><a href="'+p+'practice/ch01/">第一章配套学习材料 →</a></p>'+neighbours
@@ -159,7 +160,8 @@ def main():
                 if not f.is_file(): continue
                 zi=zipfile.ZipInfo(key+'/'+f.relative_to(ROOT/'practice'/key).as_posix(),date_time=(2026,10,30,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;zi.external_attr=0o644<<16;z.writestr(zi,f.read_bytes())
     home();learn()
-    reader('preface/','PREFACE','textbook/preface.md','让 AI 惠及更多人','序言 · 从时代的命题，到你的第一份创造')
+    reader('preface/','PREFACE','textbook/preface.md','在开源中学习，与 AI 共同创造','课程方法、五维目标与学习路径')
+    reader('outline/','OUTLINE','textbook/contents-review.md','全书目录（评审稿）','四篇十二章 · 先审定结构，再逐章充实')
     for c in C['chapters']:reader(f"chapters/{c['number']:02d}/",c['id'],c['source'],c['title'],c['subtitle'],c)
     reader('about/','ABOUT','textbook/about.md','关于这门课程',active='about')
     downloads='<div class="practice-actions"><a class="button primary" href="ch01/">从第一章材料开始 →</a><a class="text-link" href="../chapters/01/">阅读第一章 →</a></div>'
@@ -186,6 +188,6 @@ def main():
         reader(f'practice/{key}/',key.upper()+'-KIT',f'practice/{key}/README.md',label+'材料包',subtitle,active='practice',extra=kit)
     (OUT/'.nojekyll').write_text('')
     (OUT/'build.json').write_text(json.dumps({'version':C['version'],'commit':COMMIT,'chapters':[{ 'id':c['id'],'status':status(c['source']),'source':c['source']} for c in C['chapters']]},ensure_ascii=False,indent=2))
-    print(f'Built {25+len(CREATION_KITS)+len(DEMO_PAGES)} static pages and {7+len(CREATION_KITS)} downloadable practice kits')
+    print(f'Built {26+len(CREATION_KITS)+len(DEMO_PAGES)} static pages and {7+len(CREATION_KITS)} downloadable practice kits')
 
 if __name__=='__main__': main()

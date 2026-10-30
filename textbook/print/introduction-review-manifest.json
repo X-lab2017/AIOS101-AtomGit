@@ -1,0 +1,42 @@
+{
+  "sourceVersions": {
+    "PREFACE": "0.5.0",
+    "OUTLINE": "0.1.0"
+  },
+  "file": "AIOS101-Introduction-and-Contents-Review.pdf",
+  "pages": 13,
+  "paper": "A4",
+  "bytes": 7327351,
+  "sha256": "d5c8f91f03ac72a7e70a8f377ab8a1d4d715704af91377571fa1ccb2e9581ab1",
+  "fontSources": {
+    "IntroBookSerif": {
+      "source": "NotoSerifSC-VF.ttf",
+      "sha256": "5326cfb097e3ab26fcb39329752b5c0a439bf8d5c4649520e4b492939c352a09"
+    },
+    "IntroBookSans": {
+      "source": "NotoSansSC-VF.ttf",
+      "sha256": "d68bafcb48a2707749396aa12bbbd833cb70401f3a9a689fd2902c7e0d295964"
+    },
+    "IntroBookSansBold": {
+      "source": "NotoSansSC-VF.ttf",
+      "sha256": "d68bafcb48a2707749396aa12bbbd833cb70401f3a9a689fd2902c7e0d295964"
+    }
+  },
+  "figureMetadataSha256": "a5c2cdc3b82e0e45d5a3c58425ce7fe6c8f5a8b1cc2d73b3c7c54ae91357f054",
+  "inputs": {
+    "scripts/build_introduction_review.py": "d877d9aee0c4d98a60631fd837ea95966e64ed872387a748034c2b01eb801238",
+    "scripts/course_markdown.py": "57e63aa6c2f85621da20ac130f02bf70fe0e484d8e6f13717e831acf6aafe119",
+    "scripts/print-introduction.css": "f4b617759111bb398358ebc6552c23b0e3aec94aa650bc1fe54abc1fc9cfda30",
+    "site/assets/course/logo-light.svg": "203e699b550f966829903b70f5f6800f7e59324f3d4f37931b139579ffa89013",
+    "site/assets/logo-light.svg": "4257c98468d89d12ae89c2951f1f84f3ed2b4acbc6d2f4db910b355c37097785",
+    "textbook/assets/figures/ag-00-01-open-ai-for-all.webp": "d404e72b44994ca59f59084a744a202e0a194c6dc20fb045be720d0c6aa3ec16",
+    "textbook/assets/figures/ag-00-02-opendipper-global.webp": "ac6c5ea95f991d644efdaf007ddf3363add714608377320e52b2e5119e95a016",
+    "textbook/assets/figures/ag-00-03-opendipper-galaxy.webp": "e40b5c4a6715d78b43c116e1d115b2339bfecebf3a73326f4aa3d9bc55fa9cf9",
+    "textbook/assets/figures/ag-00-04-learning-progression.svg": "284defc1f5bafe1b8fc3d293a1b3517f4257ab9753f74dad9e0bce77464f9139",
+    "textbook/contents-review.md": "317eb578776f39b67c807ee379fc3385c58c3c701cb47f549ea96aaa10f7440d",
+    "textbook/preface.md": "11f5b1fdcc4864966bc48c3cad6648bfe044e126e46ca6dc0709a993901c04b2",
+    "textbook/print/introduction/fonts/IntroBookSans.ttf": "66618d44ce937c8e002baf66d677e67aadd6da6df3464784a24da73c098b1dcd",
+    "textbook/print/introduction/fonts/IntroBookSansBold.ttf": "39f85b197fb441e9fb30da0c30c3e4ad28aa679d9e4ae957c8c227fdd285f40a",
+    "textbook/print/introduction/fonts/IntroBookSerif.ttf": "a475eb59e1825cf1499f40452b960b46e66bb13fdc5c8f926ffb2f6a65e30010"
+  }
+}

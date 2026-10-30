@@ -1,11 +1,12 @@
 # 规格入口与单一正本
 
-先读 [课程宪法 v0.2.1](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
+先读 [课程宪法 v0.2.2](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
 
-**迁移状态：**[course.json](course.json) 为 0.2.3；序言、关于与 CH01—03 已对齐 OpenDipper 研究主线及统一实践命名。第一部分仍为教材评审稿，CH04—12 继续逐章迁移。旧任务保留用于定位现有内容，不覆盖新宪法；迁移依据见 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md)。
+**迁移状态：**[course.json](course.json) 为 0.2.4；引言与关于已对齐宪法 0.2.2；CH01—03 保留上一轮教材稿。全书新目录单列评审，审定后逐章填充。第一部分仍为教材评审稿，CH04—12 继续逐章迁移。旧任务保留用于定位现有内容，不覆盖新宪法；迁移依据见 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md)。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
-- [序言规格](preface-spec.md)：读者动机、入门背景、贯穿实践与开篇图件。
+- [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与贯穿作品。
+- [目录评审规格](outline-review-spec.md) · [全书目录提案](../textbook/contents-review.md)：四篇十二章与前三章三级标题，待审定后实施。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
 - [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。

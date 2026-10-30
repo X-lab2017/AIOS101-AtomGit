@@ -1,0 +1,42 @@
+@font-face {font-family:IntroBookSerif;src:url('../textbook/print/introduction/fonts/IntroBookSerif.ttf');}
+@font-face {font-family:IntroBookSans;src:url('../textbook/print/introduction/fonts/IntroBookSans.ttf');}
+@font-face {font-family:IntroBookSans;src:url('../textbook/print/introduction/fonts/IntroBookSansBold.ttf');font-weight:700;}
+@page {size:A4;margin:19mm 21mm 19mm 23mm;@top-left{content:'AI 开源通识';font:8pt IntroBookSans;color:#6a6a71;}@top-right{content:'引言与全书目录';font:8pt IntroBookSans;color:#6a6a71;}@bottom-right{content:counter(page);font:9pt IntroBookSans;color:#5146d9;}}
+@page:first {@top-left{content:none;}@top-right{content:none;}}
+*{box-sizing:border-box;}
+html{font:10.8pt/1.78 IntroBookSerif,serif;color:#1d2433;}
+body{margin:0;}
+p{margin:0 0 2.8mm;orphans:3;widows:3;}
+strong{font-family:IntroBookSans;font-weight:700;}
+a{color:#3c3c91;text-decoration:none;overflow-wrap:anywhere;}
+.book-brand{display:flex;justify-content:space-between;align-items:center;margin:0 0 8mm;padding-bottom:4mm;border-bottom:.4mm solid #5146d9;}
+.book-brand img{width:49mm;height:auto;}.book-brand .producer{width:25mm;}
+.eyebrow{font:10pt IntroBookSans;color:#5146d9;margin:0 0 3mm;}
+h1{font:700 25pt/1.45 IntroBookSans;margin:0 0 8mm;}
+h2{font:700 14pt/1.5 IntroBookSans;margin:6mm 0 3mm;padding-bottom:2mm;border-bottom:.25mm solid #d8d7e2;break-after:avoid;}
+h3{font:700 13pt/1.5 IntroBookSans;margin:5mm 0 3mm;break-after:avoid;}
+figure{margin:4mm 0;break-inside:avoid;}
+figure img{display:block;width:132mm;height:auto;margin:auto;}
+#figure-ag-00-01 img{width:137mm;}
+#figure-ag-00-04 img{width:120mm;}
+figcaption{font:9pt/1.5 IntroBookSans;text-align:center;margin-top:2mm;}
+.figure-credit{display:block;font:7.5pt/1.5 IntroBookSans;color:#63636c;margin-top:1mm;}
+table{border-collapse:collapse;table-layout:fixed;width:100%;font:9pt/1.6 IntroBookSans;margin:4mm 0;break-inside:avoid;}
+th,td{padding:2.1mm 2.2mm;vertical-align:top;border-bottom:.2mm solid #dcdce5;overflow-wrap:anywhere;}
+th{font-weight:700;background:#efedf7;text-align:left;border-top:.4mm solid #5146d9;}
+thead{display:table-header-group;}tr{break-inside:avoid;}
+.goals-matrix th:first-child{width:12%;}.goals-matrix th:nth-child(2){width:35%;}
+.course-matrix th:first-child{width:18%;}
+ul,ol{margin:2mm 0 4mm;padding-left:5mm;}
+li{margin-bottom:1mm;orphans:2;widows:2;}
+#contents{font:10.2pt/1.65 IntroBookSans;}
+#contents .contents-opening,#contents .contents-page{break-before:page;}
+#contents h2{margin-top:0;}
+#contents ul{list-style:none;padding-left:4mm;margin:1mm 0 3mm;}
+#contents li{margin-bottom:.6mm;}
+#contents .detailed{font-size:9.8pt;line-height:1.55;}
+#contents .detailed p{margin:2.5mm 0 1mm;}
+#contents .detailed p:has(>strong){break-after:avoid;}
+#contents .detailed ul{margin:0 0 2mm;}
+#contents .detailed h3{margin-top:3mm;}
+#contents .appendices h2{margin-top:6mm;}

@@ -1,6 +1,6 @@
 {
   "id": "AIOS101-ATOMGIT",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "date": "2026-10-30",
   "title": "AI 开源通识",
   "edition": "AtomGit 版",
@@ -427,13 +427,13 @@
     }
   ],
   "migration": {
-    "constitution": "0.2.1",
+    "constitution": "0.2.2",
     "alignedChapters": [
       "CH01",
       "CH02",
       "CH03"
     ],
-    "note": "序言、关于、CH01—03 已按 OpenDipper 研究主线及统一实践命名更新；CH04—12 继续逐章迁移。第一部分仍为教材评审，未完成真人试学。"
+    "note": "引言与关于课程已对齐宪法 0.2.2 的贯穿方法论、五维阶段目标与学习递进；全书新目录单列评审，尚未据此重写章节。CH01—03 保留上一轮教材稿，CH04—12 继续逐章迁移；真人试学待开展。"
   },
   "practiceContext": {
     "name": "科技研究与咨询：开源生态专题",
@@ -442,5 +442,12 @@
     "researchObject": "开源生态中的软件、模型、数据、开发者、社区与组织及其关系",
     "method": "借助 OpenDipper、公开资料与 AI 开展研究",
     "publication": "报告与交互展示作为同一个学习者项目在 AtomGit 开放维护"
+  },
+  "outlineReview": {
+    "version": "0.1.0",
+    "status": "review",
+    "source": "textbook/contents-review.md",
+    "spec": "specs/outline-review-spec.md",
+    "note": "拟定目录，审定后再逐章同步到 chapters 与正文。"
   }
 }

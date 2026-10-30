@@ -2,6 +2,8 @@
 
 ## 1. 找到章节
 
+当前先评审 [全书目录提案](../textbook/contents-review.md)，维护者审定后再按章填充内容；详见 [ADR-0015](decisions/ADR-0015-methodology-introduction-outline.md)。开源创作与 AI 创作贯穿，五维目标按阶段深化。
+
 十二章正文在 textbook/chapters/CH01.md 至 CH12.md。目录、名称和任务正本在 specs/course.json；对应教学规格在 specs/chapters/。先阅读目标、前置知识与边界，再开始写正文。
 
 ## 2. 写正文

@@ -212,5 +212,5 @@ if 'ch11' in active:
     require(not (R/'practice/ch11/work/review-draft.md').exists(),'Chapter 11 must not prefill a learner review')
 if 'ch12' in active:
     require(not (R/'practice/ch12/work/transfer-result.md').exists(),'Chapter 12 must not prefill a transfer result')
-require(len(parsed)==25+len(active)+4,'Unexpected page count')
+require(len(parsed)==26+len(active)+4,'Unexpected page count')
 print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')

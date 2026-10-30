@@ -8,20 +8,21 @@
 
 课程采用 **理解—判断—创造—协作—迁移** 的 AI 时代五维学习目标框架。综合大作业是利用 OpenDipper 完成**专业开源研究报告及配套动态展示页面**，将报告、页面及相关材料作为同一个开源项目托管在 AtomGit，积累个人技能集与作品集。
 
-**当前迁移状态：**[宪法 v0.2.1](CONSTITUTION.md)、[序言](https://www.x-lab.info/AIOS101-AtomGit/preface/)与[关于课程](https://www.x-lab.info/AIOS101-AtomGit/about/)已对齐新的设计理念；十二章与实践材料将按 OpenDipper 主线逐步完善。实施安排见 [ADR-0007](docs/decisions/ADR-0007-opendipper-research-course.md)，本轮简化原则见 [ADR-0008](docs/decisions/ADR-0008-constitution-and-about.md)。
+**当前评审：**[宪法 v0.2.2](CONSTITUTION.md)明确开源创作与 AI 创作贯穿课程；[新版引言](https://www.x-lab.info/AIOS101-AtomGit/preface/)用五维目标、学习矩阵和阶梯介绍全书。[全书目录提案](https://www.x-lab.info/AIOS101-AtomGit/outline/)先行评审，审定后再逐章填充正文。见 [ADR-0015](docs/decisions/ADR-0015-methodology-introduction-outline.md)。
 
 ## 从这里开始
 
 - [在线评审站](https://www.x-lab.info/AIOS101-AtomGit/)
+- [全书目录评审稿](textbook/contents-review.md) · [引言](textbook/preface.md)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
 - [作者指南](docs/AUTHORING.md) · [当前状态](docs/STATUS.md) · [AI 协作者指南](AGENTS.md)
 - [实践与迁移说明](practice/README.md) · [示范结构](practice/demo/README.md) · [实践模板](practice/template/README.md)
 
 ## 已上线内容与迁移范围
 
-宪法版本为 0.2.1，课程结构为 0.2.3；各章按新主线逐步迁移。现有四部分十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
+宪法版本为 0.2.2，课程结构元数据为 0.2.4；新目录为 0.1.0 评审提案，各章尚未据此重写。现有四部分十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
 
-[序言 0.4.0](textbook/preface.md)从国家发展方向与全球 AI 普惠引出学习必要性，再走进 OpenDipper 与《2026 全球开源发展报告》的真实实践，连接研究报告、动态页面与 AtomGit 综合项目。三幅手绘图按阅读顺序统一编号。见[本轮图文记录](docs/review/2026-10-30-preface-policy.md)。
+[引言 0.5.0](textbook/preface.md)从开源创作与人机合作说明课程方法，呈现五维目标、四篇学习矩阵、同一研究作品的成长与自主学习阶梯。复用三幅既有插画，新增一幅原创 SVG 结构图；[关于课程](textbook/about.md)同步。见[本轮评审记录](docs/review/2026-10-30-introduction-outline.md)。
 
 第一部分三章已完成本轮教材联动：第一章 0.7.1、第二章 0.4.1、第三章 0.3.0。统一章、节、小节标题与学习单元，沿用同一简报形成“创作—项目阅读—复用与改进”的递进。详见 [本轮评审](docs/review/2026-10-30-first-part-textbook.md)；前三章早期的 [联合记录](docs/review/2026-10-29-ch01-03.md)保留历史身份。
 
@@ -45,11 +46,11 @@
 - [第十一章：在反馈中共同改进](textbook/chapters/CH11.md)——[协作材料包](practice/ch11/README.md)，从具体问题、差异走向回应与改进。
 - [第十二章：建立个人技能集与作品集](textbook/chapters/CH12.md)——[迁移材料包](practice/ch12/README.md)，从代表作品提炼方法，在新项目问题中检验。
 
-[序言](textbook/preface.md)与全部十二章现为图文评审稿。第四至九章为 0.3.0，第十至十二章为 0.2.0；后者已逐章自审并联合对齐，见[本轮记录](docs/review/2026-10-30-ch10-12.md)。第七至九章采用[观察站产品修订版](docs/review/2026-10-29-ch07-09-realignment.md)，不再沿用旧的角色地图主线。工具和平台实操、真人试学仍需继续验证。
+[引言](textbook/preface.md)与全部十二章现为可读评审稿，新目录单列评审。第四至九章为 0.3.0，第十至十二章为 0.2.0；后者已逐章自审并联合对齐，见[本轮记录](docs/review/2026-10-30-ch10-12.md)。第七至九章采用[观察站产品修订版](docs/review/2026-10-29-ch07-09-realignment.md)，不再沿用旧的角色地图主线。工具和平台实操、真人试学仍需继续验证。
 
 ## 创作方式
 
-只需在 textbook/chapters/ 中创作 Markdown 正文；目录、阅读页、状态与下载由构建生成。结构变化先修改 specs/course.json，再同步规格。
+只需在 textbook/chapters/ 中创作 Markdown 正文；目录、阅读页、状态与下载由构建生成。已审定结构变化先修改 specs/course.json，再同步规格；当前待审目录独立保留，审定前不覆盖已实施章节。
 
 ```bash
 python scripts/sync_specs.py --check

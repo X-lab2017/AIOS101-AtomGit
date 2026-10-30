@@ -34,3 +34,11 @@ python scripts/build_print.py
 - 全站检查确认规格、正文、材料包和网页一致，Pages 不依赖排版环境，不复制 PDF。
 
 按 A4 实际大小打印，可双面长边翻转；当前为教材评审稿，尚未完成维护者终审或真人试学。出版社要求的开本、CMYK、出血和 PDF/X 属于后续印前生产规格。
+
+## 引言与全书目录评审稿
+
+新增 `AIOS101-Introduction-and-Contents-Review.pdf`：引言 0.5.0 与目录提案 0.1.0，共 13 页 A4。正文取自 `textbook/preface.md` 与 `textbook/contents-review.md`，图件取自同一登记表；目录审定后再填充各章。
+
+使用 `scripts/build_introduction_review.py` 与 `scripts/print-introduction.css` 生成。环境需要 WeasyPrint、Beautiful Soup 与 fontTools；通过 `--serif`、`--sans`、`--bold` 提供 Noto Serif SC 与 Noto Sans SC 字体，脚本生成独立且重命名的字体子集，保留其原有许可。新子集位于 `textbook/print/introduction/fonts/`，不改变已有章节的打印字体。输入摘要、图件元数据摘要及 PDF 摘要记录于 `introduction-review-manifest.json`。
+
+PDF 和字体子集不提交 GitHub 或 Pages。首次六页为引言，后七页为全书目录评审；上一轮第一部分 PDF 保留原交付身份，不以课程元数据更新冒充重新排版。
