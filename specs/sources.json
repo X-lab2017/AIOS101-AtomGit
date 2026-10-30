@@ -14,8 +14,6 @@
     "use": "示范档案中的官方自述；非本课程实测",
     "locations": [
       "DEMO",
-      "CH01",
-      "CH01-KIT",
       "CH02",
       "CH02-KIT"
     ]
@@ -36,9 +34,7 @@
     "locations": [
       "PREFACE",
       "CH03",
-      "CH03-KIT",
-      "CH01",
-      "CH01-KIT"
+      "CH03-KIT"
     ]
   },
   {
@@ -73,8 +69,6 @@
     "accessed": "2026-10-29",
     "use": "A1—A4：项目身份、插件组织、开发者预览与 README 许可声明；非实测；第五章重新核对原段用于材料对照，非实际运行；第六章重新阅读，用于模型与工具分工、读取与权限条件说明，非运行证据",
     "locations": [
-      "CH01",
-      "CH01-KIT",
       "CH05",
       "CH05-KIT",
       "CH06",
@@ -91,8 +85,6 @@
     "accessed": "2026-10-29",
     "use": "B1—B4：服务前提、模型/工作区、文件工具与权限策略；非所有桌面版本的逐屏操作；第五章重新核对原段用于材料对照，非实际运行；第六章重新阅读，用于模型与工具分工、读取与权限条件说明，非运行证据",
     "locations": [
-      "CH01",
-      "CH01-KIT",
       "CH05",
       "CH05-KIT",
       "CH06",
@@ -108,10 +100,7 @@
     "url": "https://docs.atomgit.com/docs/start/quick/",
     "accessed": "2026-10-29",
     "use": "选做平台步骤：创建仓库、可见范围、初始化 README",
-    "locations": [
-      "CH01",
-      "CH01-KIT"
-    ]
+    "locations": []
   },
   {
     "id": "SRC-CH01-ATOMGIT-EDIT",
@@ -119,10 +108,7 @@
     "url": "https://docs.atomgit.com/docs/help/home/org_project/project_manage/file_operations/",
     "accessed": "2026-10-29",
     "use": "选做浏览器在线编辑；不要求克隆仓库或自动连接工具",
-    "locations": [
-      "CH01",
-      "CH01-KIT"
-    ]
+    "locations": []
   },
   {
     "id": "SRC-CH02-R1-ENTRY",
@@ -320,9 +306,7 @@
     "url": "https://support.apple.com/guide/textedit/change-textedit-settings-txted1063/1.20/mac/27",
     "accessed": "2026-10-29",
     "use": "实际读取设置页：纯文本、扩展名及编码设置；按读者所用系统切换版本，非课程设备实测",
-    "locations": [
-      "CH01-KIT"
-    ]
+    "locations": []
   },
   {
     "id": "SRC-P1-TEXTEDIT-GUIDE",
@@ -330,9 +314,7 @@
     "url": "https://support.apple.com/guide/textedit/welcome/mac",
     "accessed": "2026-10-29",
     "use": "从官方搜索返回内容核对纯文本/富文本支持与默认格式提示；单篇创建文档页直接打开曾超时",
-    "locations": [
-      "CH01-KIT"
-    ]
+    "locations": []
   },
   {
     "id": "SRC-CH04-01",
@@ -787,6 +769,72 @@
     "use": "联合国框架下的国际合作、人工智能素养和人才培养、教育资源共享，以及中国行动（四）的开源开放社区建设。",
     "locations": [
       "PREFACE"
+    ]
+  },
+  {
+    "id": "SRC-CH01-R1",
+    "title": "DeepSeek-R1 README · 固定项目说明",
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md",
+    "accessed": "2026-10-30",
+    "use": "材料 A1—A4：身份、公开入口和不同模型条目；不用自报评测作排名",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH01-OD-GRAPH",
+    "title": "OpenDipper 模型网络 · 固定数据",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/public/data/galaxy/model.json",
+    "accessed": "2026-10-30",
+    "use": "材料 B1—B4；直接解析 R1 节点和 base-model 记录，2026-08-05 模型观察快照",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH01-OD-CONTRACT",
+    "title": "OpenDipper 开源星系 · 关系与数据说明",
+    "url": "https://github.com/X-lab2017/open-dipper/blob/465c4737a36c4c5e67e39f971b3e09d28d1e84f5/docs/OPEN_GALAXY.md",
+    "accessed": "2026-10-30",
+    "use": "记录与推断、无向关系解释、来源入口；2026-10-30 另以真实公开界面操作对照",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH01-DEEPSEEK",
+    "title": "DeepSeek 官网 · 网页服务入口",
+    "url": "https://www.deepseek.com/",
+    "accessed": "2026-10-30",
+    "use": "聊天服务与研究对象分开；本轮未登录运行，不声称学生账号已验证",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH01-DSH",
+    "title": "DeepSeek Harness · 工具角色",
+    "url": "https://github.com/deepseek-ai/deepseek-harness/blob/ce7073d51254c26cd63b22a60835b8f948deb447/README.md",
+    "accessed": "2026-10-30",
+    "use": "仅解释后续智能体工具角色；不在 CH01 安装、配置或实跑",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
+    ]
+  },
+  {
+    "id": "SRC-CH01-REPORT",
+    "title": "全球开源发展报告 · 在线报告与数据组织",
+    "url": "https://github.com/X-lab2017/2026-Global-Open-Source-Development-Report/blob/main/README.md",
+    "accessed": "2026-10-30",
+    "use": "公开报告与可视化的对应；报告 AI 工作流和培训经历另来自维护者 2026-10-30 的第一手补充，不由本页面代证",
+    "locations": [
+      "CH01",
+      "CH01-KIT"
     ]
   }
 ]

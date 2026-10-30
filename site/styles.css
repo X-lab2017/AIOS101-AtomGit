@@ -18,3 +18,9 @@
 .prose pre.task-prompt{white-space:pre-wrap;overflow-wrap:anywhere}.prose pre.task-prompt code{font-family:inherit;word-break:normal}
 #figure-ag-01-02 img{width:100%;max-width:600px}
 .textbook-figure img{width:100%}
+
+/* Explicit editorial illustration placeholders in review chapters. */
+.prose .illustration-placeholder{border:1px dashed var(--aios-border);border-left:3px solid var(--aios-action);background:transparent;border-radius:8px;padding:1rem 1.25rem;font-size:.9em;}
+.prose .illustration-placeholder p:first-child{font-weight:700;color:var(--aios-text);}
+
+#figure-ag-01-02 img{max-width:620px}

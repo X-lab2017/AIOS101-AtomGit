@@ -140,7 +140,8 @@ def render(text, source, commit, routes):
             block = []
             while i < len(lines) and lines[i].strip().startswith('>'):
                 block.append(re.sub(r'^\s*>\s?', '', lines[i])); i += 1
-            result.append('<blockquote>'+render('\n'.join(block), source, commit, routes)+'</blockquote>'); continue
+            cls = ' class="illustration-placeholder"' if block and block[0].startswith('插画占位 · 图 AG-') else ''
+            result.append('<blockquote'+cls+'>'+render('\n'.join(block), source, commit, routes)+'</blockquote>'); continue
         match = re.match(r'^(?:([-*])|(\d+)\.)\s+(.+)', line)
         if match:
             ordered = bool(match[2]); tag = 'ol' if ordered else 'ul'; items = []

@@ -2,7 +2,7 @@
 
 先读 [课程宪法 v0.2.1](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
 
-**迁移状态：**[course.json](course.json) 仍为已实施的 0.1.0 结构正本，维护现有章节身份、名称、目标、任务、证据及顺序；“关于课程”已同步新理念，下游章节、实践和其他页面仍逐步对齐。其旧任务用于定位现有内容，不能覆盖 v0.2 目标。先按 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md) 完成新规格与逐章迁移，再同步生成产物。
+**迁移状态：**[course.json](course.json) 已更新到 0.2.0；序言、关于与 CH01 对齐 OpenDipper 研究主线，CH02—03 补齐前置衔接，CH02—12 的完整任务继续逐章迁移。版本提升不代表全书迁移完成。其旧任务用于定位现有内容，不能覆盖 v0.2 目标。先按 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md) 完成新规格与逐章迁移，再同步生成产物。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
 - [序言规格](preface-spec.md)：读者动机、入门背景、贯穿实践与开篇图件。

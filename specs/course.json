@@ -1,7 +1,7 @@
 {
   "id": "AIOS101-ATOMGIT",
-  "version": "0.1.0",
-  "date": "2026-10-29",
+  "version": "0.2.0",
+  "date": "2026-10-30",
   "title": "AI 开源通识",
   "edition": "AtomGit 版",
   "principle": "用开源来理解 AI，用 AI 来贡献开源。",
@@ -31,7 +31,7 @@
     },
     {
       "id": "P4",
-      "name": "AtomGit 实践",
+      "name": "开放协作",
       "title": "进入社区",
       "en": "Contribute",
       "intro": "让成果帮助别人，在反馈和共同改进中积累自己的能力。"
@@ -50,27 +50,30 @@
       "number": 1,
       "part": "P1",
       "title": "先做成一件事",
-      "subtitle": "我的第一次 AI 创作",
+      "subtitle": "我的第一次 AI 开源探索",
       "en": "First creation",
-      "question": "怎样借助 AI 完成一件有用的小作品？",
+      "question": "怎样借助 AI，把公开材料变成一页有依据、有自己判断的研究简报？",
       "topics": [
-        "从一个小需求出发",
-        "认识 DeepSeek、DSH 与 AtomGit",
-        "把任务说清楚，提供必要材料",
-        "找到并检查实际输出"
+        "从真实报告走向自己的第一个研究问题",
+        "四篇十二章与研究作品的成长",
+        "认识项目、模型、服务与工具，观察 OpenDipper 中的 R1",
+        "读两张材料卡，使用 DeepSeek 网页端起草",
+        "作一次有理由的修订，保存版本并独立解释"
       ],
       "goals": [
-        "区分模型、智能体工具与协作平台的角色",
-        "通过真实文件和内容检查确认任务结果"
+        "分清研究的模型项目与使用的聊天服务，说明全书的学习路线",
+        "利用公开项目材料与 OpenDipper 观察，制作一页给具体读者的简报",
+        "解释一次实质修改，并提出一个值得继续研究的问题"
       ],
-      "task": "用给定项目材料制作一页项目导览，并保存到自己的观察站。",
-      "evidence": "一页初稿、材料来源、一项待核验问题",
+      "task": "借助 DeepSeek 网页端，将 R1 公开材料和 OpenDipper 观察整理成一页研究简报，修订后保存。",
+      "evidence": "一页简报及来源、一次有理由的修改、一个后续问题和自己的解释",
       "outcomes": [
         "LO1",
+        "LO2",
         "LO3"
       ],
-      "prerequisite": "给定的两份项目材料；文件和文件夹的基础说明",
-      "boundary": "不要求手写代码、源码安装或自动连接平台",
+      "prerequisite": "无需编程基础；浏览器、可用的 DeepSeek 网页端和熟悉的文档工具；两张材料卡在正文直接提供",
+      "boundary": "90 分钟；不要求安装 DSH、下载模型、配置 API 或注册 AtomGit；本章完成一页简报，后续发展为研究报告与动态页面",
       "source": "textbook/chapters/CH01.md",
       "spec": "specs/chapters/CH01.md",
       "milestone": "M01"
@@ -99,7 +102,7 @@
         "LO1",
         "LO2"
       ],
-      "prerequisite": "第 1 章的项目导览",
+      "prerequisite": "第 1 章的一页研究简报；本章另提供 DSH 阅读材料",
       "boundary": "不将未公开信息补写成事实",
       "source": "textbook/chapters/CH02.md",
       "spec": "specs/chapters/CH02.md",
@@ -408,5 +411,12 @@
       "spec": "specs/chapters/CH12.md",
       "milestone": "M12"
     }
-  ]
+  ],
+  "migration": {
+    "constitution": "0.2.1",
+    "alignedChapters": [
+      "CH01"
+    ],
+    "note": "序言、关于与 CH01 已按 OpenDipper 研究主线更新；CH02—12 保留现有教学任务，逐章迁移。结构版本不表示全书迁移完成。"
+  }
 }

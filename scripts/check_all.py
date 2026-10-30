@@ -87,12 +87,19 @@ with zipfile.ZipFile(out/'downloads/ai-project-observatory-template.zip') as z:
     require(all(z.read(name)==data for name,data in expected.items()),'Template archive differs from source')
 kit_root=R/'practice/ch01'
 with zipfile.ZipFile(out/'downloads/ch01-starter.zip') as z:
-    expected={'my-ai-observatory/'+f.relative_to(kit_root).as_posix():f.read_bytes() for f in kit_root.rglob('*') if f.is_file()}
-    require(len(expected)==8 and set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 1 archive is invalid')
+    expected={'ch01/'+f.relative_to(kit_root).as_posix():f.read_bytes() for f in kit_root.rglob('*') if f.is_file()}
+    require(set(z.namelist())==set(expected) and z.testzip() is None,'Chapter 1 archive is invalid')
+    require(all((kit_root/name).is_file() for name in ['materials/source-a.md','materials/source-b.md','prompt.txt','work/record.md','examples/guide-reference.md']),'Missing Chapter 1 learning input')
     require(all(z.read(name)==data for name,data in expected.items()),'Chapter 1 archive content differs')
-    require('my-ai-observatory/work/guide-v1.md' not in z.namelist(),'Starter must not impersonate learner output')
+    require(set(p.name for p in (kit_root/'work').iterdir())=={'record.md'},'Starter must not impersonate learner output')
 prompt=re.search(r'```text\n(.*?)\n```',(R/'textbook/chapters/CH01.md').read_text(),re.S)
 require(prompt and prompt[1]+'\n'==(kit_root/'prompt.txt').read_text(),'Chapter 1 prompt differs from kit')
+# The text students paste must carry the same eight factual clauses as the book.
+ch1=(R/'textbook/chapters/CH01.md').read_text()
+for letter, filename in [('A','source-a.md'),('B','source-b.md')]:
+    clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch1,re.M)
+    require(len(clauses)==4 and all(x in (kit_root/'materials'/filename).read_text() for x in clauses),'Chapter 1 material card differs: '+letter)
+require(re.findall(r'图 AG-01-0[14]',ch1)==['图 AG-01-01','图 AG-01-04'],'Chapter 1 illustration placeholders must stay uniquely numbered')
 kit2_root=R/'practice/ch02'
 with zipfile.ZipFile(out/'downloads/ch02-observation-kit.zip') as z:
     expected={'ch02/'+f.relative_to(kit2_root).as_posix():f.read_bytes() for f in kit2_root.rglob('*') if f.is_file()}
