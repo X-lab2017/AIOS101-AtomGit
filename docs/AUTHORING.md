@@ -2,7 +2,7 @@
 
 ## 1. 找到章节
 
-当前先评审 [全书目录提案](../textbook/contents-review.md)，维护者审定后再按章填充内容；详见 [ADR-0015](decisions/ADR-0015-methodology-introduction-outline.md)。开源创作与 AI 创作贯穿，五维目标按阶段深化。
+维护者已采纳[章名与独立实践设计](review/2026-10-30-titles-and-practice.md)，宪法、引言、目录与前三章已按此更新，待内容评审。后九章目前仅标题对齐，正文与实践继续逐章优化；见 [ADR-0017](decisions/ADR-0017-independent-practice-implementation.md)。开源创作与 AI 创作贯穿，五维目标按阶段深化。
 
 十二章正文在 textbook/chapters/CH01.md 至 CH12.md。目录、名称和任务正本在 specs/course.json；对应教学规格在 specs/chapters/。先阅读目标、前置知识与边界，再开始写正文。
 
@@ -33,8 +33,8 @@ python scripts/check_all.py
 
 实践说明在 practice/README.md，示范在 practice/demo/，模板在 practice/template/。本版未验证的运行和反馈应保留准确状态。当前事实写 docs/STATUS.md，重要决定写 docs/decisions/。
 
-## 首轮创作顺序
+## 当前创作与交付顺序
 
-先写序言与 CH01，打通一个真实任务；随后补齐 CH02—06 的理解与判断；再完成 CH07—09 的完整作品过程；最后以 CH10—12 的真实协作和迁移记录收束。内容可逐章上线，状态分别记录。
+按“宪法→引言→目录→CH01→CH02→CH03”完成本轮对齐，逐项记录自审与优化。后续以各章特点设计独立材料、任务和反馈，允许延续作品；完成一章再评审一章，不把知识递进等同于同一作品的强制延续。
 
-已提供打印稿的章节，更新正文、图件、图注或排版输入后须重新生成 PDF，并逐页检查；交付前运行 `python scripts/print_manifest.py` 检查新鲜度。PDF 只单独交付，不提交 GitHub；普通网站构建不依赖 PDF。见 [打印构建说明](../textbook/print/README.md) 和 [打印规范](../specs/print-spec.md)。
+**本轮按维护者要求仅更新仓库与 Pages，PDF 暂不更新，待评审后定稿。**旧 PDF 与摘要保持历史身份，不声称与新正文一致。通常已提供打印稿的章节在确定交付后，应随正文、图件及排版输入重新生成 PDF，并逐页检查；交付前运行 `python scripts/print_manifest.py` 检查新鲜度。PDF 只单独交付，不提交 GitHub；普通网站构建不依赖 PDF。见 [打印构建说明](../textbook/print/README.md) 和 [打印规范](../specs/print-spec.md)。

@@ -1,15 +1,15 @@
 # 规格入口与单一正本
 
-先读 [课程宪法 v0.2.2](../CONSTITUTION.md)。学习目标采用“理解—判断—创造—协作—迁移”五维框架，综合项目为借助 OpenDipper 完成研究报告、动态展示页面与 AtomGit 开源交付。
+先读 [课程宪法 v0.3.0](../CONSTITUTION.md)。五维目标为“理解—判断—创造—协作—迁移”。各章实践独立起步，允许延续和整合成果；报告与交互展示是综合示范方向。OpenDipper 提供可选材料，DSH 及其他合适工具支持创作。
 
-**迁移状态：**[course.json](course.json) 为 0.2.4；引言与关于已对齐宪法 0.2.2；CH01—03 保留上一轮教材稿。全书新目录单列评审，审定后逐章填充。第一部分仍为教材评审稿，CH04—12 继续逐章迁移。旧任务保留用于定位现有内容，不覆盖新宪法；迁移依据见 [ADR-0007](../docs/decisions/ADR-0007-opendipper-research-course.md)。
+**实施状态：**course.json 为 0.3.0；引言与关于对齐宪法；目录已采纳新章名，本轮完整更新前三章，后九章仅更名且标记正文、任务待迁移。已上线、内容审定和真人试学分别记录；本轮不更新 PDF。依据见 [ADR-0017](../docs/decisions/ADR-0017-independent-practice-implementation.md)。
 
 - [课程总规格](course-spec.md)：范围与教学实现。
-- [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与贯穿作品。
-- [目录评审规格](outline-review-spec.md) · [全书目录提案](../textbook/contents-review.md)：四篇十二章与前三章三级标题，待审定后实施。
-- [章名与独立实践的新一轮评审](../docs/review/2026-10-30-titles-and-practice.md)：标题建议、各章实践、工具分工与作品库；本轮审定后联动迁移上述正本与规格，见 ADR-0016。
+- [引言规格](preface-spec.md)：课程方法、五维目标、学习矩阵、阶梯与独立实践。
+- [目录评审规格](outline-review-spec.md) · [全书目录提案](../textbook/contents-review.md)：四篇十二章与前三章三级标题，按已认可方向实施。
+- [章名与独立实践的新一轮评审](../docs/review/2026-10-30-titles-and-practice.md)：标题建议、各章实践、工具分工与作品库；本轮据此实施，见 ADR-0017。
 - [章节规格索引](chapters/README.md)：十二章的前置知识、内容边界和验收要求。
-- [贯穿实践规格](practice-spec.md)：新综合项目要求与待迁移的实践、示范及模板。
+- [章节实践规格](practice-spec.md)：独立任务、可选综合创作、案例和作品库设计。
 - [评价规格](assessment-spec.md)：学习成果与可观察证据。
 - [教材体例规范](textbook-style-spec.md)：书籍与在线自学共用正文、概念解释、例题和练习反馈。
 - [打印书稿规范](print-spec.md)：单一正文、多端呈现、PDF 一致性与逐页验收。

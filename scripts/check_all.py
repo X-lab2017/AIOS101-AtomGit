@@ -111,7 +111,7 @@ exercise_groups=re.findall(r'<h3>(?:基础理解|材料分析|拓展与迁移)</
 require(exercise_groups==['',' start="4"',' start="6"'],'Chapter 1 exercise numbers no longer match their six answers')
 ch2=(R/'textbook/chapters/CH02.md').read_text()
 ch2_cards=(R/'practice/ch02/materials/reading-cards.md').read_text()
-for letter in 'ABC':
+for letter in 'ABCDE':
     clauses=re.findall(r'^- \*\*'+letter+r'[1-4] .*$',ch2,re.M)
     require(len(clauses)==4 and all(x in ch2_cards for x in clauses),'Chapter 2 material card differs: '+letter)
 ch2_images=re.findall(r'^!\[[^\]]+\]\(../assets/figures/([^\)]+)\)',ch2,re.M)
@@ -212,5 +212,5 @@ if 'ch11' in active:
     require(not (R/'practice/ch11/work/review-draft.md').exists(),'Chapter 11 must not prefill a learner review')
 if 'ch12' in active:
     require(not (R/'practice/ch12/work/transfer-result.md').exists(),'Chapter 12 must not prefill a transfer result')
-require(len(parsed)==26+len(active)+4,'Unexpected page count')
+require(len(parsed)==27+len(active)+4,'Unexpected page count')
 print(f'PASS: {len(parsed)} HTML pages; canonical specs, local links/anchors, brand integrity, content states, all practice archives, Chapter 4 arithmetic, Chapter 1 and Chapter 5 prompts and JavaScript syntax')

@@ -4,69 +4,47 @@
 
 理解 AI，学会判断，在开放协作中创造。X-lab 开放实验室与奇点智能研究院联合出品，面向所有专业的学生、教师与自学者。
 
-**开源北斗 OpenDipper（OD）**是全球开源生态的数据观测与研究项目。本课程将它同时作为学习教学工具与真实项目案例，结合 DeepSeek 模型、DSH 智能体工具和 AtomGit 协作实践。
+课程采用**理解—判断—创造—协作—迁移**五维目标，以**认识开源、理解 AI、开展 AI 创作、参与开放协作**四篇组织十二章。开源创作与 AI 创作从起步阶段贯穿，各章提供独立实践，允许自主延续与择优整合。
 
-课程采用 **理解—判断—创造—协作—迁移** 的 AI 时代五维学习目标框架。综合大作业是利用 OpenDipper 完成**专业开源研究报告及配套动态展示页面**，将报告、页面及相关材料作为同一个开源项目托管在 AtomGit，积累个人技能集与作品集。
-
-**当前评审：**[宪法 v0.2.2](CONSTITUTION.md)明确开源创作与 AI 创作贯穿课程；[新版引言](https://www.x-lab.info/AIOS101-AtomGit/preface/)用五维目标、学习矩阵和阶梯介绍全书。[全书目录提案](https://www.x-lab.info/AIOS101-AtomGit/outline/)先行评审，审定后再逐章填充正文。见 [ADR-0015](docs/decisions/ADR-0015-methodology-introduction-outline.md)。
+OpenDipper 是可选的生态数据观察入口与真实案例；DSH 和其他合适的 Agent 支持研究与创作；AtomGit 示范版本管理与开放协作。报告与交互展示保留为综合创作示范方向，具体结课要求由教学设计明确。
 
 ## 从这里开始
 
-- [章名与独立实践设计评审稿](docs/review/2026-10-30-titles-and-practice.md)：最新标题建议、各章独立任务、案例与作品库预留；尚待审定并联动上述宪法与引言。
-- [在线评审站](https://www.x-lab.info/AIOS101-AtomGit/)
-- [全书目录评审稿](textbook/contents-review.md) · [引言](textbook/preface.md)
+- [在线课程](https://www.x-lab.info/AIOS101-AtomGit/) · [引言](https://www.x-lab.info/AIOS101-AtomGit/preface/) · [全书目录](https://www.x-lab.info/AIOS101-AtomGit/outline/)
 - [课程宪法](CONSTITUTION.md) · [课程总规格](specs/course-spec.md) · [十二章规格](specs/chapters/README.md)
+- [章节实践与作品资源](practice/README.md) · [关于课程](textbook/about.md)
+- [本轮分项评审](docs/review/2026-10-30-independent-practice-implementation.md) · [已采纳的标题与实践设计](docs/review/2026-10-30-titles-and-practice.md)
 - [作者指南](docs/AUTHORING.md) · [当前状态](docs/STATUS.md) · [AI 协作者指南](AGENTS.md)
-- [实践与迁移说明](practice/README.md) · [示范结构](practice/demo/README.md) · [实践模板](practice/template/README.md)
 
-## 已上线内容与迁移范围
+## 本轮更新与评审范围
 
-宪法版本为 0.2.2，课程结构元数据为 0.2.4；新目录为 0.1.0 评审提案，各章尚未据此重写。现有四部分十二章图文评审稿保留供阅读与迁移复用，下列内容说明属于已上线版本，其中的旧称与任务将按新宪法逐章调整。示范不代表任务实测或社区贡献已经完成。
+宪法 0.3.0、引言 0.6.0、目录 0.2.0 与前三章依次更新并逐项自审。五维目标、学习矩阵和自主性阶梯保留，取消同一研究作品的强制延续。教材案例与授权分享的学生作品库预留方向，具体画像案例待后续设计。
 
-[引言 0.5.0](textbook/preface.md)从开源创作与人机合作说明课程方法，呈现五维目标、四篇学习矩阵、同一研究作品的成长与自主学习阶梯。复用三幅既有插画，新增一幅原创 SVG 结构图；[关于课程](textbook/about.md)同步。见[本轮评审记录](docs/review/2026-10-30-introduction-outline.md)。
+| 章节 | 内容重点 | 独立实践 |
+| --- | --- | --- |
+| [第一章：开源与人工智能](textbook/chapters/CH01.md) · 0.8.0 | AI 与开源基本认识，材料与判断，人机合作 | [AI 辅助阅读与短篇表达](practice/ch01/README.md) |
+| [第二章：开源项目的结构与运作](textbook/chapters/CH02.md) · 0.5.0 | 目的、成果、材料与协作，完整阅读项目 | [选择一个项目制作画像](practice/ch02/README.md) |
+| [第三章：开源协作与创新](textbook/chapters/CH03.md) · 0.4.0 | 历史、复用条件、共同改进与创新 | [复用材料，改进读者说明](practice/ch03/README.md) |
 
-第一部分三章已完成本轮教材联动：第一章 0.7.1、第二章 0.4.1、第三章 0.3.0。统一章、节、小节标题与学习单元，沿用同一简报形成“创作—项目阅读—复用与改进”的递进。详见 [本轮评审](docs/review/2026-10-30-first-part-textbook.md)；前三章早期的 [联合记录](docs/review/2026-10-29-ch01-03.md)保留历史身份。
+前三章各五节、十五小节，保留例题、六题及反馈和十幅图；引言保留四幅图。两幅结构图的文字与新设计同步，其余有效图件复用。正文、配套材料和页面均为待评审稿，工程检查与上线不等于维护者审定或真人试学。
 
-- [第一章：初识 AI 开源](textbook/chapters/CH01.md)——四幅图与 [练习包](practice/ch01/README.md)，从真实材料与 OD 观察形成一页研究简报。
-- [第二章：打开一个开源项目](textbook/chapters/CH02.md)——两幅图与 [材料包](practice/ch02/README.md)，从项目全貌、材料与协作建立档案。
-- [第三章：开源的力量](textbook/chapters/CH03.md)——四幅图与 [九文件复用包](practice/ch03/README.md)，理解开放机制，完成材料复用与读者导向改进。
+第四至十二章本轮仅对齐章名，正文与任务保留上一版，并明确标注待优化。已有示范和模板供选择参考，不再作为新版课程各章必交路径。
 
-三个 A4 单章和第一部分合订 PDF 在对话中单独交付，不纳入 GitHub 或 Pages。排版方法见 [打印说明](textbook/print/README.md)。
+**PDF 暂不更新。**旧 PDF 和打印输入摘要保留历史交付身份；待维护者评审新正文后再统一定稿排版。本轮仓库与 Pages 不提供新版 PDF。见[打印说明](textbook/print/README.md)。
 
-- [第四章：模型怎样学会本领](textbook/chapters/CH04.md)——[纸面实验材料包](practice/ch04/README.md)，用教学合成数据理解训练、检验与适用边界。
+## 创作与验证
 
-- [第五章：AI 为什么会答错](textbook/chapters/CH05.md)——[生成对照材料包](practice/ch05/README.md)，理解生成与上下文，并为同一导览做一次有依据的修订。
-
-- [第六章：从回答到行动](textbook/chapters/CH06.md)——[任务追踪材料包](practice/ch06/README.md)，分清读取、生成、执行和人的授权核验。
-
-- [第七章：找到值得解决的问题](textbook/chapters/CH07.md)——[设计材料包](practice/ch07/README.md)，围绕具体读者选择问题、范围和标准。
-- [第八章：把想法变成作品](textbook/chapters/CH08.md)——[创作材料包](practice/ch08/README.md)，从草图到实际候选，说明自己的关键取舍。
-- [第九章：让作品经得起检验](textbook/chapters/CH09.md)——[检验材料包](practice/ch09/README.md)，核验、修订并比较前后。
-
-- [第十章：让别人用上你的成果](textbook/chapters/CH10.md)——[分享材料包](practice/ch10/README.md)，用浏览器整理版本、检查访问和阅读路径。
-- [第十一章：在反馈中共同改进](textbook/chapters/CH11.md)——[协作材料包](practice/ch11/README.md)，从具体问题、差异走向回应与改进。
-- [第十二章：建立个人技能集与作品集](textbook/chapters/CH12.md)——[迁移材料包](practice/ch12/README.md)，从代表作品提炼方法，在新项目问题中检验。
-
-[引言](textbook/preface.md)与全部十二章现为可读评审稿，新目录单列评审。第四至九章为 0.3.0，第十至十二章为 0.2.0；后者已逐章自审并联合对齐，见[本轮记录](docs/review/2026-10-30-ch10-12.md)。第七至九章采用[观察站产品修订版](docs/review/2026-10-29-ch07-09-realignment.md)，不再沿用旧的角色地图主线。工具和平台实操、真人试学仍需继续验证。
-
-## 创作方式
-
-只需在 textbook/chapters/ 中创作 Markdown 正文；目录、阅读页、状态与下载由构建生成。已审定结构变化先修改 specs/course.json，再同步规格；当前待审目录独立保留，审定前不覆盖已实施章节。
+textbook/ 是 Markdown 正本，规格在 specs/，配套实践在 practice/。结构变化先改 specs/course.json，再运行 `python scripts/sync_specs.py`。按“逐章立题、研究先行、材料补充、图文共创、上线评审”推进。
 
 ```bash
 python scripts/sync_specs.py --check
 python scripts/check_all.py
 ```
 
-main 检查通过后由 GitHub Actions 发布 Pages。PR 仅检查。详见 [作者指南](docs/AUTHORING.md)。
+main 检查通过后由 GitHub Actions 发布 Pages，PR 仅检查。决策与版本记录见 [ADR-0017](docs/decisions/ADR-0017-independent-practice-implementation.md) 和 [当前状态](docs/STATUS.md)。
 
-## 复用与来源
+## 复用与使用条件
 
-继承 [AIOS101](https://github.com/X-lab2017/AIOS101) 的 Open Folio 1.0.0 视觉、阅读方法和 SDD 经验，按新大纲独立组织。固定来源、资产哈希和适配说明见 [品牌复用记录](brand/README.md)。
+继承 [AIOS101](https://github.com/X-lab2017/AIOS101) 的 Open Folio 1.0.0 视觉、阅读方法和 SDD 经验，按本课结构独立组织；来源和摘要见[品牌复用记录](brand/README.md)。课程源码维护于 GitHub，学习成果可在 AtomGit 等合适空间交流，当前不预设统一教学空间或自动集成。
 
-课程源码维护于 GitHub，AtomGit 承载学习者的专题研究成果与社区实践。当前尚未配置统一 AtomGit 教学空间，不预设自动集成。
-
-## 使用条件
-
-本仓库保留源资产与第三方许可，课程及代码的统一对外许可待维护者确定，不自动新增授权。见 [素材来源](site/assets/NOTICE.md) 与 [参与指南](CONTRIBUTING.md)。
-
+本仓库保留源资产与第三方许可，课程及代码的统一对外许可待维护者确定，不自动新增授权。见[素材来源](site/assets/NOTICE.md)与[参与指南](CONTRIBUTING.md)。

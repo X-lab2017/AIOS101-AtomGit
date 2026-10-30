@@ -1,6 +1,6 @@
 {
   "id": "AIOS101-ATOMGIT",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "date": "2026-10-30",
   "title": "AI 开源通识",
   "edition": "AtomGit 版",
@@ -24,14 +24,14 @@
     },
     {
       "id": "P3",
-      "name": "AI 创作",
+      "name": "开展 AI 创作",
       "title": "动手创造",
       "en": "Create",
       "intro": "从一个值得解决的问题出发，让想法成为准确、好用的作品。"
     },
     {
       "id": "P4",
-      "name": "开放协作",
+      "name": "参与开放协作",
       "title": "进入社区",
       "en": "Contribute",
       "intro": "让成果帮助别人，在反馈和共同改进中积累自己的能力。"
@@ -49,96 +49,95 @@
       "id": "CH01",
       "number": 1,
       "part": "P1",
-      "title": "初识 AI 开源",
+      "title": "开源与人工智能",
       "subtitle": "从真实项目理解人工智能与开放协作",
       "en": "Introduction to AI and open source",
-      "question": "怎样借助 AI，把公开材料变成一页有依据、有自己判断的研究简报？",
+      "question": "开源怎样帮助理解和参与 AI，怎样借助材料与 AI 完成有依据的表达？",
       "topics": [
-        "从真实报告认识 AI 创作与人机协作",
-        "理解 AI、机器学习、生成式 AI 及模型、产品与系统",
-        "从使用、理解与创造认识 AI 开源生态、材料与社区",
-        "理解四篇十二章与研究作品的成长",
-        "阅读 R1 项目材料与 OpenDipper 观察，区分数据、证据与判断",
-        "组织提示词，分析修订理由，形成可持续改进的方法",
-        "完成一页研究简报，通过小结、练习与参考反馈巩固学习"
+        "AI 与我们的学习和创造",
+        "从软件开源理解 AI 开放",
+        "从公开材料到有依据的表达",
+        "与 AI 共同阅读和表达",
+        "AI 辅助阅读与短篇表达"
       ],
       "goals": [
-        "说明人工智能、生成式 AI 和语言模型的基本含义，区分模型、产品与系统",
-        "解释 AI 开源生态中软件、模型、数据与社区的作用，辨别公开可见、免费使用与开放复用",
-        "根据项目说明和 OpenDipper 观察，区分材料记载、分析判断与待研究的问题",
-        "完成一页面向具体读者的研究简报，解释一项修改，并说明它在全书实践中的位置"
+        "说明人工智能与生成式 AI 的基本含义，区分模型、产品与工具",
+        "从软件开源理解使用、研究、修改和分享的条件，认识 AI 开放涉及多类材料",
+        "根据项目说明区分材料记载、分析判断与待解问题",
+        "借助 AI 完成一份有来源的短说明，并独立解释一次修订"
       ],
-      "task": "借助 DeepSeek 网页端，将 R1 公开材料和 OpenDipper 观察整理成一页研究简报，修订后保存。",
-      "evidence": "一页简报及来源、一次有理由的修改、一个后续问题和自己的解释",
+      "task": "使用给定项目材料 A，借助可用 AI 工具完成面向具体读者的短说明并修订；生态观察材料 B 为可选拓展。",
+      "evidence": "短说明及来源、实际工具记录、一次有理由的修订和个人解释",
       "outcomes": [
         "LO1",
         "LO2",
         "LO3"
       ],
-      "prerequisite": "无需编程、数学建模或开源协作基础；核心材料与反馈在正文提供；实践另备浏览器、AI 对话服务和文档工具",
-      "boundary": "首轮课堂 90 分钟，完整教材可课前预习与课后自学；不安装 DSH、不下载模型；完成一页简报，后续发展为研究报告与动态页面",
+      "prerequisite": "无需编程、建模或开源协作基础；正文提供材料 A、例题和反馈；实际 AI 创作需可用工具",
+      "boundary": "材料 A 足以完成核心任务；不要求 OD 实时访问、模型下载、前期作品或公开发布；课时待试学校准",
       "source": "textbook/chapters/CH01.md",
       "spec": "specs/chapters/CH01.md",
-      "milestone": "M01"
+      "milestone": "M01",
+      "designStatus": "review"
     },
     {
       "id": "CH02",
       "number": 2,
       "part": "P1",
-      "title": "打开一个开源项目",
+      "title": "开源项目的结构与运作",
       "subtitle": "从项目全貌到材料与协作",
       "en": "Open a project",
-      "question": "怎样读懂一个项目的全貌，并为自己的研究找到合适的材料与参与方向？",
+      "question": "打开一个项目，怎样读懂目的、成果、材料与协作，并形成有依据的画像？",
       "topics": [
-        "以 OpenDipper 认识项目的目的、成果、材料与协作",
-        "区分项目、仓库与平台，按问题阅读 README",
-        "辨认程序、数据、文档、检查与权利说明的不同职责",
-        "比较模型、工具、研究与内容项目的材料需求",
-        "通过 OD 内容任务与 DSH 对照理解社区及 Issue、PR",
-        "记录来源、版本和日期，区分说明、观察与判断",
-        "建立主项目档案，形成短对照，修订简报并提出研究问题"
+        "项目的目的与成果",
+        "项目材料的阅读与选择",
+        "不同项目的材料与复用入口",
+        "项目背后的社区与协作",
+        "制作一份项目画像"
       ],
       "goals": [
-        "从目的、成果、材料和协作四个方面解释项目，区分项目、仓库与平台",
-        "按问题选择 README、文件目录、研究说明、版本记录与贡献指南，解释它们各自的用途",
-        "结合真实项目说明不同成果类型与社区参与方式，区分来源记载、个人判断和未解决的问题",
-        "完成有依据的项目档案，修订第一章简报，并提出一个可以继续研究的小问题"
+        "从目的、成果、材料与协作解释项目，区分项目、仓库与平台",
+        "按问题选择 README、文件目录、研究说明、版本记录与贡献指南",
+        "比较软件工具、模型和数据研究项目的材料特点，说明判断范围",
+        "使用本章材料制作项目画像，解释材料选择及一个待解问题"
       ],
-      "task": "围绕 OpenDipper 建立主项目档案，以 R1、DSH 或本教材作短对照，修订第一章简报并提出下一步研究问题。",
-      "evidence": "有来源的项目全貌与材料选择、一项协作解释、简短对照、一次有理由的修订和一个后续问题",
+      "task": "从给定的 DSH、R1、OpenDipper 材料或同等条件的其他项目中选一个，制作项目画像，说明两类材料的作用与待查问题。",
+      "evidence": "项目画像、两类有来源的材料及选择理由、一项协作解释或待查说明、一个后续问题",
       "outcomes": [
         "LO1",
         "LO2",
         "LO3"
       ],
-      "prerequisite": "第一章基础概念与一页简报；也可使用书中参考材料；无需编程先修",
-      "boundary": "可打印教材为首要交付，核心材料在正文可读；学生可访问 GitHub、Hugging Face、AtomGit；不要求安装 DSH 或下载模型",
+      "prerequisite": "第一章的模型、产品、项目与材料判断概念；正文提供独立阅读卡，无需前章作品或编程先修",
+      "boundary": "无需安装、模型下载或对外提交；可只用教材材料；跨类型对照为拓展，工具与对象可选择",
       "source": "textbook/chapters/CH02.md",
       "spec": "specs/chapters/CH02.md",
-      "milestone": "M02"
+      "milestone": "M02",
+      "designStatus": "review"
     },
     {
       "id": "CH03",
       "number": 3,
       "part": "P1",
-      "title": "开源的力量",
+      "title": "开源协作与创新",
       "subtitle": "从成果复用到共同创造",
       "en": "The power of openness",
-      "question": "开放怎样支持复用，改进怎样进入共同成果？",
+      "question": "开源协作怎样支持创新，怎样复用材料并形成别人可以接续的改进？",
       "topics": [
-        "开放与共同创造的机制",
-        "软件开源的历史与基本思想",
-        "不同材料的开放与复用条件",
-        "从真实贡献到研究简报的共同改进"
+        "从成果共享到共同创造",
+        "开源的发展与基本思想",
+        "材料复用的条件与责任",
+        "从具体贡献到持续改进",
+        "复用材料，改进读者说明"
       ],
       "goals": [
-        "解释开放怎样为复用与共同创造提供条件，并联系历史案例说明其意义",
-        "依据具体材料与用途，完成有来源、有适用条件的复用说明",
-        "从真实变更记录区分提出改进、项目接纳与实际受益",
-        "完善研究简报，解释一次面向读者的改进并将方法用于新材料"
+        "解释复用、反馈与共同维护怎样支持创新，并说明其实现条件",
+        "联系 GNU、Linux 与开源定义理解基本思想及 AI 开放的材料问题",
+        "对一项具体材料落实相称的复用与来源说明",
+        "区分提出改进、项目接纳和实际受益，解释一次面向读者的修订"
       ],
-      "task": "沿用前两章简报与项目档案，完成一项有依据的材料复用、一次面向读者的改进及来源与使用说明。",
-      "evidence": "修订简报、材料复用记录、给读者的使用说明与改进理由；真实或预设反馈分别注明",
+      "task": "依据给定开放指南材料、待改说明与预设反馈制作写作贡献提示卡，保留来源与改写说明，解释一次改进；也可选用自己的作品。",
+      "evidence": "提示卡或等量改进成果、适用来源与声明、前后变化及理由、实际工具与反馈性质",
       "outcomes": [
         "LO1",
         "LO2",
@@ -146,17 +145,18 @@
         "LO4",
         "LO5"
       ],
-      "prerequisite": "前两章的简报与项目档案；也可使用书中完整示范；无需编程先修",
-      "boundary": "解释软件、模型、数据和图文的不同条件；核心任务为一项材料与一次改进；真实社区提交及整项目许可选择留给后续实践",
+      "prerequisite": "前两章的项目、材料和来源概念；本章提供独立输入，无需简报、画像或编程基础",
+      "boundary": "核心只复用一项材料并改进一次说明；MIT 为拓展对照；无需 OD 访问、网站制作或对外提交，真实协作另行验证",
       "source": "textbook/chapters/CH03.md",
       "spec": "specs/chapters/CH03.md",
-      "milestone": "M03"
+      "milestone": "M03",
+      "designStatus": "review"
     },
     {
       "id": "CH04",
       "number": 4,
       "part": "P2",
-      "title": "模型怎样学会本领",
+      "title": "机器学习基础",
       "subtitle": "从例子到能力",
       "en": "How models learn",
       "question": "模型怎样从样本中学习，又怎样检查是否学会？",
@@ -180,13 +180,14 @@
       "boundary": "不把小模型演示当成完整大模型训练过程",
       "source": "textbook/chapters/CH04.md",
       "spec": "specs/chapters/CH04.md",
-      "milestone": "M04"
+      "milestone": "M04",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH05",
       "number": 5,
       "part": "P2",
-      "title": "AI 为什么会答错",
+      "title": "大语言模型的生成与局限",
       "subtitle": "生成、知识与证据",
       "en": "Generation and evidence",
       "question": "回答怎样产生，哪些结果需要再核验？",
@@ -210,13 +211,14 @@
       "boundary": "小样本结果不外推为模型总排名",
       "source": "textbook/chapters/CH05.md",
       "spec": "specs/chapters/CH05.md",
-      "milestone": "M05"
+      "milestone": "M05",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH06",
       "number": 6,
       "part": "P2",
-      "title": "从回答到行动",
+      "title": "智能体的工作机制",
       "subtitle": "拆解 DSH 的一次任务",
       "en": "From answers to actions",
       "question": "模型怎样借助材料和工具完成任务？",
@@ -240,13 +242,14 @@
       "boundary": "不把展示的解释当作完整内部思维；阅读示例与亲自运行分开",
       "source": "textbook/chapters/CH06.md",
       "spec": "specs/chapters/CH06.md",
-      "milestone": "M06"
+      "milestone": "M06",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH07",
       "number": 7,
       "part": "P3",
-      "title": "找到值得解决的问题",
+      "title": "创作选题与方案设计",
       "subtitle": "从观察到设计",
       "en": "Design a useful work",
       "question": "怎样把已有观察成果设计成别人用得上的观察站？",
@@ -270,13 +273,14 @@
       "boundary": "不要求所有人制作网站、Skill 或插件",
       "source": "textbook/chapters/CH07.md",
       "spec": "specs/chapters/CH07.md",
-      "milestone": "M07"
+      "milestone": "M07",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH08",
       "number": 8,
       "part": "P3",
-      "title": "把想法变成作品",
+      "title": "作品的构建与表达",
       "subtitle": "与 AI 一起工作",
       "en": "Create with AI",
       "question": "怎样把想法推进成可以使用的作品？",
@@ -300,13 +304,14 @@
       "boundary": "核心路径不要求手写代码；实现复杂度由任务范围控制",
       "source": "textbook/chapters/CH08.md",
       "spec": "specs/chapters/CH08.md",
-      "milestone": "M08"
+      "milestone": "M08",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH09",
       "number": 9,
       "part": "P3",
-      "title": "让作品经得起检验",
+      "title": "作品的评价与改进",
       "subtitle": "准确、好用、可理解",
       "en": "Check and improve",
       "question": "怎样知道作品可靠，修改确实有效？",
@@ -330,13 +335,14 @@
       "boundary": "不得生成虚构来源、实验结果或用户反馈",
       "source": "textbook/chapters/CH09.md",
       "spec": "specs/chapters/CH09.md",
-      "milestone": "M09"
+      "milestone": "M09",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH10",
       "number": 10,
       "part": "P4",
-      "title": "让别人用上你的成果",
+      "title": "开源作品的组织与发布",
       "subtitle": "在 AtomGit 整理与分享",
       "en": "Share your work",
       "question": "别人怎样找到、理解并使用你的成果？",
@@ -360,13 +366,14 @@
       "boundary": "账号、教学额度与分享范围由实际开课条件落实",
       "source": "textbook/chapters/CH10.md",
       "spec": "specs/chapters/CH10.md",
-      "milestone": "M10"
+      "milestone": "M10",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH11",
       "number": 11,
       "part": "P4",
-      "title": "在反馈中共同改进",
+      "title": "开源社区的参与与贡献",
       "subtitle": "完成一次开源贡献",
       "en": "Contribute together",
       "question": "怎样提出有帮助的反馈并完成协作改进？",
@@ -390,13 +397,14 @@
       "boundary": "按实际发生位置标注贡献；不以 Star、代码量或上游接纳作为统一门槛",
       "source": "textbook/chapters/CH11.md",
       "spec": "specs/chapters/CH11.md",
-      "milestone": "M11"
+      "milestone": "M11",
+      "designStatus": "migration-pending"
     },
     {
       "id": "CH12",
       "number": 12,
       "part": "P4",
-      "title": "建立个人技能集与作品集",
+      "title": "学习成果的积累与迁移",
       "subtitle": "让学习继续发生",
       "en": "Build your portfolio",
       "question": "怎样证明自己学会了，并把方法用于新问题？",
@@ -423,31 +431,49 @@
       "boundary": "技能集指人的能力与方法，不限定为 Agent Skill",
       "source": "textbook/chapters/CH12.md",
       "spec": "specs/chapters/CH12.md",
-      "milestone": "M12"
+      "milestone": "M12",
+      "designStatus": "migration-pending"
     }
   ],
   "migration": {
-    "constitution": "0.2.2",
+    "constitution": "0.3.0",
     "alignedChapters": [
       "CH01",
       "CH02",
       "CH03"
     ],
-    "note": "引言与关于课程已对齐宪法 0.2.2 的贯穿方法论、五维阶段目标与学习递进；全书新目录单列评审，尚未据此重写章节。CH01—03 保留上一轮教材稿，CH04—12 继续逐章迁移；真人试学待开展。"
+    "pendingChapters": [
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10",
+      "CH11",
+      "CH12"
+    ],
+    "note": "宪法 0.3.0、引言 0.6.0、目录 0.2.0 与前三章已按独立实践设计更新，仍待维护者内容评审；后九章仅标题对齐，正文与任务待迁移。PDF 暂缓，工具流程和真人试学另行验证。"
   },
   "practiceContext": {
-    "name": "科技研究与咨询：开源生态专题",
-    "report": "开源生态专题研究报告",
-    "display": "开源生态研究展示",
+    "name": "开源生态中的研究与创作",
+    "mode": "各章实践独立起步，允许自主延续和择优整合",
     "researchObject": "开源生态中的软件、模型、数据、开发者、社区与组织及其关系",
-    "method": "借助 OpenDipper、公开资料与 AI 开展研究",
-    "publication": "报告与交互展示作为同一个学习者项目在 AtomGit 开放维护"
+    "method": "使用适用的公开材料与数据，借助 DSH 或其他合适的 AI／Agent 工具开展实践",
+    "dataRole": "OpenDipper 为可选观察入口和数据来源之一",
+    "publication": "本版以 AtomGit 示范版本管理和开放协作；课程资源平台逐步积累授权分享的作品",
+    "comprehensiveExample": {
+      "name": "科技研究与咨询：开源生态专题",
+      "report": "开源生态专题研究报告",
+      "display": "开源生态研究展示",
+      "requirement": "综合创作示范方向；具体结课成果由教学设计明确"
+    }
   },
   "outlineReview": {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "status": "review",
     "source": "textbook/contents-review.md",
     "spec": "specs/outline-review-spec.md",
-    "note": "拟定目录，审定后再逐章同步到 chapters 与正文。"
+    "note": "维护者已认可标题与独立实践方向；本轮正文仍待评审，前三章逐项落实，后九章继续修订。"
   }
 }
